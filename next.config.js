@@ -12,6 +12,8 @@ const nextConfig = {
         fs: false,
         net: false,
         dns: false,
+        child_process: false, // Exclude child_process from bundling
+        tls: false, // Exclude tls from bundling
       };
     }
     config.module.rules.push({
