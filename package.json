@@ -15,7 +15,7 @@
     "gray-matter": "^4.0.3",
     "luxon": "^3.4.4",
     "next": "14.0.4",
-    "nodemailer": "^6.9.13",
+    "nodemailer": "^6.9.10",
     "plyr": "^3.7.8",
     "rc-slider": "^10.5.0",
     "react": "^18",
