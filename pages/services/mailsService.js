@@ -1,21 +1,29 @@
-var nodemailer = require("nodemailer");
+// pages/api/sendMail.js
 
-export async function sendMail({
-  subject,
-  toEmail,
-  otpText,
-  name,
-  email,
-  dob,
-  phone,
-  address,
-  qualification,
-  course,
-  pg_diploma,
-  parent_name,
-  parent_phone,
-}) {
-  var transporter = nodemailer.createTransport({
+import nodemailer from "nodemailer";
+
+export default async function handler(req, res) {
+  if (req.method !== "POST") {
+    return res.status(405).json({ message: "Method Not Allowed" });
+  }
+
+  const {
+    subject,
+    toEmail,
+    otpText,
+    name,
+    email,
+    dob,
+    phone,
+    address,
+    qualification,
+    course,
+    pg_diploma,
+    parent_name,
+    parent_phone,
+  } = req.body;
+
+  const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       user: "shyamalfred@gmail.com",
@@ -26,7 +34,7 @@ export async function sendMail({
     },
   });
 
-  var mailOptions = {
+  const mailOptions = {
     from: "shyamalfred@gmail.com",
     to: "shyamalfred@gmail.com",
     subject: subject,
@@ -47,9 +55,9 @@ export async function sendMail({
   try {
     const info = await transporter.sendMail(mailOptions);
     console.log("Email Sent:", info.response);
-    return true;
+    res.status(200).json({ message: "Email Sent" });
   } catch (error) {
     console.error("Error sending email:", error);
-    throw new Error("Error sending email");
+    res.status(500).json({ message: "Error sending email" });
   }
 }
