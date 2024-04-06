@@ -1,0 +1,27 @@
+{
+  "contactOne": [
+    {
+      "title": "Contact Phone Number",
+      "numOne": "+918129999536",
+      "numTwo": "+222 222 222 333",
+      "icon": "feather-headphones",
+      "address": ""
+    },
+    {
+      "title": "Our Email Address",
+      "mailOne": "counsellor@londoncollege.in",
+      "mailTwo": "example@gmail.com",
+      "icon": "feather-mail",
+      "numOne": "",
+      "address": "",
+      "numTwo": ""
+    },
+    {
+      "title": "Our Location",
+      "address": "Pipeline Junction, Thrikkakara,Kochi,Kerala,682021",
+      "icon": "feather-map-pin",
+      "numOne": "",
+      "numTwo": ""
+    }
+  ]
+}
