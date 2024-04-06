@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { sendMail } from "../services/mailsService";
+import { sendMail } from "../../services/mailsService";
 
 const handler = async (req, res) => {
   try {
