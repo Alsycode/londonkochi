@@ -34,32 +34,38 @@ import Vidcomponet from "../vidcomponent/index.js";
 import BannerVideo from "../../components/bannervideo";
 import ContactForm from "../Contacts/Contact-Form.js";
 import BrandOneHome from "../Brand/brandhome"
-const UniversityClassic = () => {
-
-  const [videoData, setVideoData] = useState(null);
+const UniversityClassic = ({videoData}) => {
+  const videoDataa = videoData;
+console.log("dffdf",videoDataa)
+  const [videoDatas, setVideoDatas] = useState(null);
   const [error, setError] = useState(null);
-
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch("http://139.59.78.49:1337/api/london-college-videos?populate=*", {
-          headers: {
-            Authorization: "Bearer 3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c"
-          }
-        });
-        const data = await res.json();
-        setVideoData(data);
-      } catch (error) {
-        setError(error);
-      }
-    };
+    if (videoData) {
+      setVideoDatas(videoData);
+    }
+  }, [videoData]);
+  console.log("dffdsffdfdf",videoDatas)
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const res = await fetch("http://139.59.78.49:1337/api/london-college-videos?populate=*", {
+  //         headers: {
+  //           Authorization: "Bearer 3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c"
+  //         }
+  //       });
+  //       const data = await res.json();
+  //       setVideoData(data);
+  //     } catch (error) {
+  //       setError(error);
+  //     }
+  //   };
 
-    fetchData();
-    sal({
-      threshold: 0.01,
-      once: true,
-    });
-  }, []);
+  //   fetchData();
+  //   sal({
+  //     threshold: 0.01,
+  //     once: true,
+  //   });
+  // }, []);
 
 
   console.log("video",videoData)
@@ -433,7 +439,7 @@ const UniversityClassic = () => {
           <Course title="University Tuition & Fees" />
         </div> */}
       </div>
-      <Vidcomponet videoData={videoData} />
+      <Vidcomponet videoData={videoDatas} />
       <div className="rbt-testimonial-area bg-color-light rbt-section-gap overflow-hidden">
         <div className="wrapper mb--60">
           <div className="container">
@@ -481,3 +487,28 @@ const UniversityClassic = () => {
 };
 
 export default UniversityClassic;
+export async function getServerSideProps(context) {
+  try {
+    const res = await fetch(
+      "http://139.59.78.49:1337/api/london-college-videos?populate=*",
+      {
+        headers: {
+          Authorization:
+            "Bearer 3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c",
+        },
+      }
+    );
+    const videoData = await res.json();
+    return {
+      props: {
+        videoData,
+      },
+    };
+  } catch (error) {
+    return {
+      props: {
+        error: "Error fetching video data",
+      },
+    };
+  }
+}

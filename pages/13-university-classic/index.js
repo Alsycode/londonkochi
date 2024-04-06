@@ -11,7 +11,9 @@ import UniversityClassic from "@/components/13-university-classic/13-University-
 import HeaderStyleFour from "@/components/Header/HeaderStyle-Four";
 import Separator from "@/components/Common/Separator";
 
-const UniversityPage = () => {
+const UniversityPage = ({videoData}) => {
+  const uhuuhuhuhu = videoData;
+  console.log("uhuuhuhuhu",uhuuhuhuhu)
   return (
     <>
       <PageHead title="University Classic - Online Courses & Education NEXTJS14 Template" />
@@ -19,7 +21,7 @@ const UniversityPage = () => {
         <Context>
           <MobileMenu />
           <HeaderStyleFour headerType="" />
-          <UniversityClassic />
+          <UniversityClassic videoData={videoData}/>
           <Cart />
 
           <BackToTop />
