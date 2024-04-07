@@ -41,18 +41,17 @@ const Main = () => {
         }}
       ></div>
       <video
-        src="/video.mp4" 
-        autoPlay
-        loop
-        muted
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
-          position: 'relative',
-          zIndex: 0,
-        }}
-      />
+  src="/video.mp4" 
+  autoPlay
+  loop
+  style={{
+    width: '100%',
+    height: '100%',
+    objectFit: 'contain',
+    position: 'relative',
+    zIndex: 0,
+  }}
+/>
       <div
         className="content"
         style={{
