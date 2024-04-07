@@ -47,7 +47,7 @@ const VideoCarousel = ({ videoData }) => {
           marginBottom: "30px",
         }}
       >
-        Our Success stories
+        Our stories
       </h1>
       <div style={{ position: "relative", overflow: "hidden" }}>
         {videoData?.data?.map((videoObj, index) => (
