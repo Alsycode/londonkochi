@@ -38,8 +38,7 @@ const VideoCarousel = ({ videoData }) => {
         background: "rgba(156, 155, 152, 0.25)",
         backdropFilter: "blur(10px)",
         boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
-      
-    }}
+      }}
     >
       <h1
         style={{
@@ -63,16 +62,35 @@ const VideoCarousel = ({ videoData }) => {
               textAlign: "center", // Center text on small screens
             }}
           >
-            <div style={{ width: "100%", height: "50vh", borderRadius: "20px" }}>
+            <div
+              style={{
+                width: "100%",
+                height: "50vh",
+                borderRadius: "20px",
+                position: "relative",
+              }}
+            >
               <img
-                src={videoObj?.attributes?.videoimage?.data?.attributes?.formats?.small?.url}
+                src={
+                  videoObj?.attributes?.videoimage?.data?.attributes?.formats
+                    ?.small?.url
+                }
                 alt={videoObj.attributes?.title}
                 className="carousel-image"
-                style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  borderRadius: "20px",
+                }}
               />
               <button
                 className="play-button"
-                onClick={() => openPlayer(videoObj?.attributes?.Video?.data?.attributes?.url)}
+                onClick={() =>
+                  openPlayer(
+                    videoObj?.attributes?.Video?.data?.attributes?.url
+                  )
+                }
                 style={{
                   position: "absolute",
                   top: "50%",

@@ -16,7 +16,7 @@ const UniversityPage = ({videoData}) => {
   console.log("uhuuhuhuhu",uhuuhuhuhu)
   return (
     <>
-      <PageHead title="University Classic - Online Courses & Education NEXTJS14 Template" />
+      <PageHead title="London College- No.1 Logistics School" />
       <Provider store={Store}>
         <Context>
           <MobileMenu />
