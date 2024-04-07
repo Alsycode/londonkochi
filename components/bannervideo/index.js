@@ -44,7 +44,7 @@ const Main = () => {
         src="/video.mp4" 
         autoPlay
         loop
-        
+        muted
         style={{
           width: '100%',
           height: '100%',
@@ -68,7 +68,7 @@ const Main = () => {
           zIndex: 2,
         }}
       >
-        <h1>Welcome</h1>
+        {/* <h1>Welcome</h1> */}
         {/* <div className="section-title">
                           <span className="subtitle bg-white-opacity d-inline-block">
                           Unlock Your Potential at London College:
