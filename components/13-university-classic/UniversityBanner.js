@@ -64,22 +64,22 @@ const UniversityBanner = () => {
                         <div className="social-share-wrapper mt--40">
                           <ul className="social-icon social-default transparent-with-border">
                             <li>
-                              <Link href="https://www.facebook.com/">
+                              <Link href= "https://www.facebook.com/londoncollegekochi/">
                                 <i className="feather-facebook"></i>
                               </Link>
                             </li>
                             <li>
-                              <Link href="https://www.twitter.com">
+                              <Link href="https://twitter.com/LondonCollegebf">
                                 <i className="feather-twitter"></i>
                               </Link>
                             </li>
                             <li>
-                              <Link href="https://www.instagram.com/">
+                              <Link href="https://www.instagram.com/londoncollegekochi/">
                                 <i className="feather-instagram"></i>
                               </Link>
                             </li>
                             <li>
-                              <Link href="https://www.linkdin.com/">
+                              <Link href="https://www.linkedin.com/company/london-college/?originalSubdomain=in">
                                 <i className="feather-linkedin"></i>
                               </Link>
                             </li>

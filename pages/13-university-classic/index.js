@@ -12,8 +12,8 @@ import HeaderStyleFour from "@/components/Header/HeaderStyle-Four";
 import Separator from "@/components/Common/Separator";
 
 const UniversityPage = ({videoData}) => {
-  const uhuuhuhuhu = videoData;
-  console.log("uhuuhuhuhu",uhuuhuhuhu)
+
+ 
   return (
     <>
       <PageHead title="London College- No.1 Logistics School" />

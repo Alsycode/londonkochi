@@ -87,10 +87,10 @@ console.log("dffdf",videoDataa)
   return (
     <>
       <div className="rbt-slider-main-wrapper position-relative">
-        {/* <UniversityBanner /> */}
+        <UniversityBanner />
       </div>
 <BannerVideo/>
-      <div
+      {/* <div
         className="rbt-video-area bg-color-white rbt-section-gapTop"
         id="about"
       >
@@ -162,7 +162,7 @@ console.log("dffdf",videoDataa)
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <div
       style={{height:"800px"}}
       ><VideoSlider videoData={videoData} /></div> */}
