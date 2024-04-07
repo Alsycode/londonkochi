@@ -44,6 +44,7 @@ const Main = () => {
         src="/video.mp4" 
         autoPlay
         loop
+        muted
         style={{
           width: '100%',
           height: '100%',
