@@ -1,10 +1,11 @@
 import HomePage from "./13-university-classic";
 import BackToTop from "./backToTop";
-
+import { useEffect } from "react";
 export default function Home({ videoDatas }) {
   const videoData = videoDatas;
   console.log("data", videoData);
 
+  
   return (
     <>
       <main className="">

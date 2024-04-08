@@ -1,3 +1,5 @@
+const { withNextVideo } = require('next-video/process')
+
 const nextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
@@ -32,4 +34,4 @@ const nextConfig = {
   },
 };
 
-module.exports = nextConfig;
+module.exports = withNextVideo(nextConfig);

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Video from 'next-video';
 
 const VideoCarousel = ({ videoData }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -156,29 +157,33 @@ const VideoCarousel = ({ videoData }) => {
           style={{
             position: "fixed",
             top: "50%",
-            left: "50%",
-            transform: "translate(-50%, -50%)",
+            left: "0",
+            width: "100%", // Take full width on mobile
+            transform: "translateY(-50%)",
             zIndex: "9999",
             background: "#fff",
             padding: "20px",
           }}
         >
-          <button
-            className="close-button"
-            onClick={closePlayer}
-            style={{ float: "right" }}
-          >
+<button
+  className="close-button"
+  onClick={closePlayer}
+  style={{
+    position: "relative",
+    top: "20px",
+    right: "20px",
+    background: "none",
+    border: "none",
+    cursor: "pointer",
+    fontSize: "20px",
+    marginBottom:"20px"
+  // Ensure the button appears above the video
+  }}
+>
+
             Close
           </button>
-          <iframe
-            src={videoUrl}
-            width="560"
-            height="315"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-            title="Embedded Video Player"
-          ></iframe>
+          <Video src={videoUrl} style={{ width: "100%", height: "80%" }} />
         </div>
       )}
     </div>

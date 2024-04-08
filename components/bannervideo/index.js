@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import backgroundImage from '../../public/images/banner/one.jpg'; // Import your background image
 
 const Main = () => {
+  useEffect(() => {
+    // Function to play the video
+    const playVideo = () => {
+      const video = document.getElementById('myVideo');
+      if (video) {
+        video.play().catch(error => {
+          // Autoplay was prevented
+          console.error('Autoplay was prevented:', error);
+        });
+      }
+    };
+
+    // Attempt to play the video when the component mounts
+    playVideo();
+
+    // Clean up
+    return () => {
+      // Optionally, you can pause the video when the component unmounts
+      const video = document.getElementById('myVideo');
+      if (video) {
+        video.pause();
+      }
+    };
+  }, []);
+
   return (
     <div
       className="background-container"
@@ -14,7 +39,6 @@ const Main = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-
       }}
     >
       <div
@@ -28,58 +52,49 @@ const Main = () => {
         }}
       >
         <div
-        className="overlay"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          backgroundColor: 'rgba(0,0,0,.4)',
-          zIndex: 1,
-          borderRadius:"20px"
-        }}
-      ></div>
-      <video
-  src="/video.mp4" 
-  autoPlay
-  loop
-  style={{
-    width: '100%',
-    height: '100%',
-    objectFit: 'contain',
-    position: 'relative',
-    zIndex: 0,
-  }}
-/>
-      <div
-        className="content"
-        style={{
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          top: 0,
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          color: 'white',
-          zIndex: 2,
-        }}
-      >
-        {/* <h1>Welcome</h1> */}
-        {/* <div className="section-title">
-                          <span className="subtitle bg-white-opacity d-inline-block">
-                          Unlock Your Potential at London College:
-                          </span>
-                        </div> */}
-    {/* <h1 className="title w-700">
-                  
-                          <strong className="color-white">
-                          Where Knowledge Meets Opportunity
-                          </strong>
-                        </h1> */}
-      </div>
+          className="overlay"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            backgroundColor: 'rgba(0,0,0,.4)',
+            zIndex: 1,
+            borderRadius: '20px'
+          }}
+        ></div>
+        <video
+          id="myVideo"
+          src="/video.mp4" 
+          autoPlay
+          loop
+          muted // Add muted attribute for autoplay to work in some browsers
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            position: 'relative',
+            zIndex: 0,
+          }}
+        />
+        <div
+          className="content"
+          style={{
+            position: 'absolute',
+            width: '100%',
+            height: '100%',
+            top: 0,
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            color: 'white',
+            zIndex: 2,
+          }}
+        >
+          {/* Your content here */}
+        </div>
       </div>
     </div>
   );

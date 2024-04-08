@@ -3,6 +3,41 @@ import Link from "next/link";
 import img from "../../public/images/about/contact.jpg";
 import SectionHead from "../../components/Button/ButtonProps/SectionHead"; // Import the SectionHead component
 const ContactForm = ({ gap }) => {
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    const formData = new FormData(e.target);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const subject = formData.get("subject");
+    const message = formData.get("message");
+  
+    try {
+      const response = await fetch("/api/apifive", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+  
+      if (response.ok) {
+        console.log("Email sent successfully!");
+  
+        // Clear form fields
+        e.target.reset();
+      } else {
+        console.error("Failed to send email");
+        // Handle the failure scenario
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      // Handle the error scenario
+    }
+  };
+  
+  
   return (
     <>
       <div className={`rbt-contact-address ${gap}`}>
@@ -30,13 +65,12 @@ const ContactForm = ({ gap }) => {
                 </h3> */}
                 <form
                   id="contact-form"
-                  method="POST"
-                  action="mail.php"
+                 onSubmit={handleSubmit}
                   className="rainbow-dynamic-form max-width-auto"
                 >
                   <div className="form-group">
                     <input
-                      name="contact-name"
+                      name="name"
                       id="contact-name"
                       type="text"
                       placeholder="Name"
@@ -45,7 +79,7 @@ const ContactForm = ({ gap }) => {
                   </div>
                   <div className="form-group">
                     <input
-                      name="contact-phone"
+                      name="email"
                       type="email"
                       placeholder="Email"
                     />
@@ -62,23 +96,30 @@ const ContactForm = ({ gap }) => {
                   </div>
                   <div className="form-group">
                     <textarea
-                      name="contact-message"
+                      name="message"
                       id="contact-message"
                       placeholder="Message"
                     ></textarea>
                     <span className="focus-border"></span>
                   </div>
-                  <div className="row mt--50">
-              <div className="col-lg-12">
-                <div className="rbt-button-group">
-                  <Link className="rbt-moderbt-btn" href="#"
-                          >
-                             <span className="moderbt-btn-text">Submit Button</span>
-                            <i className="feather-arrow-right"></i>
-                  </Link>
-                </div>
-              </div>
-            </div>
+                  <div className="form-submit-group">
+                    <button
+                      name="submit"
+                      type="submit"
+                      id="submit"
+                      className="rbt-btn btn-md btn-gradient hover-icon-reverse w-100"
+                    >
+                      <span className="icon-reverse-wrapper">
+                        <span className="btn-text">Submit</span>
+                        <span className="btn-icon">
+                          <i className="feather-arrow-right"></i>
+                        </span>
+                        <span className="btn-icon">
+                          <i className="feather-arrow-right"></i>
+                        </span>
+                      </span>
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
