@@ -355,7 +355,7 @@ console.log("dffdf",videoDataa)
           </div>
         </div>
       </div>
-    <div
+    {/* <div
         className="rbt-course-area rbt-section-gapTop bg-color-white"
         id="course"
       >
@@ -379,7 +379,7 @@ console.log("dffdf",videoDataa)
             <CardThree />
           </div>
         </div> 
-       </div> 
+       </div>  */}
 
       {/* <div
         className="rbt-rbt-blog-area rbt-section-gapTop bg-color-white"

@@ -13,7 +13,7 @@ import Featured from "./Course-Sections/Featured";
 import RelatedCourse from "./Course-Sections/RelatedCourse";
 import Content from "./Course-Sections/Content";
 import DeliveryandBenifits from "./Course-Sections/Delivery-and-Benifits"; // Corrected import
-import VideoImg from "../../public/images/others/video-07.jpg";
+import VideoImg from "../../public/images/course/course1.jpg";
 import AboutIndustry from "./Course-Sections/AboutIndustry";
 import Gallery from "../Gallery/Gallery";
 import Jobrole from "./Course-Sections/jobrole";
@@ -34,7 +34,7 @@ console.log("cerificate",cerificate)
           <Link
             className="video-popup-with-text video-popup-wrapper text-center popup-video mb--15"
             data-vbtype="video"
-            href="https://www.youtube.com/watch?v=nA1Aqp0sPQo"
+            href="https://www.youtube.com/shorts/57SFQ4MoP5M"
           >
             <div className="video-content">
               <Image

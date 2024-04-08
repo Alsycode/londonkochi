@@ -9,7 +9,7 @@ const ContactForm = ({ gap }) => {
   
     const formData = new FormData(e.target);
     const name = formData.get("name");
-    const email = formData.get("email");
+    const phone = formData.get("phone");
     const subject = formData.get("subject");
     const message = formData.get("message");
   
@@ -19,7 +19,7 @@ const ContactForm = ({ gap }) => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, subject, message }),
+        body: JSON.stringify({ name, phone, subject, message }),
       });
   
       if (response.ok) {
@@ -79,9 +79,9 @@ const ContactForm = ({ gap }) => {
                   </div>
                   <div className="form-group">
                     <input
-                      name="email"
-                      type="email"
-                      placeholder="Email"
+                      name="phone"
+                      type="phone"
+                      placeholder="Phone"
                     />
                     <span className="focus-border"></span>
                   </div>

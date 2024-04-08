@@ -11,8 +11,9 @@ const CourseMenu = () => {
     { id: "Certificates & Affiliates", label: "Certificates & Affiliates" },
 
      {id: "Delivery & Benefit", label: "Delivery & Benefit "},
-     {id: "Recruitment", label: "Recruitment"},
      {id: "About Industry", label: "About Industry"},
+     {id: "Recruitment", label: "Recruitment"},
+    
      {id: "Job role",label: "Job role"}
     
     

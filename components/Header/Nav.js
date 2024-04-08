@@ -478,15 +478,9 @@ const Nav = () => {
         </li> 
         
          
-          <li className="with-megamenu position-static">
-          <Link
-            href="/admissions"
-           
-          >
-            Admissions
-            <i ></i>
-          </Link>
-          </li>
+    
+
+
           <li className="with-megamenu position-static">
           <Link
             href="/testimonialpage"
@@ -514,6 +508,25 @@ const Nav = () => {
             <i ></i>
           </Link>
           </li>
+          <li className="with-megamenu position-static">
+  <Link
+    href="/admissions"
+    style={{
+      display: 'inline-block',
+      paddingLeft:"auto",
+      paddingRight:"10px",
+      paddingTop:"auto",
+      paddingBottom:"auto",
+      backgroundColor: '#EEDC82', // Change background color to #EEDC82
+      color: 'white',
+      borderRadius: '5px',
+      textDecoration: 'none', // Remove default underline
+    }}
+  >
+    Admissions
+    {/* <i></i> */}
+  </Link>
+</li>
       </ul>
     </nav>
   );

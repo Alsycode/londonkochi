@@ -10,7 +10,7 @@
           "tab": "home-tab",
           "target": "home",
           "desc": "Our diploma programs are tailored to provide specialized skills and hands-on training. From state-of-the-art laboratories to industry-standard equipment, students receive practical experience that prepares them for success in their chosen career paths.",
-          "img": "/images/tab/tabs-03.png"
+          "img": "/images/tab/tabs-02.png"
         },
         {
           "text": "Awards For Training and Higher Education",
@@ -18,10 +18,10 @@
           "tab": "profile-tab",
           "target": "profile",
           "desc": "At London College, we understand the importance of getting a head start in your career. Our diploma programs offer shorter durations compared to traditional degrees, allowing you to enter the workforce sooner. This means you can start earning and gaining valuable work experience while others are still studying.",
-          "img": "/images/tab/tabs-02.png"
+          "img": "/images/tab/tabs-03.png"
         },
         {
-          "text": "Industry-Relevant Training",
+          "text": "Center of Excellence",
           "isActive": false,
           "tab": "contact-tab",
           "target": "contact",

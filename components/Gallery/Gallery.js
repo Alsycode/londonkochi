@@ -23,6 +23,9 @@ const Gallery = () => {
   }, []);
   return (
     <div className="row g-0 parent-gallery-container">
+         <div className="section-title text-center">
+         <h4 className="rbt-title-style-3">Top recruiters</h4>
+                  </div>
       {Brands &&
          brands?.map((data, index) => (
           <Link

@@ -5,14 +5,14 @@ const handler = async (req, res) => {
   try {
     if (req.method === "POST") {
       // Extract data from the request body
-      const { name, email, subject, message } = req.body;
+      const { name, phone, subject, message } = req.body;
 
       // Send email with form data
       await sendSimpleMail({
         subject,
         to: "razoralf67@gmail.com", // Update with your email address or use email from req.body
         name,
-        email,
+        phone,
         message,
       });
 

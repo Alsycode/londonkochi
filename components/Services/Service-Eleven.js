@@ -12,9 +12,9 @@ const ServiceEleven = ({ isTitle }) => {
             {isTitle === undefined ? (
               <div className="row mb--60">
                 <div className="col-lg-12">
-                  {/* <div className="section-title text-center">
-                    <h2 className="title">{data.sectionTitle}</h2>
-                  </div> */}
+                <div className="section-title text-center">
+         <h4 className="rbt-title-style-3">Job role</h4>
+                  </div>
                 </div>
               </div>
             ) : (
