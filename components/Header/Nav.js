@@ -103,7 +103,15 @@ const Nav = () => {
             </div>
           </div>  */}
         </li>
-
+        <li className="with-megamenu position-static">
+          <Link
+            href="/about-us-02"
+           
+          >
+            About Us
+            <i ></i>
+          </Link>
+          </li>
         <li className="with-megamenu has-menu-child-item">
           <Link
             className={`${activeMenuItem === "courses" ? "open" : ""}`}
@@ -183,6 +191,16 @@ const Nav = () => {
             {/* </div>
           </div> */}
         </li>
+        <li className="with-megamenu has-menu-child-item">
+          <Link
+            className={`${activeMenuItem === "courses" ? "open" : ""}`}
+            href="#"
+            onClick={() => toggleMenuItem("courses")}
+          >
+            Life at London College
+            <i ></i>
+          </Link>
+          </li>
         {/* <li className="has-dropdown has-menu-child-item">
           <Link
             className={`${activeMenuItem === "dashboard" ? "open" : ""}`}
@@ -222,7 +240,7 @@ const Nav = () => {
               })}
           </ul>
         </li> */}
-        <li className="with-megamenu has-menu-child-item position-static">
+        {/* <li className="with-megamenu has-menu-child-item position-static">
           <Link
             href="#"
             className={`${activeMenuItem === "pages" ? "open" : ""}`}
@@ -230,7 +248,7 @@ const Nav = () => {
           >
             More
             <i ></i>
-          </Link>
+          </Link> */}
           {/* <div
             className={`rbt-megamenu grid-item-4 ${
               activeMenuItem === "pages" ? "active d-block" : ""
@@ -296,7 +314,7 @@ const Nav = () => {
               </div>
             </div>
           </div> */}
-        </li>
+        {/* </li> */}
         {/* <li className="with-megamenu has-menu-child-item position-static">
           <Link
             href="#"
@@ -458,24 +476,8 @@ const Nav = () => {
             </div>
                     </div> */}
         </li> 
-        <li className="with-megamenu position-static">
-          <Link
-            href="/contact"
-           
-          >
-            Contact Us
-            <i ></i>
-          </Link>
-          </li>
-          <li className="with-megamenu position-static">
-          <Link
-            href="/about-us-02"
-           
-          >
-            About Us
-            <i ></i>
-          </Link>
-          </li>
+        
+         
           <li className="with-megamenu position-static">
           <Link
             href="/admissions"
@@ -500,6 +502,15 @@ const Nav = () => {
            
           >
             Faq
+            <i ></i>
+          </Link>
+          </li>
+          <li className="with-megamenu position-static">
+          <Link
+            href="/contact"
+           
+          >
+            Contact Us
             <i ></i>
           </Link>
           </li>

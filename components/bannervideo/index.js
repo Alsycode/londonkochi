@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
 import backgroundImage from '../../public/images/banner/one.jpg'; // Import your background image
+import leftLogo from '../../public/images/banner/logo1.jpg'; // Import left logo image
+import rightLogo from '../../public/images/banner/logo2.png'; // Import right logo image
 
 const Main = () => {
   useEffect(() => {
@@ -27,20 +29,63 @@ const Main = () => {
     };
   }, []);
 
+  const handleLoadedData = () => {
+    // Video loaded, attempt to play it
+    playVideo();
+  };
+
+  const handleButtonClick = () => {
+    const video = document.getElementById('myVideo');
+    if (video.paused) {
+      video.play();
+    } else {
+      video.pause();
+    }
+  };
+
   return (
     <div
       className="background-container"
       style={{
         width: '100%',
         height: '100vh',
-        backgroundImage: `url(/images/banner/one.jpg)`, // Set the background image
+        backgroundImage: `url(/images/banner/banner1.jpg)`, // Set the background image
         backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
+        position: 'relative',
       }}
     >
+      {/* Left logo */}
+      <img
+        src="/images/banner/logo1.jpg"
+        alt="Left Logo"
+        style={{
+          position: 'absolute',
+          left: '10%',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          zIndex: '2',width:"20%"
+        }}
+      />
+      
+      {/* Right logo */}
+      <img
+        src="/images/banner/logo2.png"
+        alt="Right Logo"
+        style={{
+          position: 'absolute',
+          right: '10%',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          zIndex: '2',
+          width:"25%"
+        }}
+      />
+
       <div
         className="main"
         style={{
@@ -61,15 +106,16 @@ const Main = () => {
             height: '100%',
             backgroundColor: 'rgba(0,0,0,.4)',
             zIndex: 1,
-            borderRadius: '20px'
+            borderRadius: '20px',
           }}
         ></div>
         <video
           id="myVideo"
           src="/video.mp4" 
-          autoPlay
+          
           loop
-          muted // Add muted attribute for autoplay to work in some browsers
+          // Add muted attribute for autoplay to work in some browsers
+          onLoadedData={handleLoadedData} // Handle loaded data event
           style={{
             width: '100%',
             height: '100%',
@@ -93,7 +139,9 @@ const Main = () => {
             zIndex: 2,
           }}
         >
-          {/* Your content here */}
+          <button onClick={handleButtonClick} style={{ fontSize: '24px', color: 'white', background: 'rgba(0, 0, 0, 0.5)', border: 'none', padding: '10px 20px', borderRadius: '10px', cursor: 'pointer' }}>
+            Play/Pause
+          </button>
         </div>
       </div>
     </div>
