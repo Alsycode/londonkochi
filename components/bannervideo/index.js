@@ -1,9 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import backgroundImage from '../../public/images/banner/one.jpg'; // Import your background image
 import leftLogo from '../../public/images/banner/logo1.jpg'; // Import left logo image
 import rightLogo from '../../public/images/banner/logo2.png'; // Import right logo image
 
 const Main = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Check if the screen width is less than or equal to 768px (typical mobile screen width)
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    // Initial check on mount
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   useEffect(() => {
     // Function to play the video
     const playVideo = () => {
@@ -60,31 +78,36 @@ const Main = () => {
       }}
     >
       {/* Left logo */}
-      <img
-        src="/images/banner/logo1.jpg"
-        alt="Left Logo"
-        style={{
-          position: 'absolute',
-          left: '10%',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          zIndex: '2',width:"20%"
-        }}
-      />
+      {!isMobile && (
+        <img
+          src="/images/banner/logo1.jpg"
+          alt="Left Logo"
+          style={{
+            position: 'absolute',
+            left: '10%',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            zIndex: '2',
+            width: '20%',
+          }}
+        />
+      )}
       
       {/* Right logo */}
-      <img
-        src="/images/banner/logo2.png"
-        alt="Right Logo"
-        style={{
-          position: 'absolute',
-          right: '10%',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          zIndex: '2',
-          width:"25%"
-        }}
-      />
+      {!isMobile && (
+        <img
+          src="/images/banner/logo2.png"
+          alt="Right Logo"
+          style={{
+            position: 'absolute',
+            right: '10%',
+            top: '50%',
+            transform: 'translateY(-50%)',
+            zIndex: '2',
+            width: '25%',
+          }}
+        />
+      )}
 
       <div
         className="main"
@@ -112,7 +135,6 @@ const Main = () => {
         <video
           id="myVideo"
           src="/video.mp4" 
-          
           loop
           // Add muted attribute for autoplay to work in some browsers
           onLoadedData={handleLoadedData} // Handle loaded data event

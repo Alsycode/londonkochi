@@ -41,14 +41,16 @@ const VideoCarousel = ({ videoData }) => {
         boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
       }}
     >
-      <h1
+      <div 
         style={{
           textAlign: "center",
           marginBottom: "30px",
         }}
       >
-        Our stories
-      </h1>
+       <span className="subtitle bg-primary-opacity">
+                  <h1> Our Stories </h1> 
+                  </span>
+      </div>
       <div style={{ position: "relative", overflow: "hidden" }}>
         {videoData?.data?.map((videoObj, index) => (
           <div

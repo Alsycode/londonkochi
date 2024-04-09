@@ -22,15 +22,15 @@ const HeaderTopFour = ({
           <div className={`rbt-header-sec align-items-center ${flexDirection}`}>
             <div className="rbt-header-sec-col rbt-header-left">
               <div className="rbt-header-content">
-                <div className="header-info">
+               {/* <div className="header-info">
                   <ul className="rbt-information-list">
                     <li>
                       <Link href="#">
                         <i className="feather-phone"></i>+91-812999536
                       </Link>
                     </li>
-                  </ul>
-                </div>
+                  </ul> 
+                </div> */}
                 <div className="rbt-separator"></div>
                 <div className="header-info">
                   <ul className="social-share-transparent">
@@ -71,9 +71,9 @@ const HeaderTopFour = ({
 
             <div className="rbt-header-sec-col rbt-header-right">
               <div className="rbt-header-content">
-                {/* <div className="header-info">
+                <div className="header-info">
                   <ul className="rbt-secondary-menu">
-                    <li>
+                    {/* <li>
                       <Link href="/my-account">My Account</Link>
                     </li>
                     <li>
@@ -87,9 +87,14 @@ const HeaderTopFour = ({
                     </li>
                     <li>
                       <Link href="#">Terms & Condition</Link>
+                    </li> */}
+                    <li>
+                      <Link href="#">
+                        <i className="feather-phone"></i>+91-812999536
+                      </Link>
                     </li>
                   </ul>
-                </div> */}
+                </div>
                 <div className="rbt-separator"></div>
                 {/* <div className="header-info" onClick={() => setToggle(!toggle)}>
                   <div className="header-right-btn d-flex">

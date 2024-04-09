@@ -279,7 +279,10 @@ console.log("dffdf",videoDataa)
           <div className="row g-5 align-items-end mb--60">
             <div className="col-lg-6 col-md-12 col-12">
               <div className="section-title text-start">
-                <h2 className="title">Our Program</h2>
+              <span className="subtitle bg-primary-opacity">
+                    Our Program
+                  </span>
+
               </div>
             </div>
             <div className="col-lg-6 col-md-12 col-12">

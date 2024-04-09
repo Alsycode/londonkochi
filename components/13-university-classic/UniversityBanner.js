@@ -51,7 +51,7 @@ const UniversityBanner = () => {
                           Where Knowledge Meets Opportunity
                           </strong>
                         </h1>
-                        <div className="button-group mt--30">
+                        {/* <div className="button-group mt--30">
                           <Link
                             className="rbt-btn btn-gradient rbt-marquee-btn"
                             href="#"
@@ -60,7 +60,7 @@ const UniversityBanner = () => {
                               More About Us
                             </span>
                           </Link>
-                        </div>
+                        </div> */}
                         <div className="social-share-wrapper mt--40">
                           <ul className="social-icon social-default transparent-with-border">
                             <li>
@@ -117,7 +117,7 @@ const UniversityBanner = () => {
                             for creative people.
                           </strong>
                         </h1> */}
-                        <div className="button-group mt--30">
+                        {/* <div className="button-group mt--30">
                           <Link
                             className="rbt-btn btn-gradient rbt-marquee-btn radius-round"
                             href="#"
@@ -126,7 +126,7 @@ const UniversityBanner = () => {
                               More About Us
                             </span>
                           </Link>
-                        </div>
+                        </div> */}
                         <div className="social-share-wrapper mt--40">
                           <ul className="social-icon social-default transparent-with-border">
                             <li>
@@ -181,7 +181,7 @@ const UniversityBanner = () => {
                           Learning keeps you <br />{" "}
                           <strong className="color-white">in the lead</strong>
                         </h1>
-                        <div className="button-group mt--30">
+                        {/* <div className="button-group mt--30">
                           <Link
                             className="rbt-btn btn-gradient rbt-marquee-btn radius-round"
                             href="#"
@@ -190,7 +190,7 @@ const UniversityBanner = () => {
                               More About University
                             </span>
                           </Link>
-                        </div>
+                        </div> */}
                         <div className="social-share-wrapper mt--40">
                           <ul className="social-icon social-default transparent-with-border">
                             <li>
