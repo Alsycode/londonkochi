@@ -15,6 +15,7 @@ import Separator from "@/components/Common/Separator";
 import FooterOne from "@/components/Footer/Footer-One";
 import { useAppContext } from "@/context/Context";
 import ContactForm from "@/components/Contacts/Contact-Form";
+import Head from "next/head";
 const BlogGridLayout = ({ updateData }) => {  
   const [data, setData ] = useState();
 
@@ -37,6 +38,12 @@ const BlogGridLayout = ({ updateData }) => {
   return (
     <>
       <PageHead title="Blog Grid - Online Courses & Education NEXTJS14 Template" />
+      {/* <Head>
+        <title>{title}</title>
+        <meta name="description" content="We have been succesfull in placing more than 1800+ students  in India and Middle East Asia.London college is a globally reputed  educational institution" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon (1).ico" />
+      </Head> */}
       <Provider store={Store}>
         <Context>
           <MobileMenu />

@@ -13,11 +13,11 @@ import Featured from "./Course-Sections/Featured";
 import RelatedCourse from "./Course-Sections/RelatedCourse";
 import Content from "./Course-Sections/Content";
 import DeliveryandBenifits from "./Course-Sections/Delivery-and-Benifits"; // Corrected import
-import VideoImg from "../../public/images/course/course1.jpg";
+import VideoImg from "../../public/images/course/course-02.jpg";
 import AboutIndustry from "./Course-Sections/AboutIndustry";
 import Gallery from "../Gallery/Gallery";
 import Jobrole from "./Course-Sections/jobrole";
-const CourseDetailsTwo = ({ checkMatchCourses }) => {
+const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
   useEffect(() => {
     import("venobox/dist/venobox.min.js").then((venobox) => {
       new venobox.default({
@@ -26,10 +26,26 @@ const CourseDetailsTwo = ({ checkMatchCourses }) => {
     });
   }, []);
 const cerificate = checkMatchCourses.courseRequirement;
-console.log("cerificate",cerificate)
+
+  const detailname = courseData?.attributes?.Coursename;
+ const jsontitle = checkMatchCourses?.courseTitle;
+ let matchedCourse = null;
+ courseData?.data?.forEach((item) => {
+ 
+  if (item.attributes.Coursename === jsontitle) {
+    // If a match is found, assign the current item to matchedCourse
+    matchedCourse = item;
+    // Exit the loop since we found a match
+    return;
+  }
+});
+console.log("matchedCourse111111",matchedCourse)
+ console.log("jsontitle",jsontitle)
+console.log("detailname",detailname)
   return (
     <>
-      <div className="col-lg-12">
+      <div className="col-lg-8">
+
         {checkMatchCourses.courseImg && (
           <Link
             className="video-popup-with-text video-popup-wrapper text-center popup-video mb--15"
@@ -44,25 +60,26 @@ console.log("cerificate",cerificate)
                 height={660}
                 alt="Video Images"
               />
-              <div className="position-to-top">
+              {/* <div className="position-to-top">
                 <span className="rbt-btn rounded-player-2 with-animation">
                   <span className="play-icon"></span>
                 </span>
               </div>
               <span className="play-view-text d-block color-white">
                 <i className="feather-eye"></i> Preview this course
-              </span>
+              </span> */}
             </div>
           </Link>
         )}
       </div>
 
       <div className="row row--30 gy-5 pt--60">
-        <div className="col-lg-12">
+        <div className="col-lg-8">
           <div className="course-details-content">
             <div className="rbt-inner-onepage-navigation sticky-top mt--30">
               <CourseMenu />
             </div>
+
 
           
 
@@ -75,22 +92,16 @@ console.log("cerificate",cerificate)
               ))}
             
 
-            <div
-              className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30"
-              id="Certificates & Affiliates"
-            >
-              
-                {checkMatchCourses &&
-                  checkMatchCourses.courseRequirement.map((data, index) => (
-                    <Requirements
-                      {...data}
-                      key={index}
-                      checkMatchCourses={data}
-                    />
-                  ))}
-              
-              
-            </div>
+            <div className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30" id="Certificates & Affiliates">
+  <div className="row">
+    {checkMatchCourses &&
+      checkMatchCourses.courseRequirement.map((data, index) => (
+        <div className="col-lg-6 col-md-12" key={index}>
+          <Requirements {...data}  key={index} checkMatchCourses={data} />
+        </div>
+      ))}
+  </div>
+</div>
             
             {/* Display Delivery and Benefits section */}
             {/* <DeliveryandBenifits /> */}
@@ -154,9 +165,18 @@ console.log("cerificate",cerificate)
 
             </div>
         </div>
+             <div className="col-lg-4">
+        <div className="course-sidebar sticky-top rbt-shadow-box course-sidebar-top rbt-gradient-border">
+          <div className="inner">
+            <Viedo checkMatchCourses={checkMatchCourses && checkMatchCourses} matchedCourse={matchedCourse} />
+          </div>
+        </div>
       </div>
+      </div>
+ 
     </>
   );
 };
 
 export default CourseDetailsTwo;
+

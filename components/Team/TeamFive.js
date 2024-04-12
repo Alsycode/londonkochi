@@ -13,8 +13,8 @@ const TeamFive = () => {
         <TeamHead title="Team (Card Box)." desc="Card Box Style." />
         <div className="row row--15 mt_dec--30">
           {TeamData &&
-            TeamData.team.slice(2,5).map((data, index) => (
-              <div className="col-lg-4 col-md-6 col-12 mt--30" key={index}>
+            TeamData.team.slice(2, 6).map((data, index) => ( // Change slice(2, 6) to include 4 items
+              <div className="col-lg-3 col-md-6 col-12 mt--30" key={index}> {/* Adjust col-lg-3 to make 4 cards per row */}
                 {data.details.map((item, innerIndex) => (
                   <div
                     className="rbt-team team-style-default style-two rbt-hover"
@@ -32,12 +32,12 @@ const TeamFive = () => {
                       </div>
                       <div className="content">
                         <h2 className="title">{item.name}</h2>
-                        <h6 className="subtitle theme-gradient">{item.type}</h6>
-                        <span className="team-form">
+                        {/* <h6 className="subtitle theme-gradient">{item.type}</h6> */}
+                        {/* <span className="team-form">
                           <i className="feather-map-pin"></i>
                           <span className="location">{item.location}</span>
-                        </span>
-                        <p className="description">{item.desc}</p>
+                        </span> */}
+                        {/* <p className="description">{item.desc}</p> */}
                         <ul className="social-icon social-default icon-naked mt--20">
                           <li>
                             <Link href="https://www.facebook.com/">

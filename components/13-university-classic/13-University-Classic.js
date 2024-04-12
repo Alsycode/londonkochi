@@ -4,10 +4,10 @@ import Image from "next/image";
 import sal from "sal.js";
 import Admissionform from "../admission.js";
 import "venobox/dist/venobox.min.css";
-
+import TeamFive from "../Team/TeamFive.js";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-
+import TeamFour from "@/components/Team/TeamFour";
 import EventData from "../../data/events.json";
 import UniversityBanner from "./UniversityBanner";
 import ServiceEight from "../Services/Service-Eight";
@@ -19,7 +19,7 @@ import Course from "../Accordions/Course";
 import Testimonial from "../Testimonials/Testimonial";
 import Gallery from "../Gallery/Gallery";
 import BrandOne from "../Brand/Brand-One";
-
+import TestimonialSix from "@/components/Testimonials/Testimonial-Six";
 import imgOne from "../../public/images/gallery/one.jpg";
 import imgTwo from "../../public/images/gallery/two.jpg";
 import imgThree from "../../public/images/gallery/three.jpg";
@@ -34,7 +34,50 @@ import Vidcomponet from "../vidcomponent/index.js";
 import BannerVideo from "../../components/bannervideo";
 import ContactForm from "../Contacts/Contact-Form.js";
 import BrandOneHome from "../Brand/brandhome"
-const UniversityClassic = ({videoData}) => {
+import Typed from "typed.js";
+import CardFive from "../Cards/Card-Five.js";
+const UniversityClassic = ({videoData, testimonialData, update}) => {
+  const [visibleIndex, setVisibleIndex] = useState(0);
+   const [visibleIndex2, setVisibleIndex2] = useState(0);
+   const updatecheck = update;
+  //  console.log("788888888888888888888888",update);
+   let testimonial; // Declare testimonialsss variable
+const [updates, setUpdates] = useState([0]);
+useEffect(() => {
+  // Check if the update prop has changed before updating state
+  if (update !== updates) {
+    setUpdates(update);
+  }
+}, [update]);
+console.log("9000000000000000000",updates)
+   // Later in your code...
+   {testimonialData && (testimonial = testimonialData)}
+   console.log("ddddddd",testimonial)
+   // Then you can use testimonialsss as needed
+  //  console.log("testimonial", testimonialsss);
+  // useEffect(() => {
+  //   const typeitInstance = new Typed(".is-visible", {
+  //     strings: ["Clip One.", "Clip Two.", "Clip Three."],
+  //     typeSpeed: 80,
+  //     backSpeed: 60,
+  //     startDelay: 200,
+  //     loop: Infinity,
+  //     showCursor: false,
+  //   });
+  //   const intervalId = setInterval(() => {
+  //     setVisibleIndex((prevIndex) => (prevIndex + 1) % 3);
+  //   }, 2000);
+
+  //    const intervalIdTwo = setInterval(() => {
+  //      setVisibleIndex2((prevIndex) => (prevIndex + 1) % 2);
+  //    }, 2000);
+
+  //   return () => {
+  //     typeitInstance.destroy();
+  //     clearInterval(intervalId);
+  //     clearInterval(intervalIdTwo);
+  //   };
+  // }, []);
   const videoDataa = videoData;
 console.log("dffdf",videoDataa)
   const [videoDatas, setVideoDatas] = useState(null);
@@ -89,7 +132,111 @@ console.log("dffdf",videoDataa)
       <div className="rbt-slider-main-wrapper position-relative">
         <UniversityBanner />
       </div>
+      {/* <div className="d-flex justify-content-center align-items-center my-5"> 
+  <h1 className="title text-center">
+    Why
+    <span className="header-caption ms-2">
+      <span className={`cd-headline loading-bar`}>
+        <span
+          className={`cd-words-wrapper ${
+            visibleIndex2 === 1 ? "is-loading" : ""
+          }`}
+        >
+          <b
+            className={
+              visibleIndex === 0
+                ? "is-visible theme-gradient"
+                : "is-hidden theme-gradient"
+            }
+          >
+            Logistics
+          </b>
+          <b
+            className={
+              visibleIndex === 1
+                ? "is-visible theme-gradient"
+                : "is-hidden theme-gradient"
+            }
+          >
+            Supply Chain Management
+          </b>
+          <b
+            className={
+              visibleIndex === 2
+                ? "is-visible theme-gradient"
+                : "is-hidden theme-gradient"
+            }
+          >
+           Management
+          </b>
+        </span>
+      </span>
+    </span>
+  </h1>
+</div> */}
+
 <BannerVideo/>
+<TeamFive/>
+<div className="rbt-advance-tab-area rbt-section-gapTop bg-color-white">
+        <AdvanceTab
+          tag=""
+          title="LONDON COLLEGE AWARDS AND ACCREDITIONS"
+          desc=" "
+        />
+      </div>
+      <div
+        className="rbt-program-area rbt-section-gapTop bg-color-white"
+        id="program"
+      >
+        <div className="container">
+          <div className="row g-5 align-items-end mb--60">
+            <div className="col-lg-6 col-md-12 col-12">
+              <div className="section-title text-start">
+              <span className="subtitle bg-primary-opacity">
+                    Our Program
+                  </span>
+
+              </div>
+            </div>
+            <div className="col-lg-6 col-md-12 col-12">
+              <div className="load-more-btn text-start text-lg-end">
+                <Link className="rbt-btn-link" href="/course-card-2">
+                  Browse Histudy Program<i className="feather-arrow-right"></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="row g-5">
+          {courseDetails?.courseTab?.slice(0, 3).map((item, index) => {
+  console.log(item); // Logging the current item
+  return (
+    <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={index}>
+      <div className="rbt-category-gallery">
+        <div className="thumbnail">
+          <Link href={`/course-details-2/${item.id}`}>
+          <Image
+                    src={item.courseImg}
+                    width={498}
+                    height={498}
+                    alt="Card image"
+                  />
+            <div className="rbt-bg-overlay"></div>
+          </Link>
+          <div className="hover-content">
+            <h3 className="title">
+            <Link href={`/course-details-2/${item.id}`}>{item.courseTitle}</Link>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+})}
+<div className="mb-60 mt-60">
+<Gallery/>
+</div>
+  
+
       {/* <div
         className="rbt-video-area bg-color-white rbt-section-gapTop"
         id="about"
@@ -263,63 +410,9 @@ console.log("dffdf",videoDataa)
         </div>
       </div>
 
-      <div className="rbt-advance-tab-area rbt-section-gapTop bg-color-white">
-        <AdvanceTab
-          tag=""
-          title="TRANSFORMING LEARNERS TO PROFESSIONALS"
-          desc=" "
-        />
-      </div>
+     
 
-      <div
-        className="rbt-program-area rbt-section-gapTop bg-color-white"
-        id="program"
-      >
-        <div className="container">
-          <div className="row g-5 align-items-end mb--60">
-            <div className="col-lg-6 col-md-12 col-12">
-              <div className="section-title text-start">
-              <span className="subtitle bg-primary-opacity">
-                    Our Program
-                  </span>
-
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-12 col-12">
-              <div className="load-more-btn text-start text-lg-end">
-                <Link className="rbt-btn-link" href="/course-card-2">
-                  Browse Histudy Program<i className="feather-arrow-right"></i>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="row g-5">
-          {courseDetails?.courseTab?.slice(0, 3).map((item, index) => {
-  console.log(item); // Logging the current item
-  return (
-    <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={index}>
-      <div className="rbt-category-gallery">
-        <div className="thumbnail">
-          <Link href={`/course-details-2/${item.id}`}>
-          <Image
-                    src={item.courseImg}
-                    width={498}
-                    height={498}
-                    alt="Card image"
-                  />
-            <div className="rbt-bg-overlay"></div>
-          </Link>
-          <div className="hover-content">
-            <h3 className="title">
-            <Link href={`/course-details-2/${item.id}`}>{item.courseTitle}</Link>
-            </h3>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-})}
-
+      
          
             {/* <div className="col-lg-4 col-md-6 col-sm-6 col-12">
               <div className="rbt-category-gallery">
@@ -434,6 +527,38 @@ console.log("dffdf",videoDataa)
           />
         </div>
       </div> */}
+      {/* <div className="col-lg-12">
+  <Slider {...settings}>
+    {checkMatchCourses.map((course, index) => (
+      <div key={index}>
+        <Link
+          className="video-popup-with-text video-popup-wrapper text-center popup-video mb--15"
+          data-vbtype="video"
+          href={course.link}
+        >
+          <div className="video-content">
+            <Image
+              className="w-100 rbt-radius"
+              src={course.courseImg}
+              width={1305}
+              height={660}
+              alt="Video Images"
+            />
+            <div className="position-to-top">
+              <span className="rbt-btn rounded-player-2 with-animation">
+                <span className="play-icon"></span>
+              </span>
+            </div>
+            <span className="play-view-text d-block color-white">
+              <i className="feather-eye"></i> Preview this course
+            </span>
+          </div>
+        </Link>
+      </div>
+    ))}
+  </Slider>
+</div> */}
+
       <div
         className="rbt-testimonial-area bg-color-white rbt-section-gap overflow-hidden"
         id="testimonial"
@@ -442,8 +567,8 @@ console.log("dffdf",videoDataa)
           <Course title="University Tuition & Fees" />
         </div> */}
       </div>
-      <Vidcomponet videoData={videoDatas} />
-      <div className="rbt-testimonial-area bg-color-light rbt-section-gap overflow-hidden">
+      <Vidcomponet videoData={videoData} />
+      {/* <div className="rbt-testimonial-area bg-color-light rbt-section-gap overflow-hidden">
         <div className="wrapper mb--60">
           <div className="container">
             <div className="row">
@@ -461,17 +586,57 @@ console.log("dffdf",videoDataa)
           </div>
         </div>
         <Testimonial />
-      </div>
+      </div> */}
       {/* <div className="rbt-gallery-area">
         <Gallery />
       </div> */}
-      <div className="rbt-brand-area bg-color-white rbt-section-gap">
+       <div className="rbt-testimonial-area bg-color-white rbt-section-gapBottom overflow-hidden">
+            <div className="container-fluid">
+              <div className="row g-5 align-items-center">
+                <div className="col-xl-3">
+                  <div className="section-title pl--100 pl_md--30 pl_sm--0">
+                    <h2 className="title">What Our Students Say</h2>
+                    {/* <p className="description mt--20">
+                      Learning communicate to global world and build a bright
+                      future with our histudy.
+                    </p> */}
+                    <div className="veiw-more-btn mt--20">
+                      <Link
+                        className="rbt-btn btn-gradient rbt-marquee-btn marquee-text-y"
+                        href="#"
+                      >
+                        <span data-text="Explore">Explore</span>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+                <TestimonialSix testimonial={testimonial} />
+              </div>
+            </div>
+          </div>
+      {/* <div className="rbt-brand-area bg-color-white rbt-section-gap">
         <div className="container">
           <div className="row align-items-center g-5">
             <BrandOneHome/>
           </div>
         </div>
-      </div>
+      </div> */}
+    <div className="rbt-rbt-card-area rbt-section-gap bg-color-white">
+            <div className="container">
+              <div className="row row--15 align-items-center mb--30">
+                <div className="col-lg-12">
+                  <div className="section-title">
+                    <h2 className="title">Updates</h2>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="row row--15">
+                <CardFive />
+              </div>
+            </div>
+          </div>
+     
       <div
         className="rbt-program-area rbt-section-gapTop bg-color-white"
         id="program"
@@ -484,34 +649,17 @@ console.log("dffdf",videoDataa)
               </div>
             </div>
       <ContactForm/>
+      <div className="rbt-google-map bg-color-white rbt-section-gapTop">
+            <iframe
+              className="w-100"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.8054316500397!2d76.32349407450882!3d10.032908772468666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080b1cf47bc41d%3A0xe5a66b4a652615b9!2sLondon%20College!5e0!3m2!1sen!2sin!4v1711517169630!5m2!1sen!2sin"
+              height="600"
+              style={{ border: "0" }}
+            ></iframe>
+          </div>
       </div></div></div>
     </>
   );
 };
 
 export default UniversityClassic;
-export async function getServerSideProps(context) {
-  try {
-    const res = await fetch(
-      "http://139.59.78.49:1337/api/london-college-videos?populate=*",
-      {
-        headers: {
-          Authorization:
-            "Bearer 3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c",
-        },
-      }
-    );
-    const videoData = await res.json();
-    return {
-      props: {
-        videoData,
-      },
-    };
-  } catch (error) {
-    return {
-      props: {
-        error: "Error fetching video data",
-      },
-    };
-  }
-}

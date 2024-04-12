@@ -8,19 +8,19 @@ const RelatedCourse = ({ checkMatchCourses }) => {
       <div className="row g-5 align-items-end mb--40">
         <div className="col-lg-8 col-md-8 col-12">
           <div className="section-title">
-            <span className="subtitle bg-pink-opacity">Top Course</span>
+            {/* <span className="subtitle bg-pink-opacity">Top Course</span> */}
             <h4 className="title">
-              More Course By
-              <strong className="color-primary ms-3">
+              Related Updates
+              {/* <strong className="color-primary ms-3">
                 {checkMatchCourses.userName}
-              </strong>
+              </strong> */}
             </h4>
           </div>
         </div>
         <div className="col-lg-4 col-md-4 col-12">
           <div className="read-more-btn text-start text-md-end">
             <a className="rbt-btn rbt-switch-btn btn-border btn-sm" href="#">
-              <span data-text="View All Course">View All Course</span>
+              <span data-text="View All Course">View all updates</span>
             </a>
           </div>
         </div>

@@ -43,7 +43,7 @@ console.log("blogData",updateData)
         {updateData &&
           updateData?.data?.slice(start, end).map((data, index) => (
             <div className="col-lg-4 col-md-6 col-sm-12 col-12" key={index}>
-              <div className="rbt-card variation-02 rbt-hover">
+              <div className="rbt-card variation-02 rbt-hover" >
                 <div className="rbt-card-img">
                   <Link href={`/blog-details/${data.id}`}>
                     <Image

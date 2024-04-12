@@ -1,7 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const Scroll = ({ testimonial, testimonialData }) => {
+const Scroll = ({ testimonial, testimonialData , testidata}) => {
+  const data = testidata;
+  console.log("data",data);
   return (
     <>
       {testimonial &&

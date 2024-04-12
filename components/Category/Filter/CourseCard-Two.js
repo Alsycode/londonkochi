@@ -25,7 +25,7 @@ console.log("********",courselog)
     console.log("Number of words:", words.length);
   
     if (words.length > 35) {
-      const truncatedDescription = words.slice(0, 35).join(" ") + " ...";
+      const truncatedDescription = words.slice(0, 25).join(" ") + " ...";
       // console.log("Truncated description:", truncatedDescription);
       return truncatedDescription;
     } else {
@@ -66,6 +66,10 @@ console.log("********",courselog)
                 </Link>
               </div>
               <div className="rbt-card-body">
+              <div className="rbt-category">
+                    <Link href="#">Mumbai</Link>
+                    <Link href="#">Chennai</Link>
+                  </div>
                 <h4 className="rbt-card-title">
                   <Link href={`/course-details-2/${data.id}`}>
                     {data.courseTitle}

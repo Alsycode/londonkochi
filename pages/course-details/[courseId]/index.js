@@ -7,7 +7,7 @@ import Store from "@/redux/store";
 import Context from "@/context/Context";
 
 import MobileMenu from "@/components/Header/MobileMenu";
-import HeaderStyleTen from "@/components/Header/HeaderStyle-Ten";
+import HeaderStyleTen from "@/components/Header/HeaderStyle-Four";
 import Cart from "@/components/Header/Offcanvas/Cart";
 import BackToTop from "@/pages/backToTop";
 import Separator from "@/components/Common/Separator";
@@ -29,7 +29,7 @@ const SingleCourse = () => {
 
   useEffect(() => {
     if (postId && checkMatch === undefined) {
-      router.push("/course-filter-one-toggle");
+      router.push("/course-card");
     }
 
     sal({
@@ -37,7 +37,8 @@ const SingleCourse = () => {
       once: true,
     });
   }, [checkMatch, router]);
-
+  const delivery = CourseData.courseTab[0].DeliveryAndBenefit;
+  console.log("delivery",delivery);
   return (
     <>
       <PageHead title="Course Details - Online Courses & Education NEXTJS14 Template" />
@@ -56,8 +57,7 @@ const SingleCourse = () => {
           <div className="rbt-course-details-area ptb--60">
             <div className="container">
               <div className="row g-5">
-                <CourseDetailsOne
-                  checkMatchCourses={checkMatch !== undefined ? checkMatch : ""}
+                <CourseDetailsOne checkMatchCourses={checkMatch !== undefined ? checkMatch : ""}
                 />
               </div>
             </div>

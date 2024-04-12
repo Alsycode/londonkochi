@@ -22,12 +22,11 @@ const Gallery = () => {
     });
   }, []);
   return (
-    <div className="row g-0 parent-gallery-container">
+    <div className="row g-0 parent-gallery-container" style={{ marginTop: "70px" }}>
          <div className="section-title text-center">
-         <h4 className="rbt-title-style-3">Top recruiters</h4>
+         <h2 className="rbt-title-style-3">TOP RECRUITERS</h2>
                   </div>
-      {Brands &&
-         brands?.map((data, index) => (
+      {Brands && brands?.map((data, index) => (
           <Link
             className="child-gallery-single col-lg-2 col-md-4 col-sm-6 col-6"
             key={index}

@@ -144,7 +144,7 @@ const TestimonialPage = ({testimonialData}) => {
 export default TestimonialPage;
 
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
     try {
       const res = await fetch("http://139.59.78.49:1337/api/london-college-testimonials?populate=*", {
         headers: {
