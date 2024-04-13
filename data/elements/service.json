@@ -548,15 +548,15 @@
               "icon": "feather-heart"
             },
             {
-              "text": "ExecutiveDocumentation",
+              "text": "Executive Documentation",
               "icon": "feather-flag"
             },
             {
-              "text": "ExecutiveOperations",
+              "text": "Executive Operations",
               "icon": "feather-eye"
             },
             {
-              "text": "ExecutiveCustomer ServiceCargo",
+              "text": "Executive Customer ServiceCargo",
               "icon": "feather-edit-2"
             },
             {
@@ -576,15 +576,15 @@
           "bgFour": false,
           "list": [
             {
-              "text": "Documentation ExecutiveClient",
+              "text": "Documentation Executive Client",
               "icon": "feather-heart"
             },
             {
-              "text": "ServicingShipping Online",
+              "text": "Servicing Shipping Online",
               "icon": "feather-flag"
             },
             {
-              "text": "executiveCustoms Clearance",
+              "text": "Executive Customs Clearance",
               "icon": "feather-eye"
             }
             
@@ -601,11 +601,11 @@
           "bgFour": false,
           "list": [
             {
-              "text": "Purchase and ProcurementStore",
+              "text": "Purchase and Procurement Store",
               "icon": "feather-heart"
             },
             {
-              "text": "KeepingInventory Management",
+              "text": "Keeping Inventory Management",
               "icon": "feather-flag"
             },
             {
@@ -641,7 +641,7 @@
               "icon": "feather-edit-2"
             },
             {
-              "text": "ExecutiveOverseas",
+              "text": "Executive Overseas",
               "icon": "feather-battery-charging"
             },
             {
@@ -673,7 +673,7 @@
               "icon": "feather-eye"
             },
             {
-              "text": "ServiceTransport Executive",
+              "text": "Service Transport Executive",
               "icon": "feather-edit-2"
             }
           
@@ -694,15 +694,15 @@
               "icon": "feather-heart"
             },
             {
-              "text": "ExecutiveDocumentation",
+              "text": "Executive Documentation",
               "icon": "feather-flag"
             },
             {
-              "text": " ExecutiveProduct",
+              "text": " Executive Product",
               "icon": "feather-eye"
             },
             {
-              "text": "ExecutiveCustomer Service",
+              "text": "Executive Customer Service",
               "icon": "feather-edit-2"
             }
           

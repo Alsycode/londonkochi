@@ -6,12 +6,13 @@ import { useEffect } from "react";
   const testimonialData = testimonialDatas;
   console.log("dataset", testimonialData);
   const update = updateDatas;
-  console.log("update22222222222222222",update)
+  
+  console.log("update22222222222222222",updateDatas)
   
   return ( 
     <>
       <main className="">
-      <HomePage videoData={videoData} testimonialData={testimonialData} update={update && update.length > 0 ? update : null} />
+      <HomePage videoData={videoData} testimonialData={testimonialData} update={update} />
 
    
         <BackToTop />

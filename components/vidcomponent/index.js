@@ -48,7 +48,7 @@ const VideoCarousel = ({ videoData }) => {
         }}
       >
        <span className="subtitle bg-primary-opacity">
-                  <h1> Our Stories </h1> 
+                  <h1> Placement Stories </h1> 
                   </span>
       </div>
       <div style={{ position: "relative", overflow: "hidden" }}>

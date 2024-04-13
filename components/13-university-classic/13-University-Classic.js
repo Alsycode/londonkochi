@@ -39,22 +39,9 @@ import CardFive from "../Cards/Card-Five.js";
 const UniversityClassic = ({videoData, testimonialData, update}) => {
   const [visibleIndex, setVisibleIndex] = useState(0);
    const [visibleIndex2, setVisibleIndex2] = useState(0);
-   const updatecheck = update;
-  //  console.log("788888888888888888888888",update);
-   let testimonial; // Declare testimonialsss variable
-const [updates, setUpdates] = useState([0]);
-useEffect(() => {
-  // Check if the update prop has changed before updating state
-  if (update !== updates) {
-    setUpdates(update);
-  }
-}, [update]);
-console.log("9000000000000000000",updates)
-   // Later in your code...
-   {testimonialData && (testimonial = testimonialData)}
-   console.log("ddddddd",testimonial)
-   // Then you can use testimonialsss as needed
-  //  console.log("testimonial", testimonialsss);
+const dataset = testimonialData?.data;
+ console.log("weeeeeee", update)
+ 
   // useEffect(() => {
   //   const typeitInstance = new Typed(".is-visible", {
   //     strings: ["Clip One.", "Clip Two.", "Clip Three."],
@@ -87,7 +74,7 @@ console.log("dffdf",videoDataa)
       setVideoDatas(videoData);
     }
   }, [videoData]);
-  console.log("dffdsffdfdf",videoDatas)
+
   // useEffect(() => {
   //   const fetchData = async () => {
   //     try {
@@ -610,7 +597,7 @@ console.log("dffdf",videoDataa)
                     </div>
                   </div>
                 </div>
-                <TestimonialSix testimonial={testimonial} />
+                <TestimonialSix dataset={dataset} />
               </div>
             </div>
           </div>
@@ -632,7 +619,7 @@ console.log("dffdf",videoDataa)
               </div>
               
               <div className="row row--15">
-                <CardFive />
+               {update && <CardFive update={update} />} 
               </div>
             </div>
           </div>

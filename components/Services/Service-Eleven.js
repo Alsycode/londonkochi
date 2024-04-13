@@ -12,8 +12,8 @@ const ServiceEleven = ({ isTitle }) => {
             {isTitle === undefined ? (
               <div className="row mb--60">
                 <div className="col-lg-12">
-                <div className="section-title text-center">
-         <h4 className="rbt-title-style-3">Job role</h4>
+                  <div className="section-title text-center">
+                    <h4 className="rbt-title-style-3">Job role</h4>
                   </div>
                 </div>
               </div>
@@ -50,9 +50,9 @@ const ServiceEleven = ({ isTitle }) => {
                           />
                         </div>
                         <div className="content">
-                          <h5 className="title">
+                          <h6 className="title">
                             <Link href="#">{item.title}</Link>
-                          </h5>
+                          </h6>
                           <ul className="rbt-list-style-3">
                             {item.list.map((listItem, innerIndex) => (
                               <li key={innerIndex}>
@@ -61,36 +61,9 @@ const ServiceEleven = ({ isTitle }) => {
                               </li>
                             ))}
                           </ul>
-                          {/* <Link
-                            className="rbt-btn-link stretched-link"
-                            href="#"
-                          >
-                            Learn More<i className="feather-arrow-right"></i>
-                          </Link> */}
                         </div>
                       </div>
-
-                      {/* <div className="rbt-flipbox-back rbt-flipbox-face inner">
-                        <div className="flip-back-top">
-                          <div className="back-thumb w-100">
-                            <Image
-                              className="w-100 radius-10"
-                              src={item.img}
-                              width={490}
-                              height={300}
-                              alt="card-icon"
-                            />
-                          </div>
-                          <p>{item.desc}</p>
-                        </div>
-                        <Link
-                          className="rbt-btn rbt-switch-btn btn-white btn-sm"
-                          href="#"
-                        >
-                          <span data-text="Learn More">Learn More</span>
-                        </Link>
-                      </div>*/}
-                    </div> 
+                    </div>
                   </div>
                 </div>
               ))}

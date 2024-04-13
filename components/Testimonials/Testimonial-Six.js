@@ -1,9 +1,9 @@
 import TestimonialData from "../../data/elements/testimonial.json";
 import Scroll from "./Testimonial-Scroll/Scroll";
 
-const TestimonialSix = ({ testimonial }) => {
-  const six = testimonial;
-  console.log("sixxx",six) 
+const TestimonialSix = ({ dataset }) => {
+  const six = dataset;
+  console.log("sixxx",dataset) 
   return (
     <>
       <div className="col-xl-9">
@@ -11,7 +11,7 @@ const TestimonialSix = ({ testimonial }) => {
           <Scroll
             // testimonial={TestimonialData}
             // testimonialData={TestimonialData.testimonialTwo}
-            testimonial={testimonial ? testimonial : null}
+           dataset={dataset}
           />
         </div>
       </div>

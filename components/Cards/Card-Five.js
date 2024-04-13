@@ -5,17 +5,18 @@ import sal from "sal.js";
 
 import CardData from "../../data/elements/card";
 
-const CardFive = () => {
+const CardFive = ({update}) => {
   useEffect(() => {
     sal({
       threshold: 0.01,
       once: true,
     });
   }, []);
+  console.log("%%%%%%%%%%%%%%%%%%%",update)
   return (
     <>
-      {CardData &&
-        CardData.cardFive.map((data, index) => (
+      {update &&
+        update?.data?.slice(0, 3).map((data, index) => (
           <div
             className="col-lg-4 col-md-6 col-sm-6 col-12 mt--30"
             data-sal-delay="150"
@@ -25,9 +26,9 @@ const CardFive = () => {
           >
             <div className="rbt-card variation-03 rbt-hover">
               <div className="rbt-card-img">
-                <Link className="thumbnail-link" href={data.link}>
+                <Link className="thumbnail-link"   href={`/blog-details/${data.id}`}>
                   <Image
-                    src={data.img}
+                    src={data?.attributes?.Bannerimg1?.data?.attributes?.formats?.small?.url}
                     width={355}
                     height={244}
                     alt="Card image"
@@ -42,10 +43,10 @@ const CardFive = () => {
               </div>
               <div className="rbt-card-body">
                 <h5 className="rbt-card-title">
-                  <Link href={data.link}>{data.title}</Link>
+                  {/* <Link >{data?.attributes?.heading}</Link> */}
                 </h5>
                 <div className="rbt-card-bottom">
-                  <Link className="transparent-button" href={data.link}>
+                  <Link className="transparent-button"   href={`/blog-details/${data.id}`}>
                     <i>
                       <svg
                         width="17"
