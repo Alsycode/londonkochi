@@ -191,7 +191,7 @@ const Nav = () => {
             {/* </div>
           </div> */}
         </li>
-        <li className="with-megamenu has-menu-child-item">
+        {/* <li className="with-megamenu has-menu-child-item">
           <Link
             className={`${activeMenuItem === "courses" ? "open" : ""}`}
             href="#"
@@ -200,7 +200,7 @@ const Nav = () => {
             Life at London College
             <i ></i>
           </Link>
-          </li>
+          </li> */}
         {/* <li className="has-dropdown has-menu-child-item">
           <Link
             className={`${activeMenuItem === "dashboard" ? "open" : ""}`}
