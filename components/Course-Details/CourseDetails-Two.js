@@ -13,6 +13,7 @@ import Featured from "./Course-Sections/Featured";
 import RelatedCourse from "./Course-Sections/RelatedCourse";
 import Content from "./Course-Sections/Content";
 import DeliveryandBenifits from "./Course-Sections/Delivery-and-Benifits"; // Corrected import
+ 
 import VideoImg from "../../public/images/course/course-02.jpg";
 import AboutIndustry from "./Course-Sections/AboutIndustry";
 import Gallery from "../Gallery/Gallery";
@@ -91,7 +92,27 @@ console.log("detailname",detailname)
                 <Overview {...data} key={index} checkMatchCourses={data} />
               ))}
             
+            <div
+              className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
+              id="Delivery & Benefit" // Corrected typo
+            >
+              
+                  <DeliveryandBenifits   checkMatchCourses={checkMatchCourses.DeliveryAndBenefit} />
 
+            </div>
+
+            <div
+              className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
+              id="About Industry" // Corrected typo
+            >
+              
+              {checkMatchCourses &&
+             
+             <AboutIndustry checkMatchCourses={checkMatchCourses.aboutIndustry} />
+           }
+
+            </div>
+            
             <div className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30" id="Certificates & Affiliates">
   <div className="row">
     {checkMatchCourses &&
@@ -107,26 +128,7 @@ console.log("detailname",detailname)
             {/* <DeliveryandBenifits /> */}
             
             {/* Instructor section */}
-            <div
-              className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
-              id="Delivery & Benefit" // Corrected typo
-            >
-              
-                  <DeliveryandBenifits   checkMatchCourses={checkMatchCourses.DeliveryAndBenefit} />
 
-            </div>
-           
-            <div
-              className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
-              id="About Industry" // Corrected typo
-            >
-              
-              {checkMatchCourses &&
-             
-             <AboutIndustry  checkMatchCourses={checkMatchCourses.aboutIndustry} />
-           }
-
-            </div>
             {/* Commented-out section */}
             {/* <div className="rbt-review-wrapper rbt-shadow-box review-wrapper mt--30" id="review">
               <Review />

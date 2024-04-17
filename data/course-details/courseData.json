@@ -9739,6 +9739,7 @@
     {
       "id": 13,
       "courseTitle": "POST GRADUATE DIPLOMA in Logistics & Supply Chain Management",
+      "slug": "post-graduate-diploma-in-logistics-and-supply-chain-management",
       "shortDescription": "Delivering skills integrated management program at affordable prices and excellent quality to fit the right candidate to the right job, consistently and reliably.",
       "category": "Web Design",
       "courseType": "featured",
@@ -10329,6 +10330,7 @@
     {
       "id": 14,
       "courseTitle": "ADVANCED DIPLOMA in Logistics & Supply Chain Management",
+      "slug": "advanced-diploma-in-logistics-and-supply-chain-management",
       "category": "Backend",
       "courseType": "latest",
       "shortDescription": "Advanced Diploma in Logistics and Supply Chain Management is a core skill based program of London College approved by Logistics Sector Skill Council, Govt. of India. ",
@@ -10950,6 +10952,7 @@
     {
       "id": 15,
       "courseTitle": "DIPLOMA in Logistics & Supply Chain Management",
+      "slug": "diploma-in-logistics-and-supply-chain-management-1",
       "category": "Full Stack",
       "courseType": "featured",
       "shortDescription": "Diploma in Logistics and Supply Chain Management is a beginner’s skill program of London College approved by Logistics Sector Skill Council, Government of India.",
@@ -11525,6 +11528,7 @@
     {
       "id": 16,
       "courseTitle": "Bachelors in Business Administration ( BBA ) + Logistics",
+      "slug": "bachelors-in-business-administration-bba-logistics",
       "category": "Mobile Application",
       "courseType": "popular",
       "shortDescription": "Bachelors in Business Administration + Logistics is a 3 year Core Skills based Advanced Diploma Integrated Graduation program that can lead to a wide range of excellent career opportunities.",
@@ -12140,6 +12144,7 @@
     {
       "id": 17,
       "courseTitle": "Bachelors in Commerce ( B.Com ) + Logistics",
+      "slug": "bachelors-in-commerce-b-com-logistics",
       "category": "Backend",
       "courseType": "featured",
       "shortDescription": "This programme is a 3 year Core Skills based Advanced Diploma Integrated Graduation program. It is a career launching qualification preparing the student to take a leading place in today’s global economy.",
@@ -12718,6 +12723,7 @@
     {
       "id": 18,
       "courseTitle": "Online ADVANCED DIPLOMA in Logistics & Supply Chain Management",
+     "slug": "online-advanced-diploma-in-logistics-and-supply-chain-management",
       "category": "Finance & Accounting",
       "courseType": "popular",
       "shortDescription":"The Advanced Diploma in Logistics and Supply Chain Management offered by London College is a skill-based program approved by the Logistics Sector Skill Council, Government of India. This program adheres to national-level standards of occupation and is certified by the Logistics Sector Skill Council, an initiative of the Ministry of Skill Development and Entrepreneurship, Government of India. Students who successfully complete this program receive a dual Advanced Diploma Certification in Logistics and Supply Chain Management from London College India. Furthermore, graduates have the option to upgrade their qualification to a Post Graduate Diploma, which is an extensive skill-integrated management program. Upon completion of the PG Diploma, students are awarded a dual Post Graduate Diploma in Logistics and Supply Chain Management certificate from London College India.",
@@ -13330,6 +13336,7 @@
     {
       "id": 19,
       "courseTitle": "Online DIPLOMA in Logistics & Supply Chain Management",
+      "slug": "online-diploma-in-logistics-and-supply-chain-management",
       "category": "Graphic Design",
       "courseType": "popular",
       "desc": "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",
@@ -13943,6 +13950,7 @@
     {
       "id": 20,
       "courseTitle": "Online POST GRADUATE DIPLOMA in Logistics & Supply Chain Management",
+      "slug": "Online POST GRADUATE DIPLOMA in Logistics & Supply Chain Management",
       "category": "Personal Development",
       "courseType": "latest",
       "desc": "Master Python by building 100 projects in 100 days. Learn data science, automation, build websites, games and apps!",

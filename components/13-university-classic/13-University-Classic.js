@@ -200,7 +200,7 @@ console.log("dffdf",videoDataa)
     <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={index}>
       <div className="rbt-category-gallery">
         <div className="thumbnail">
-          <Link href={`/course-details-2/${item.id}`}>
+          <Link href={`/courses/${item.id}`}>
           <Image
                     src={item.courseImg}
                     width={498}

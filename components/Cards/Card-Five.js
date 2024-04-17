@@ -42,9 +42,9 @@ const CardFive = ({update}) => {
                 </Link>
               </div>
               <div className="rbt-card-body">
-                <h5 className="rbt-card-title">
-                  {/* <Link >{data?.attributes?.heading}</Link> */}
-                </h5>
+                <h6 className="rbt-card-title">
+                  <Link href={`/blog-details/${data.id}`}>{data?.attributes?.heading}</Link>
+                </h6>
                 <div className="rbt-card-bottom">
                   <Link className="transparent-button"   href={`/blog-details/${data.id}`}>
                     <i>

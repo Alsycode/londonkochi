@@ -26,16 +26,16 @@ const AboutUsPageTwo = () => {
       <Provider store={Store}>
         <Context>
           <HeaderStyleTen headerSticky="rbt-sticky" headerType="" />
-          <MobileMenu />
-          <Cart />
+          <MobileMenu/>
+          <Cart/>
 
           <div className="rbt-banner-area rbt-banner-8 variation-02">
             <div className="container">
-              <Banner />
+              <Banner/>
             </div>
           </div>
 
-          <Video />
+          <Video/>
 
           {/* <div className="rbt-about-area about-style-1 bg-color-white rbt-section-gap">
             <div className="container">
@@ -51,18 +51,18 @@ const AboutUsPageTwo = () => {
             </div>
           </div> */}
           <div className="rbt-rbt-card-area bg-color-extra2 rbt-section-gap">
-            <ServiceTwelve />
+            <ServiceTwelve/>
           </div>
           {/* <div className="rbt-team-area bg-gradient-8 rbt-section-gap">
             <TeamTen />
           </div> */}
-          <div className="rbt-brand-area bg-color-white rbt-section-gap">
+          {/* <div className="rbt-brand-area bg-color-white rbt-section-gap">
             <BrandThree />
-          </div>
+          </div> */}
           <ContactForm/>
-          <Separator />
-          <BackToTop />
-          <FooterOne />
+          <Separator/>
+          <BackToTop/>
+          <FooterOne/>
         </Context>
       </Provider>
     </>

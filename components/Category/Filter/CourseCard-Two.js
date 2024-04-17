@@ -56,7 +56,7 @@ console.log("********",courselog)
               }`}
             >
               <div className="rbt-card-img">
-                <Link href={`/course-details-2/${data.id}`}>
+                <Link href={`/course/${data.slug}`}>
                   <Image
                     src={data.courseImg}
                     width={235}
@@ -71,7 +71,7 @@ console.log("********",courselog)
                     <Link href="#">Chennai</Link>
                   </div>
                 <h4 className="rbt-card-title">
-                  <Link href={`/course-details-2/${data.id}`}>
+                  <Link href={`/course/${data.slug}`}>
                     {data.courseTitle}
                   </Link>
                 </h4>
@@ -87,7 +87,7 @@ console.log("********",courselog)
                 <div className="rbt-card-bottom">
                   <Link
                     className="transparent-button"
-                    href={`/course-details-2/${data.id}`}
+                    href={`/course/${data.slug}`}
                   >
                     Learn More
                     <i className="feather-arrow-right"></i>

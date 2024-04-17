@@ -115,7 +115,7 @@ const Nav = () => {
         <li className="with-megamenu has-menu-child-item">
           <Link
             className={`${activeMenuItem === "courses" ? "open" : ""}`}
-            href="/course-details-2"
+            href="/courses"
             onClick={() => toggleMenuItem("courses")}
           >
             Courses
@@ -511,17 +511,17 @@ const Nav = () => {
           <li className="with-megamenu position-static">
   <Link
     href="/admissions"
-    style={{
-      display: 'inline-block',
-      paddingLeft:"auto",
-      paddingRight:"10px",
-      paddingTop:"auto",
-      paddingBottom:"auto",
-      backgroundColor: '#EEDC82', // Change background color to #EEDC82
-      color: 'white',
-      borderRadius: '5px',
-      textDecoration: 'none', // Remove default underline
-    }}
+    // style={{
+    //   display: 'inline-block',
+    //   paddingLeft:"auto",
+    //   paddingRight:"10px",
+    //   paddingTop:"auto",
+    //   paddingBottom:"auto",
+    //   backgroundColor: '#EEDC82', // Change background color to #EEDC82
+    //   color: 'white',
+    //   borderRadius: '5px',
+    //   textDecoration: 'none', // Remove default underline
+    // }}
   >
     Admissions
     {/* <i></i> */}
