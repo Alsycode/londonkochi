@@ -10,6 +10,7 @@ const BlogDetails = ({ matchedBlog,updateData }) => {
   console.log("-----------------",updateData)
   const relatedupdates = updateData?.data?.filter((item) => item?.id !== matchedBlog?.id);
  console.log("relatedupdates",relatedupdates)
+ 
   return (
     <>
       <div className="content">
@@ -102,14 +103,13 @@ const BlogDetails = ({ matchedBlog,updateData }) => {
           <Link href="#">{matchedBlog?.linkTwo}</Link> {matchedBlog.descFive}
         </p> */}
 
-        {/* <div className="tagcloud">
-          {matchedBlog &&
-            matchedBlog.tag.map((tagItem, innerIndex) => (
-              <Link href="#" key={innerIndex}>
-                {tagItem.tag}
-              </Link>
-            ))}
-        </div> */}
+<div className="tagcloud">
+  {matchedBlog?.attributes?.tags?.map((item, index) => (
+    <Link key={index} href="/relatedUpdates/[item.tagtext]" as={`/relatedUpdates/${encodeURIComponent(item.tagtext)}`}>
+      {item.tagtext}
+    </Link>
+  ))}
+  </div>
 
         {/* <div className="social-share-block">
           <div className="post-like">

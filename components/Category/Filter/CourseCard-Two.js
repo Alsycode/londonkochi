@@ -21,7 +21,7 @@ console.log("********",courselog)
   
     if (!description) return ""; // Return empty string if description is null or undefined
   
-    const words = description.split(" ");
+    const words = description?.split(" ");
     console.log("Number of words:", words.length);
   
     if (words.length > 35) {
@@ -56,9 +56,9 @@ console.log("********",courselog)
               }`}
             >
               <div className="rbt-card-img">
-                <Link href={`/course/${data.slug}`}>
+                <Link href={`/courses/${data?.slug}`}>
                   <Image
-                    src={data.courseImg}
+                    src={data?.courseImg}
                     width={235}
                     height={330}
                     alt="Card image"
@@ -71,8 +71,8 @@ console.log("********",courselog)
                     <Link href="#">Chennai</Link>
                   </div>
                 <h4 className="rbt-card-title">
-                  <Link href={`/course/${data.slug}`}>
-                    {data.courseTitle}
+                  <Link href={`/courses/${data?.slug}`}>
+                    {data?.courseTitle}
                   </Link>
                 </h4>
                 {/* <span className="lesson-number">
@@ -87,7 +87,7 @@ console.log("********",courselog)
                 <div className="rbt-card-bottom">
                   <Link
                     className="transparent-button"
-                    href={`/course/${data.slug}`}
+                    href={`/courses/${data?.slug}`}
                   >
                     Learn More
                     <i className="feather-arrow-right"></i>

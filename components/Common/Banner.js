@@ -25,14 +25,14 @@ const Banner = ({ text, col, getBlog }) => {
 
                   <div className=" title-wrapper">
                     <h1 className="title mb--0">{text}</h1>
-                    <Link href="#" className="rbt-badge-2">
+                    {/* <Link href="#" className="rbt-badge-2">
                       <div className="image">🎉</div>{" "}
                       {getBlog ? `${getBlog.length} Articles` : "50 Articles"}
-                    </Link>
+                    </Link> */}
                   </div>
 
                   <p className="description">
-                    Blog that help beginner designers become true unicorns.{" "}
+                    Explore our latest Updates
                   </p>
                 </div>
               </div>

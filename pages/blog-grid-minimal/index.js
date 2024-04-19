@@ -16,7 +16,7 @@ import Separator from "@/components/Common/Separator";
 import FooterOne from "@/components/Footer/Footer-One";
 import BlogGridMinimal from "@/components/Blogs/BlogGridMinimal";
 
-const BlogGridMinimalLayout = () => {
+const BlogGridMinimalLayout = ({updateData}) => {
   let getBlog = JSON.parse(JSON.stringify(BlogData.blogGrid));
 
   useEffect(() => {
@@ -43,7 +43,8 @@ const BlogGridMinimalLayout = () => {
                 top={true}
                 start={0}
                 end={9}
-              />
+                updateData={updateData}
+                 />
             </div>
           </div>
 
@@ -57,3 +58,26 @@ const BlogGridMinimalLayout = () => {
 };
 
 export default BlogGridMinimalLayout;
+export async function getServerSideProps() {
+  try {
+    const res = await fetch("http://139.59.78.49:1337/api/london-collegeupdates?populate=*", {
+      headers: {
+        Authorization: "Bearer 3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c"
+      }
+    });
+    const data = await res.json();
+    
+    return {
+      props: {
+        updateData: data
+      }
+    };
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    return {
+      props: {
+        updateData: null
+      }
+    };
+  }
+}

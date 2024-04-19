@@ -12,7 +12,7 @@ const CourseHead = ({ checkMatch }) => {
 
   return (
     <>
-      {path === "/course/[courseId]" ? (
+      {path === "/courses/[id]" ? (
         <>
           <div className="container">
             <div className="row">

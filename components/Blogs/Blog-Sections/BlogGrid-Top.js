@@ -1,13 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const BlogGridTop = ({ updateData, selectedGridBlogs ,BlogData}) => {
+const BlogGridTop = ({ updateData, selectedGridBlogs , BlogData}) => {
   console.log("********",updateData)
-  const firstupdate = updateData?.data[0];
-  console.log("&&&&&&&&&&",firstupdate)
-   const img = firstupdate?.attributes?.Bannerimg1?.data?.attributes?.formats?.small?.url;
- const title = firstupdate?.attributes?.heading;
- console.log("*********&&&&&&&&&&&",title)
+  // console.log("filteredUpdates", filteredUpdates)
+  // const firstupdate = updateData?.data[0];
+  // console.log("&&&&&&&&&&",firstupdate)
+//     const img = firstupdate?.attributes?.Bannerimg1?.data?.attributes?.formats?.small?.url;
+//  const title = firstupdate?.attributes?.heading;
+//  console.log("*********&&&&&&&&&&&",title)
   return (
     <>
       <div className="row g-5">

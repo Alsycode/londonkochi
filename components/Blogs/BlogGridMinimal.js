@@ -4,11 +4,11 @@ import { useEffect, useState } from "react";
 import BlogData from "../../data/blog/blog.json";
 import Pagination from "../Common/Pagination";
 
-const BlogGridMinimal = ({ isPagination, start, end }) => {
+const BlogGridMinimal = ({ isPagination, start, end ,updateData}) => {
   const [blogs, setBlogs] = useState([]);
   const [page, setPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
-
+  console.log("^^^^^^^^^^^^^^^^^^^^",updateData)
   const startIndex = (page - 1) * 9;
   const selectedGridBlogs = blogs.slice(startIndex, startIndex + 9);
 
@@ -28,8 +28,8 @@ const BlogGridMinimal = ({ isPagination, start, end }) => {
   return (
     <>
       <div className="row g-5">
-        {BlogData &&
-          selectedGridBlogs.slice(start, end).map((data, index) => (
+        {updateData &&
+          updateData?.data?.slice(start, end).map((data, index) => (
             <div
               className="col-lg-4 col-md-6 col-sm-6 col-12 mt--30"
               // data-sal-delay="150"
@@ -41,12 +41,12 @@ const BlogGridMinimal = ({ isPagination, start, end }) => {
                 <div className="rbt-card-body">
                   <ul className="meta-list justify-content-start mb--30">
                     <li className="list-item">
-                      <i className="feather-clock"></i>
-                      <span>{data.date}</span>
+                      {/* <i className="feather-clock"></i> */}
+                      {/* <span>{data.date}</span> */}
                     </li>
                   </ul>
                   <h4 className="rbt-card-title">
-                    <Link href={`/blog-details/${data.id}`}>{data.title}</Link>
+                    <Link href={`/blog-details/${data.id}`}>{data?.attributes?.heading}</Link>
                   </h4>
                   <div className="rbt-card-bottom mt--40">
                     <Link

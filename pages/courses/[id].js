@@ -23,12 +23,15 @@ import CardFive from "@/components/Cards/Card-Five";
 console.log("CourseDatajsonnnnnnnnnnnnnnnn:", CourseData);
 const SingleCourseTwo = ({courseData, updateData}) => {
   const router = useRouter();
-  const postId = parseInt(router.query.courseId);
+  const postId = router.query.id;
+  const slug = router.query;
+  console.log("slug------------------",slug)
   let getCourse;
 
   getCourse = JSON.parse(JSON.stringify(CourseData.courseTab));
+console.log("getCourse",getCourse)
 
-  const checkMatch = getCourse.find((course) => course.id === postId);
+  const checkMatch = getCourse.find((course) => course.slug === postId);
 console.log("matchedcourse",checkMatch);
 // const detailname = courseData?.attributes?.Coursename;
   useEffect(() => {

@@ -18,6 +18,7 @@ import VideoImg from "../../public/images/course/course-02.jpg";
 import AboutIndustry from "./Course-Sections/AboutIndustry";
 import Gallery from "../Gallery/Gallery";
 import Jobrole from "./Course-Sections/jobrole";
+const tags = ["Warehouse","Commerce","DIPLOMA","Online","Shipping","Supply Chain Management","Logistics","Logistics Courses","Logistics Colleges"];
 const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
   useEffect(() => {
     import("venobox/dist/venobox.min.js").then((venobox) => {
@@ -26,14 +27,14 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
       });
     });
   }, []);
-const cerificate = checkMatchCourses.courseRequirement;
+const cerificate = checkMatchCourses?.courseRequirement;
 
   const detailname = courseData?.attributes?.Coursename;
  const jsontitle = checkMatchCourses?.courseTitle;
  let matchedCourse = null;
  courseData?.data?.forEach((item) => {
  
-  if (item.attributes.Coursename === jsontitle) {
+  if (item?.attributes?.Coursename === jsontitle) {
     // If a match is found, assign the current item to matchedCourse
     matchedCourse = item;
     // Exit the loop since we found a match
@@ -47,7 +48,7 @@ console.log("detailname",detailname)
     <>
       <div className="col-lg-8">
 
-        {checkMatchCourses.courseImg && (
+        {checkMatchCourses?.courseImg && (
           <Link
             className="video-popup-with-text video-popup-wrapper text-center popup-video mb--15"
             data-vbtype="video"
@@ -88,7 +89,7 @@ console.log("detailname",detailname)
             {/* Commented-out section */}
             
              {checkMatchCourses &&
-              checkMatchCourses.courseOverview.map((data, index) => (
+              checkMatchCourses?.courseOverview?.map((data, index) => (
                 <Overview {...data} key={index} checkMatchCourses={data} />
               ))}
             
@@ -108,15 +109,15 @@ console.log("detailname",detailname)
               
               {checkMatchCourses &&
              
-             <AboutIndustry checkMatchCourses={checkMatchCourses.aboutIndustry} />
+             <AboutIndustry checkMatchCourses={checkMatchCourses?.aboutIndustry} />
            }
 
             </div>
-            
+
             <div className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30" id="Certificates & Affiliates">
   <div className="row">
     {checkMatchCourses &&
-      checkMatchCourses.courseRequirement.map((data, index) => (
+      checkMatchCourses?.courseRequirement?.map((data, index) => (
         <div className="col-lg-6 col-md-12" key={index}>
           <Requirements {...data}  key={index} checkMatchCourses={data} />
         </div>
@@ -166,7 +167,15 @@ console.log("detailname",detailname)
              <Jobrole/>
 
             </div>
+            <div className="tagcloud" style={{ marginTop: "30px" }}>
+      {tags.map((tag, index) => (
+        <Link key={index} href="/relatedCourse/[tag]" as={`/relatedCourse/${encodeURIComponent(tag)}`}>
+          #{tag}
+        </Link>
+      ))}
+    </div>
         </div>
+        
              <div className="col-lg-4">
         <div className="course-sidebar sticky-top rbt-shadow-box course-sidebar-top rbt-gradient-border">
           <div className="inner">
