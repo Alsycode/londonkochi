@@ -10881,12 +10881,7 @@
                       "text": "Warehouse Manager",
                       "icon": "feather-flag"
                     }
-                   
-                  
-                
-              
-              
-              ]
+                    ]
             }
           ]
         }
@@ -12935,42 +12930,7 @@
           ]
         }
       ],
-      "courseRequirement": [
-        {
-          "title": "Requirements",
-          "detailsList": [
-            {
-              "listItem": "Become an advanced, confident, and modern JavaScript developer from scratch."
-            },
-            {
-              "listItem": "Have an intermediate skill level of Python programming."
-            },
-            {
-              "listItem": "Have a portfolio of various data analysis projects."
-            },
-            {
-              "listItem": "Use the numpy library to create and manipulate arrays."
-            }
-          ]
-        },
-        {
-          "title": "Description",
-          "detailsList": [
-            {
-              "listItem": "Use the Jupyter Notebook Environment. JavaScript developer from scratch."
-            },
-            {
-              "listItem": "Use the pandas module with Python to create and structure data."
-            },
-            {
-              "listItem": "Have a portfolio of various data analysis projects."
-            },
-            {
-              "listItem": "Create data visualizations using matplotlib and the seaborn."
-            }
-          ]
-        }
-      ],
+      
       "courseInstructor": [
         {
           "title": "Instructor",
@@ -14654,42 +14614,7 @@
           ]
         }
       ],
-      "courseRequirement": [
-        {
-          "title": "Requirements",
-          "detailsList": [
-            {
-              "listItem": "Become an advanced, confident, and modern JavaScript developer from scratch."
-            },
-            {
-              "listItem": "Have an intermediate skill level of Python programming."
-            },
-            {
-              "listItem": "Have a portfolio of various data analysis projects."
-            },
-            {
-              "listItem": "Use the numpy library to create and manipulate arrays."
-            }
-          ]
-        },
-        {
-          "title": "Description",
-          "detailsList": [
-            {
-              "listItem": "Use the Jupyter Notebook Environment. JavaScript developer from scratch."
-            },
-            {
-              "listItem": "Use the pandas module with Python to create and structure data."
-            },
-            {
-              "listItem": "Have a portfolio of various data analysis projects."
-            },
-            {
-              "listItem": "Create data visualizations using matplotlib and the seaborn."
-            }
-          ]
-        }
-      ],
+     
       "courseInstructor": [
         {
           "title": "Instructor",
@@ -15247,74 +15172,7 @@
           ]
         }
       ],
-      "courseRequirement": [
-        {
-          "title": "Certificates",
-          "detailsList": [
-            {
-              "listItem": "Dual Advanced Diploma in 1) Logistics, Supply Chain & Retail management 2) International Shipping & Export Import Management 3) Certified by London College."
-            },
-            {
-              "listItem": "Advanced Diploma in Logistics & Supply Chain Management, Certified by Logistics Sector Skill Council, (Initiative of the Ministry of Skill Development & Entrepreneurship Government of India)"
-            },
-            {
-              "listItem": "Soft Skill (Personality Development – Grooming – English Communication Skills) training Certified by Career Development Council of AMS"
-            },
-           
-            {
-              "listItem": "SAP certification awarded by WHRDE (World Human Recourse Development Education)"
-            }
-          ]
-        },
-        {
-          "title": "Affiliations",
-          "detailsList": [
-            {
-              "listItem": "London College is The only Logistics Sector Skill Council (Initiative of the Ministry of Skill Development & Entrepreneurship Government of India) Affiliated College in Kerala"
-            },
-            {
-              "listItem": "London College was the Only Knowledge Partner of ISM – INDIA (An Affiliate of ISM-USA) for supply chain management courses."
-            },
-            {
-              "listItem": "London College was the First & Only “Centre of Excellence” of Confederation of Indian Industry – Institute of Logistics in Kerala"
-            }
-           
-          ]
-        }
-      ],
-      "courseOverview": [
-        {
-          "title": "About Course",
-          "desc": "Diploma in Logistics and Supply Chain Management is a beginner’s skill program of London College approved by Logistics Sector Skill Council, Government of India. This program meets the National level standard of occupation and is certified by Logistics Sector Skill Council, an Initiative of the Ministry of Skill Development and Entrepreneurship, Govt. of India.",
-          "descTwo": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis, aliquam voluptas laudantium incidunt architecto nam excepturi provident rem laborum repellendus placeat neque aut doloremque ut ullam, veritatis nesciunt iusto officia alias, non est vitae. Eius repudiandae optio quam alias aperiam nemo nam tempora, dignissimos dicta excepturi ea quo ipsum omnis maiores perferendis commodi voluptatum facere vel vero. Praesentium quisquam iure veritatis, perferendis adipisci sequi blanditiis quidem porro eligendi fugiat facilis inventore amet delectus expedita deserunt ut molestiae modi laudantium, quia tenetur animi natus ea. Molestiae molestias ducimus pariatur et consectetur. Error vero, eum soluta delectus necessitatibus eligendi numquam hic at?",
-          "overviewList": [
-            {
-              "listItem": "Become an advanced, confident, and modern JavaScript developer from scratch."
-            },
-            {
-              "listItem": "Have an intermediate skill level of Python programming."
-            },
-            {
-              "listItem": "Have a portfolio of various data analysis projects."
-            },
-            {
-              "listItem": "Use the numpy library to create and manipulate arrays."
-            },
-            {
-              "listItem": "Use the Jupyter Notebook Environment. JavaScript developer from scratch."
-            },
-            {
-              "listItem": "Use the pandas module with Python to create and structure data."
-            },
-            {
-              "listItem": "Have a portfolio of various data analysis projects."
-            },
-            {
-              "listItem": "Create data visualizations using matplotlib and the seaborn."
-            }
-          ]
-        }
-      ],
+     
       "courseContent": [
         {
           "title": "Course Content",
