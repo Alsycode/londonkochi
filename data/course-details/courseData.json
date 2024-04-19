@@ -9775,6 +9775,269 @@
           "description": "The interest in supply chain programs at many colleges and universities is growing, driven by the increased visibility of supply chain topics in recent headlines. More students, along with their parents, now understand the significance of supply chains. Unlike fields with established histories like accounting or finance, supply chain hasn't traditionally been a top choice recommended by parents. However, the pandemic has shifted perceptions, leading to a rise in interest among students. The value of strong supply chains has become apparent across various disciplines, with supply chain management modules attracting students from business, medicine, public health, and science and engineering backgrounds. Concepts like risk mitigation, resilience, and agility are gaining prominence, with students focusing on identifying and responding to risks. COVID-19 highlighted the importance of supply chain resilience, driving it to the forefront of research and teaching. Students now learn to navigate uncertainty and problem-solve in dynamic environments, preparing them for the complexities of the future."
         }
       ],
+      "serviceEleven": [
+        {
+          "sectionTitle": "Style Eleven.",
+          "body": [
+            {
+              "title": "AIRPORT",
+              "imgFront": "/images/flip/airport.jpg",
+              "img": "/images/flip/kindergarten-01-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgOne": true,
+              "bgTwo": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer ServiceCargo",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "EXPORT IMPORT",
+              "imgFront": "/images/flip/import-and-export.jpg",
+              "img": "/images/flip/kindergarten-02-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgTwo": true,
+              "bgOne": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Documentation Executive Client",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Servicing Shipping Online",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-eye"
+                }
+                
+              ]
+            },
+            {
+              "title": "PRODUCTION",
+              "imgFront": "/images/flip/production.jpg",
+              "img": "/images/flip/kindergarten-03-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgThree": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Purchase and Procurement Store",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Keeping Inventory Management",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Warehouse Executive",
+                  "icon": "feather-eye"
+                }
+              ]
+            },
+            {
+              "title": "SHIPPING",
+              "imgFront": "/images/flip/shipping.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Documentation",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Service Marketing",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Consolidation",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Overseas",
+                  "icon": "feather-battery-charging"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "ROAD TRANSPORT",
+              "imgFront": "/images/flip/road-transport.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Transport Executive Cargo",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": " Product Executive",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Custome Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Service Transport Executive",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "WAREHOUSE",
+              "imgFront": "/images/flip/warehouse.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Executive Product",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer Service",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "RETAIL",
+              "imgFront": "/images/flip/retail.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Warehouse  Customer Executive",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Service Product Line",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Operations Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": " Inventory Executive",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Coordinators Back",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Office",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Operations ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Sourcing ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Purchasing",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Merchandising",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Retail Logistics",
+                  "icon": "feather-edit-2"
+                }]
+            },
+    
+                {
+                  "title": "ECOMMERCE",
+                  "imgFront": "/images/flip/ecomers.jpg",
+                  "img": "/images/flip/kindergarten-04-back.jpg",
+                  "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+                  "bgFour": true,
+                  "bgOne": false,
+                  "bgTwo": false,
+                  "bgThree": false,
+                  "list": [
+                    {
+                      "text": "Hub in Charge Team Leader",
+                      "icon": "feather-heart"
+                    },
+                    {
+                      "text": "Warehouse Manager",
+                      "icon": "feather-flag"
+                    }
+                   
+                  
+                
+              
+              
+              ]
+            }
+          ]
+        }
+      ],
       "DeliveryAndBenefit": [
         {
           "title": "Online Class",
@@ -10363,6 +10626,269 @@
         {
           "title": "About Industry",
           "description": "The interest in supply chain programs at many colleges and universities is growing, driven by the increased visibility of supply chain topics in recent headlines. More students, along with their parents, now understand the significance of supply chains. Unlike fields with established histories like accounting or finance, supply chain hasn't traditionally been a top choice recommended by parents. However, the pandemic has shifted perceptions, leading to a rise in interest among students. The value of strong supply chains has become apparent across various disciplines, with supply chain management modules attracting students from business, medicine, public health, and science and engineering backgrounds. Concepts like risk mitigation, resilience, and agility are gaining prominence, with students focusing on identifying and responding to risks. COVID-19 highlighted the importance of supply chain resilience, driving it to the forefront of research and teaching. Students now learn to navigate uncertainty and problem-solve in dynamic environments, preparing them for the complexities of the future."
+        }
+      ],
+      "serviceEleven": [
+        {
+          "sectionTitle": "Style Eleven.",
+          "body": [
+            {
+              "title": "AIRPORT",
+              "imgFront": "/images/flip/airport.jpg",
+              "img": "/images/flip/kindergarten-01-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgOne": true,
+              "bgTwo": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer ServiceCargo",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "EXPORT IMPORT",
+              "imgFront": "/images/flip/import-and-export.jpg",
+              "img": "/images/flip/kindergarten-02-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgTwo": true,
+              "bgOne": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Documentation Executive Client",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Servicing Shipping Online",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-eye"
+                }
+                
+              ]
+            },
+            {
+              "title": "PRODUCTION",
+              "imgFront": "/images/flip/production.jpg",
+              "img": "/images/flip/kindergarten-03-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgThree": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Purchase and Procurement Store",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Keeping Inventory Management",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Warehouse Executive",
+                  "icon": "feather-eye"
+                }
+              ]
+            },
+            {
+              "title": "SHIPPING",
+              "imgFront": "/images/flip/shipping.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Documentation",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Service Marketing",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Consolidation",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Overseas",
+                  "icon": "feather-battery-charging"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "ROAD TRANSPORT",
+              "imgFront": "/images/flip/road-transport.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Transport Executive Cargo",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": " Product Executive",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Custome Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Service Transport Executive",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "WAREHOUSE",
+              "imgFront": "/images/flip/warehouse.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Executive Product",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer Service",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "RETAIL",
+              "imgFront": "/images/flip/retail.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Warehouse  Customer Executive",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Service Product Line",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Operations Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": " Inventory Executive",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Coordinators Back",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Office",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Operations ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Sourcing ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Purchasing",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Merchandising",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Retail Logistics",
+                  "icon": "feather-edit-2"
+                }]
+            },
+    
+                {
+                  "title": "ECOMMERCE",
+                  "imgFront": "/images/flip/ecomers.jpg",
+                  "img": "/images/flip/kindergarten-04-back.jpg",
+                  "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+                  "bgFour": true,
+                  "bgOne": false,
+                  "bgTwo": false,
+                  "bgThree": false,
+                  "list": [
+                    {
+                      "text": "Hub in Charge Team Leader",
+                      "icon": "feather-heart"
+                    },
+                    {
+                      "text": "Warehouse Manager",
+                      "icon": "feather-flag"
+                    }
+                   
+                  
+                
+              
+              
+              ]
+            }
+          ]
         }
       ],
       "DeliveryAndBenefit": [
@@ -10987,6 +11513,269 @@
           "description": "The interest in supply chain programs at many colleges and universities is growing, driven by the increased visibility of supply chain topics in recent headlines. More students, along with their parents, now understand the significance of supply chains. Unlike fields with established histories like accounting or finance, supply chain hasn't traditionally been a top choice recommended by parents. However, the pandemic has shifted perceptions, leading to a rise in interest among students. The value of strong supply chains has become apparent across various disciplines, with supply chain management modules attracting students from business, medicine, public health, and science and engineering backgrounds. Concepts like risk mitigation, resilience, and agility are gaining prominence, with students focusing on identifying and responding to risks. COVID-19 highlighted the importance of supply chain resilience, driving it to the forefront of research and teaching. Students now learn to navigate uncertainty and problem-solve in dynamic environments, preparing them for the complexities of the future."
         }
       ],
+      "serviceEleven": [
+        {
+          "sectionTitle": "Style Eleven.",
+          "body": [
+            {
+              "title": "AIRPORT",
+              "imgFront": "/images/flip/airport.jpg",
+              "img": "/images/flip/kindergarten-01-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgOne": true,
+              "bgTwo": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer ServiceCargo",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "EXPORT IMPORT",
+              "imgFront": "/images/flip/import-and-export.jpg",
+              "img": "/images/flip/kindergarten-02-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgTwo": true,
+              "bgOne": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Documentation Executive Client",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Servicing Shipping Online",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-eye"
+                }
+                
+              ]
+            },
+            {
+              "title": "PRODUCTION",
+              "imgFront": "/images/flip/production.jpg",
+              "img": "/images/flip/kindergarten-03-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgThree": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Purchase and Procurement Store",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Keeping Inventory Management",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Warehouse Executive",
+                  "icon": "feather-eye"
+                }
+              ]
+            },
+            {
+              "title": "SHIPPING",
+              "imgFront": "/images/flip/shipping.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Documentation",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Service Marketing",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Consolidation",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Overseas",
+                  "icon": "feather-battery-charging"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "ROAD TRANSPORT",
+              "imgFront": "/images/flip/road-transport.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Transport Executive Cargo",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": " Product Executive",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Custome Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Service Transport Executive",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "WAREHOUSE",
+              "imgFront": "/images/flip/warehouse.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Executive Product",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer Service",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "RETAIL",
+              "imgFront": "/images/flip/retail.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Warehouse  Customer Executive",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Service Product Line",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Operations Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": " Inventory Executive",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Coordinators Back",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Office",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Operations ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Sourcing ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Purchasing",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Merchandising",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Retail Logistics",
+                  "icon": "feather-edit-2"
+                }]
+            },
+    
+                {
+                  "title": "ECOMMERCE",
+                  "imgFront": "/images/flip/ecomers.jpg",
+                  "img": "/images/flip/kindergarten-04-back.jpg",
+                  "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+                  "bgFour": true,
+                  "bgOne": false,
+                  "bgTwo": false,
+                  "bgThree": false,
+                  "list": [
+                    {
+                      "text": "Hub in Charge Team Leader",
+                      "icon": "feather-heart"
+                    },
+                    {
+                      "text": "Warehouse Manager",
+                      "icon": "feather-flag"
+                    }
+                   
+                  
+                
+              
+              
+              ]
+            }
+          ]
+        }
+      ],
       "DeliveryAndBenefit": [
         {
           "title": "Online Class",
@@ -11563,6 +12352,269 @@
           "description": "The interest in supply chain programs at many colleges and universities is growing, driven by the increased visibility of supply chain topics in recent headlines. More students, along with their parents, now understand the significance of supply chains. Unlike fields with established histories like accounting or finance, supply chain hasn't traditionally been a top choice recommended by parents. However, the pandemic has shifted perceptions, leading to a rise in interest among students. The value of strong supply chains has become apparent across various disciplines, with supply chain management modules attracting students from business, medicine, public health, and science and engineering backgrounds. Concepts like risk mitigation, resilience, and agility are gaining prominence, with students focusing on identifying and responding to risks. COVID-19 highlighted the importance of supply chain resilience, driving it to the forefront of research and teaching. Students now learn to navigate uncertainty and problem-solve in dynamic environments, preparing them for the complexities of the future."
         }
       ],
+      "serviceEleven": [
+        {
+          "sectionTitle": "Style Eleven.",
+          "body": [
+            {
+              "title": "AIRPORT",
+              "imgFront": "/images/flip/airport.jpg",
+              "img": "/images/flip/kindergarten-01-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgOne": true,
+              "bgTwo": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer ServiceCargo",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "EXPORT IMPORT",
+              "imgFront": "/images/flip/import-and-export.jpg",
+              "img": "/images/flip/kindergarten-02-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgTwo": true,
+              "bgOne": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Documentation Executive Client",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Servicing Shipping Online",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-eye"
+                }
+                
+              ]
+            },
+            {
+              "title": "PRODUCTION",
+              "imgFront": "/images/flip/production.jpg",
+              "img": "/images/flip/kindergarten-03-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgThree": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Purchase and Procurement Store",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Keeping Inventory Management",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Warehouse Executive",
+                  "icon": "feather-eye"
+                }
+              ]
+            },
+            {
+              "title": "SHIPPING",
+              "imgFront": "/images/flip/shipping.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Documentation",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Service Marketing",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Consolidation",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Overseas",
+                  "icon": "feather-battery-charging"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "ROAD TRANSPORT",
+              "imgFront": "/images/flip/road-transport.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Transport Executive Cargo",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": " Product Executive",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Custome Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Service Transport Executive",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "WAREHOUSE",
+              "imgFront": "/images/flip/warehouse.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Executive Product",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer Service",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "RETAIL",
+              "imgFront": "/images/flip/retail.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Warehouse  Customer Executive",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Service Product Line",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Operations Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": " Inventory Executive",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Coordinators Back",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Office",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Operations ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Sourcing ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Purchasing",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Merchandising",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Retail Logistics",
+                  "icon": "feather-edit-2"
+                }]
+            },
+    
+                {
+                  "title": "ECOMMERCE",
+                  "imgFront": "/images/flip/ecomers.jpg",
+                  "img": "/images/flip/kindergarten-04-back.jpg",
+                  "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+                  "bgFour": true,
+                  "bgOne": false,
+                  "bgTwo": false,
+                  "bgThree": false,
+                  "list": [
+                    {
+                      "text": "Hub in Charge Team Leader",
+                      "icon": "feather-heart"
+                    },
+                    {
+                      "text": "Warehouse Manager",
+                      "icon": "feather-flag"
+                    }
+                   
+                  
+                
+              
+              
+              ]
+            }
+          ]
+        }
+      ],
       "DeliveryAndBenefit": [
         {
           "title": "Online Class",
@@ -11572,6 +12624,7 @@
             {"listItem": "Weekend batch (Saturday & Sunday) – 5 hrs/day"}
           ]
         },
+        
         {
           "title": "OFFLINE CLASS",
           "list": [
@@ -12173,6 +13226,269 @@
       "language": "English",
       "courseAward": "Certified Course",
       "courseFor": ["Python", "Development"],
+      "serviceEleven": [
+        {
+          "sectionTitle": "Style Eleven.",
+          "body": [
+            {
+              "title": "AIRPORT",
+              "imgFront": "/images/flip/airport.jpg",
+              "img": "/images/flip/kindergarten-01-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgOne": true,
+              "bgTwo": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer ServiceCargo",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "EXPORT IMPORT",
+              "imgFront": "/images/flip/import-and-export.jpg",
+              "img": "/images/flip/kindergarten-02-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgTwo": true,
+              "bgOne": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Documentation Executive Client",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Servicing Shipping Online",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-eye"
+                }
+                
+              ]
+            },
+            {
+              "title": "PRODUCTION",
+              "imgFront": "/images/flip/production.jpg",
+              "img": "/images/flip/kindergarten-03-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgThree": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Purchase and Procurement Store",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Keeping Inventory Management",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Warehouse Executive",
+                  "icon": "feather-eye"
+                }
+              ]
+            },
+            {
+              "title": "SHIPPING",
+              "imgFront": "/images/flip/shipping.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Documentation",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Service Marketing",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Consolidation",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Overseas",
+                  "icon": "feather-battery-charging"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "ROAD TRANSPORT",
+              "imgFront": "/images/flip/road-transport.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Transport Executive Cargo",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": " Product Executive",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Custome Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Service Transport Executive",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "WAREHOUSE",
+              "imgFront": "/images/flip/warehouse.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Executive Product",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer Service",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "RETAIL",
+              "imgFront": "/images/flip/retail.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Warehouse  Customer Executive",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Service Product Line",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Operations Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": " Inventory Executive",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Coordinators Back",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Office",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Operations ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Sourcing ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Purchasing",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Merchandising",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Retail Logistics",
+                  "icon": "feather-edit-2"
+                }]
+            },
+    
+                {
+                  "title": "ECOMMERCE",
+                  "imgFront": "/images/flip/ecomers.jpg",
+                  "img": "/images/flip/kindergarten-04-back.jpg",
+                  "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+                  "bgFour": true,
+                  "bgOne": false,
+                  "bgTwo": false,
+                  "bgThree": false,
+                  "list": [
+                    {
+                      "text": "Hub in Charge Team Leader",
+                      "icon": "feather-heart"
+                    },
+                    {
+                      "text": "Warehouse Manager",
+                      "icon": "feather-flag"
+                    }
+                   
+                  
+                
+              
+              
+              ]
+            }
+          ]
+        }
+      ],
       "aboutIndustry": [
         {
           "title": "About Industry",
@@ -12752,6 +14068,269 @@
       "language": "English",
       "courseAward": "Certified Course",
       "courseFor": ["Frontend", "Python"],
+      "serviceEleven": [
+        {
+          "sectionTitle": "Style Eleven.",
+          "body": [
+            {
+              "title": "AIRPORT",
+              "imgFront": "/images/flip/airport.jpg",
+              "img": "/images/flip/kindergarten-01-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgOne": true,
+              "bgTwo": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer ServiceCargo",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "EXPORT IMPORT",
+              "imgFront": "/images/flip/import-and-export.jpg",
+              "img": "/images/flip/kindergarten-02-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgTwo": true,
+              "bgOne": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Documentation Executive Client",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Servicing Shipping Online",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-eye"
+                }
+                
+              ]
+            },
+            {
+              "title": "PRODUCTION",
+              "imgFront": "/images/flip/production.jpg",
+              "img": "/images/flip/kindergarten-03-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgThree": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Purchase and Procurement Store",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Keeping Inventory Management",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Warehouse Executive",
+                  "icon": "feather-eye"
+                }
+              ]
+            },
+            {
+              "title": "SHIPPING",
+              "imgFront": "/images/flip/shipping.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Documentation",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Service Marketing",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Consolidation",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Overseas",
+                  "icon": "feather-battery-charging"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "ROAD TRANSPORT",
+              "imgFront": "/images/flip/road-transport.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Transport Executive Cargo",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": " Product Executive",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Custome Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Service Transport Executive",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "WAREHOUSE",
+              "imgFront": "/images/flip/warehouse.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Executive Product",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer Service",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "RETAIL",
+              "imgFront": "/images/flip/retail.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Warehouse  Customer Executive",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Service Product Line",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Operations Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": " Inventory Executive",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Coordinators Back",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Office",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Operations ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Sourcing ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Purchasing",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Merchandising",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Retail Logistics",
+                  "icon": "feather-edit-2"
+                }]
+            },
+    
+                {
+                  "title": "ECOMMERCE",
+                  "imgFront": "/images/flip/ecomers.jpg",
+                  "img": "/images/flip/kindergarten-04-back.jpg",
+                  "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+                  "bgFour": true,
+                  "bgOne": false,
+                  "bgTwo": false,
+                  "bgThree": false,
+                  "list": [
+                    {
+                      "text": "Hub in Charge Team Leader",
+                      "icon": "feather-heart"
+                    },
+                    {
+                      "text": "Warehouse Manager",
+                      "icon": "feather-flag"
+                    }
+                   
+                  
+                
+              
+              
+              ]
+            }
+          ]
+        }
+      ],
       "aboutIndustry": [
         {
           "title": "About Industry",
@@ -13364,6 +14943,269 @@
       "language": "English",
       "courseAward": "Certified Course",
       "courseFor": ["Backend", "Frontend"],
+      "serviceEleven": [
+        {
+          "sectionTitle": "Style Eleven.",
+          "body": [
+            {
+              "title": "AIRPORT",
+              "imgFront": "/images/flip/airport.jpg",
+              "img": "/images/flip/kindergarten-01-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgOne": true,
+              "bgTwo": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer ServiceCargo",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "EXPORT IMPORT",
+              "imgFront": "/images/flip/import-and-export.jpg",
+              "img": "/images/flip/kindergarten-02-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgTwo": true,
+              "bgOne": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Documentation Executive Client",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Servicing Shipping Online",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-eye"
+                }
+                
+              ]
+            },
+            {
+              "title": "PRODUCTION",
+              "imgFront": "/images/flip/production.jpg",
+              "img": "/images/flip/kindergarten-03-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgThree": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Purchase and Procurement Store",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Keeping Inventory Management",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Warehouse Executive",
+                  "icon": "feather-eye"
+                }
+              ]
+            },
+            {
+              "title": "SHIPPING",
+              "imgFront": "/images/flip/shipping.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Documentation",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Service Marketing",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Consolidation",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Overseas",
+                  "icon": "feather-battery-charging"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "ROAD TRANSPORT",
+              "imgFront": "/images/flip/road-transport.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Transport Executive Cargo",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": " Product Executive",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Custome Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Service Transport Executive",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "WAREHOUSE",
+              "imgFront": "/images/flip/warehouse.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Executive Product",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer Service",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "RETAIL",
+              "imgFront": "/images/flip/retail.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Warehouse  Customer Executive",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Service Product Line",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Operations Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": " Inventory Executive",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Coordinators Back",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Office",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Operations ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Sourcing ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Purchasing",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Merchandising",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Retail Logistics",
+                  "icon": "feather-edit-2"
+                }]
+            },
+    
+                {
+                  "title": "ECOMMERCE",
+                  "imgFront": "/images/flip/ecomers.jpg",
+                  "img": "/images/flip/kindergarten-04-back.jpg",
+                  "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+                  "bgFour": true,
+                  "bgOne": false,
+                  "bgTwo": false,
+                  "bgThree": false,
+                  "list": [
+                    {
+                      "text": "Hub in Charge Team Leader",
+                      "icon": "feather-heart"
+                    },
+                    {
+                      "text": "Warehouse Manager",
+                      "icon": "feather-flag"
+                    }
+                   
+                  
+                
+              
+              
+              ]
+            }
+          ]
+        }
+      ],
       "aboutIndustry": [
         {
           "title": "About Industry",
@@ -13982,6 +15824,269 @@
         {
           "title": "About Industry",
           "description": "The interest in supply chain programs at many Colleges & Universities is growing, one positive by-product of the degree to which the subject of supply chains captured headlines during the past year. More students—and as important, their parents—now know what a supply chain is.Supply chain doesn’t have a history like accounting or finance. You don’t have parents telling their kids to go into supply chain. The pandemic has changed that and programs are noticing an uptick in interest.The value of strong supply chains has also become apparent to students in a range of disciplines. Since 2017, supply chain and operations a module in supply chain management in the health and medical devices sector. It attracts students from a range of disciplines within the Institutions, including business, medicine, public health, and science and engineering.The concepts of risk mitigation, resilience, and agility, while always important, are gaining prominence. Supply chain students will spend more time identifying, assessing, and responding to risk, supply chain talent strategies. While many in academia have been discussing the need for supply chain professionals to prepare for disruptive events, whether a natural disaster or pandemic, the benefits of doing so aren’t as easy to quantify as, for instance, cutting inventory costs. COVID-19 may change that.Supply chain resilience has also become an increasingly integral part of research and teaching. In teaching, this would be covered as a function of the level of redundancy and flexibility that can be built into the supply chain through choices made by policy and/or decision-makers.The pandemic also hammered home how uncertain the world is, and how future supply chain professionals need to hone their ability to solve problems even amidst uncertainty. It’s more ambiguous and tough on students. But it helps students learn to thrive in a changing environment."
+        }
+      ],
+      "serviceEleven": [
+        {
+          "sectionTitle": "Style Eleven.",
+          "body": [
+            {
+              "title": "AIRPORT",
+              "imgFront": "/images/flip/airport.jpg",
+              "img": "/images/flip/kindergarten-01-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgOne": true,
+              "bgTwo": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer ServiceCargo",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "EXPORT IMPORT",
+              "imgFront": "/images/flip/import-and-export.jpg",
+              "img": "/images/flip/kindergarten-02-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgTwo": true,
+              "bgOne": false,
+              "bgThree": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Documentation Executive Client",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Servicing Shipping Online",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-eye"
+                }
+                
+              ]
+            },
+            {
+              "title": "PRODUCTION",
+              "imgFront": "/images/flip/production.jpg",
+              "img": "/images/flip/kindergarten-03-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgThree": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgFour": false,
+              "list": [
+                {
+                  "text": "Purchase and Procurement Store",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Keeping Inventory Management",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Warehouse Executive",
+                  "icon": "feather-eye"
+                }
+              ]
+            },
+            {
+              "title": "SHIPPING",
+              "imgFront": "/images/flip/shipping.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Documentation",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Operations",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Service Marketing",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Consolidation",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Overseas",
+                  "icon": "feather-battery-charging"
+                },
+                {
+                  "text": "Executive Customs Clearance",
+                  "icon": "feather-battery-charging"
+                }
+              ]
+            },
+            {
+              "title": "ROAD TRANSPORT",
+              "imgFront": "/images/flip/road-transport.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Transport Executive Cargo",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": " Product Executive",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Custome Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Service Transport Executive",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "WAREHOUSE",
+              "imgFront": "/images/flip/warehouse.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Operations",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Executive Documentation",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": " Executive Product",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": "Executive Customer Service",
+                  "icon": "feather-edit-2"
+                }
+              
+              ]
+            },
+            {
+              "title": "RETAIL",
+              "imgFront": "/images/flip/retail.jpg",
+              "img": "/images/flip/kindergarten-04-back.jpg",
+              "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+              "bgFour": true,
+              "bgOne": false,
+              "bgTwo": false,
+              "bgThree": false,
+              "list": [
+                {
+                  "text": "Warehouse  Customer Executive",
+                  "icon": "feather-heart"
+                },
+                {
+                  "text": "Service Product Line",
+                  "icon": "feather-flag"
+                },
+                {
+                  "text": "Operations Executive",
+                  "icon": "feather-eye"
+                },
+                {
+                  "text": " Inventory Executive",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Executive Coordinators Back",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Office",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Operations ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Sourcing ",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Purchasing",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Merchandising",
+                  "icon": "feather-edit-2"
+                },
+                {
+                  "text": "Retail Logistics",
+                  "icon": "feather-edit-2"
+                }]
+            },
+    
+                {
+                  "title": "ECOMMERCE",
+                  "imgFront": "/images/flip/ecomers.jpg",
+                  "img": "/images/flip/kindergarten-04-back.jpg",
+                  "desc": "Babies enjoy classrooms made for exploring with teachers who support today’s big milestones.",
+                  "bgFour": true,
+                  "bgOne": false,
+                  "bgTwo": false,
+                  "bgThree": false,
+                  "list": [
+                    {
+                      "text": "Hub in Charge Team Leader",
+                      "icon": "feather-heart"
+                    },
+                    {
+                      "text": "Warehouse Manager",
+                      "icon": "feather-flag"
+                    }
+                   
+                  
+                
+              
+              
+              ]
+            }
+          ]
         }
       ],
       "courseOverview": [
