@@ -3,15 +3,17 @@ import React, { useState } from "react";
 const AboutIndustry = ({ checkMatchCourses }) => {
   const [toggle, setToggle] = useState(false);
   const { title, description } = checkMatchCourses[0];
-
+console.log("gettttttttttttttt", checkMatchCourses)
+const aboutTitle = checkMatchCourses[0]?.title;
+const aboutDescription = checkMatchCourses[0]?.description;
   return (
     <>
     
         <div className="rbt-course-feature-inner has-show-more-inner-content">
           <div className="section-title">
-            <h4 className="rbt-title-style-3">{title}</h4>
+            <h4 className="rbt-title-style-3">{aboutTitle}</h4>
           </div>
-          <p>{description}</p>
+          <p>{aboutDescription}</p>
 
           <div className="row g-5 mb--30">
             <div className="col-lg-6">

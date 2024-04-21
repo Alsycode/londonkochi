@@ -34,7 +34,8 @@ console.log("********",courselog)
     }
   };
   
-
+ const coureseimg = courselog?.data[0]?.attributes?.courseimage?.data?.attributes?.formats?.large?.url;
+console.log("coureseimg",coureseimg)
   return (
     <>
       <div
@@ -42,7 +43,7 @@ console.log("********",courselog)
           toggle ? "active-list-view" : ""
         }`}
       >
-        {course?.slice(0, 7)?.map((data, index) => (
+        {courselog?.data?.slice(0, 8)?.map((data, index) => (
           <div
             className="course-grid-4"
             data-sal-delay="150"
@@ -56,9 +57,9 @@ console.log("********",courselog)
               }`}
             >
               <div className="rbt-card-img">
-                <Link href={`/courses/${data?.slug}`}>
+                <Link href={`/logistics-and-scm-courses/${data?.slug}`}>
                   <Image
-                    src={data?.courseImg}
+                    src={data?.attributes?.courseimage?.data?.attributes?.formats?.thumbnail?.url}
                     width={235}
                     height={330}
                     alt="Card image"
@@ -71,8 +72,8 @@ console.log("********",courselog)
                     <Link href="#">Chennai</Link>
                   </div>
                 <h4 className="rbt-card-title">
-                  <Link href={`/courses/${data?.slug}`}>
-                    {data?.courseTitle}
+                  <Link href={`/logistics-and-scm-courses/${data?.attributes?.slug}`}>
+                    {data?.attributes?.tabDatas?.courseTitle}
                   </Link>
                 </h4>
                 {/* <span className="lesson-number">
@@ -81,13 +82,13 @@ console.log("********",courselog)
                     ({data.days} hours total)
                   </span>
                 </span> */}
-                <p className="rbt-card-text">
+                {/* <p className="rbt-card-text">
                   {truncateDescription(data?.courseOverview[0]?.desc)}
-                </p>
+                </p> */}
                 <div className="rbt-card-bottom">
                   <Link
                     className="transparent-button"
-                    href={`/courses/${data?.slug}`}
+                    href={`/logistics-and-scm-courses/${data?.slug}`}
                   >
                     Learn More
                     <i className="feather-arrow-right"></i>

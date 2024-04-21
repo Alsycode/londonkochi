@@ -22,18 +22,18 @@ const Main = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    // Function to play the video
-    const playVideo = () => {
-      const video = document.getElementById('myVideo');
-      if (video) {
-        video.play().catch(error => {
-          // Autoplay was prevented
-          console.error('Autoplay was prevented:', error);
-        });
-      }
-    };
+  // Function to play the video
+  const playVideo = () => {
+    const video = document.getElementById('myVideo');
+    if (video) {
+      video.play().catch(error => {
+        // Autoplay was prevented
+        console.error('Autoplay was prevented:', error);
+      });
+    }
+  };
 
+  useEffect(() => {
     // Attempt to play the video when the component mounts
     playVideo();
 

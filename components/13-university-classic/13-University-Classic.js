@@ -36,11 +36,11 @@ import ContactForm from "../Contacts/Contact-Form.js";
 import BrandOneHome from "../Brand/brandhome"
 import Typed from "typed.js";
 import CardFive from "../Cards/Card-Five.js";
-const UniversityClassic = ({videoData, testimonialData, update}) => {
+const UniversityClassic = ({videoData, testimonialData, update, detailData}) => {
   const [visibleIndex, setVisibleIndex] = useState(0);
    const [visibleIndex2, setVisibleIndex2] = useState(0);
 const dataset = testimonialData?.data;
- console.log("weeeeeee", update)
+ console.log("weeeeeee", detailData)
  
   // useEffect(() => {
   //   const typeitInstance = new Typed(".is-visible", {
@@ -194,15 +194,17 @@ console.log("dffdf",videoDataa)
             </div>
           </div>
           <div className="row g-5">
-          {courseDetails?.courseTab?.slice(0, 3).map((item, index) => {
+          {detailData?.data?.slice(0, 3).map((item, index) => {
   console.log(item); // Logging the current item
+
+
   return (
     <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={index}>
       <div className="rbt-category-gallery">
         <div className="thumbnail">
           <Link href={`/courses/${item.id}`}>
           <Image
-                    src={item.courseImg}
+                    src={item?.attributes?.courseimage?.data?.attributes?.formats?.small?.url}
                     width={498}
                     height={498}
                     alt="Card image"
@@ -211,7 +213,7 @@ console.log("dffdf",videoDataa)
           </Link>
           <div className="hover-content">
             <h3 className="title">
-            <Link href={`/course-details-2/${item.id}`}>{item.courseTitle}</Link>
+            <Link href={`/course-details-2/${item.id}`}>{item.attributes?.Coursename}</Link>
             </h3>
           </div>
         </div>
@@ -587,14 +589,12 @@ console.log("dffdf",videoDataa)
                       Learning communicate to global world and build a bright
                       future with our histudy.
                     </p> */}
-                    <div className="veiw-more-btn mt--20">
-                      <Link
-                        className="rbt-btn btn-gradient rbt-marquee-btn marquee-text-y"
-                        href="#"
-                      >
-                        <span data-text="Explore">Explore</span>
-                      </Link>
-                    </div>
+                        <div className="rbt-button-group">
+                <Link className="rbt-moderbt-btn" href="#">
+                  <span className="moderbt-btn-text">Explore</span>
+                  <i className="feather-arrow-right"></i>
+                </Link>
+              </div>
                   </div>
                 </div>
                 <TestimonialSix dataset={dataset} />

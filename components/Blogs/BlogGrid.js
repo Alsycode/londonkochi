@@ -45,7 +45,7 @@ console.log("blogData",updateData)
             <div className="col-lg-4 col-md-6 col-sm-12 col-12" key={index}>
               <div className="rbt-card variation-02 rbt-hover" >
                 <div className="rbt-card-img">
-                  <Link href={`/blog-details/${data.id}`}>
+                  <Link href={`/updates/${data.id}`}>
                     <Image
                       src={data?.attributes?.Bannerimg1?.data?.attributes?.formats?.small?.url}
                       width={450}
@@ -57,13 +57,13 @@ console.log("blogData",updateData)
                 </div>
                 <div className="rbt-card-body">
                   <h5 className="rbt-card-title">
-                    <Link href={`/blog-details/${data.id}`}>{data?.attributes?.heading}</Link>
+                    <Link href={`/updates/${data.id}`}>{data?.attributes?.heading}</Link>
                   </h5>
                   <p className="rbt-card-text">{data?.desc}</p>
                   <div className="rbt-card-bottom">
                     <Link
                       className="transparent-button"
-                      href={`/blog-details/${data.id}`}
+                      href={`/updates/${data.id}`}
                     >
                       Learn More
                       <i>

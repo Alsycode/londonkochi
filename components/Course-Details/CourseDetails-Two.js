@@ -27,11 +27,11 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
       });
     });
   }, []);
-const cerificate = checkMatchCourses?.courseRequirement;
+ const cerificate = checkMatchCourses?.courseRequirement;
 
-  const detailname = courseData?.attributes?.Coursename;
- const jsontitle = checkMatchCourses?.courseTitle;
- let matchedCourse = null;
+   const detailname = courseData?.attributes?.Coursename;
+  const jsontitle = checkMatchCourses?.courseTitle;
+  let matchedCourse = null;
  courseData?.data?.forEach((item) => {
  
   if (item?.attributes?.Coursename === jsontitle) {
@@ -41,9 +41,20 @@ const cerificate = checkMatchCourses?.courseRequirement;
     return;
   }
 });
-console.log("matchedCourse111111",matchedCourse)
+
+//  console.log("jsontitle",jsontitle)
+// console.log("detailname",detailname)
+  const deliveryandBenifits = courseData?.attributes?.tabDatas?.DeliveryAndBenefit;
+
+  const aboutIndustry = courseData?.attributes?.tabDatas?.aboutIndustry;
+// const AcclaimedAffiliations = courseData?.attributes?.tabDatas?.Acclaimed Affiliations;
+ const overview = courseData?.attributes?.tabDatas;
+  const requirement = courseData?.attributes?.tabDatas?.courseRequirement;
+  const tagData = courseData?.attributes?.tags;
+// const certificates = 
+ console.log("requirement",tagData)
  console.log("jsontitle",jsontitle)
-console.log("detailname",detailname)
+ console.log("detailname",detailname)
   return (
     <>
       <div className="col-lg-8">
@@ -88,17 +99,17 @@ console.log("detailname",detailname)
 
             {/* Commented-out section */}
             
-             {checkMatchCourses &&
-              checkMatchCourses?.courseOverview?.map((data, index) => (
-                <Overview {...data} key={index} checkMatchCourses={data} />
-              ))}
-            
+             {/* {checkMatchCourses &&
+              checkMatchCourses?.courseOverview?.map((data, index) => ( */}
+                <Overview  overview={overview}  />
+              {/* ))}
+             */}
             <div
               className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
               id="Delivery & Benefit" // Corrected typo
             >
               
-                  <DeliveryandBenifits   checkMatchCourses={checkMatchCourses.DeliveryAndBenefit} />
+                  <DeliveryandBenifits   checkMatchCourses={deliveryandBenifits} />
 
             </div>
 
@@ -107,21 +118,22 @@ console.log("detailname",detailname)
               id="About Industry" // Corrected typo
             >
               
-              {checkMatchCourses &&
+          {checkMatchCourses &&
              
-             <AboutIndustry checkMatchCourses={checkMatchCourses?.aboutIndustry} />
+             <AboutIndustry checkMatchCourses={aboutIndustry} />
            }
 
             </div>
 
             <div className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30" id="Certificates & Affiliates">
   <div className="row">
-    {checkMatchCourses &&
-      checkMatchCourses?.courseRequirement?.map((data, index) => (
-        <div className="col-lg-6 col-md-12" key={index}>
-          <Requirements {...data}  key={index} checkMatchCourses={data} />
+    {requirement &&
+      // checkMatchCourses?.courseRequirement?.map((data, index) => (
+        <div className="col-lg-6 col-md-12" >
+          <Requirements  checkMatchCourses={requirement} />
         </div>
-      ))}
+      // ))
+    }
   </div>
 </div>
             
@@ -159,6 +171,7 @@ console.log("detailname",detailname)
              <Gallery/>
 
             </div>
+            
             <div
               className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
               id="Job role"
@@ -168,9 +181,9 @@ console.log("detailname",detailname)
 
             </div>
             <div className="tagcloud" style={{ marginTop: "30px" }}>
-      {tags.map((tag, index) => (
+      {tagData?.map((tag, index) => (
         <Link key={index} href="/relatedCourse/[tag]" as={`/relatedCourse/${encodeURIComponent(tag)}`}>
-          #{tag}
+          #{tag?.tagtext}
         </Link>
       ))}
     </div>

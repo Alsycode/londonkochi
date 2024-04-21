@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 
-const Overview = ({ checkMatchCourses }) => {
+const Overview = ({ overview }) => {
   const [toggle, setToggle] = useState(false);
-  const { title, desc, overviewList } = checkMatchCourses;
+  
+  const courseOverviewww = overview?.courseOverview[0];
+   const descrip = courseOverviewww?.desc;
+   const title = courseOverviewww?.title;
+  console.log("check111111111111111", descrip)
+  // const { title, desc, overviewList } = checkMatchCourses;
   // const { title, desc, descTwo, overviewList } = checkMatchCourses;
   return (
     <>
@@ -12,23 +17,23 @@ const Overview = ({ checkMatchCourses }) => {
         }`}
         id="overview"
       >
-        <div className="rbt-course-feature-inner has-show-more-inner-content">
+         <div className="rbt-course-feature-inner has-show-more-inner-content">
           <div className="section-title">
             <h4 className="rbt-title-style-3">{title}</h4>
           </div>
-          <p>{desc}</p>
+          <p>{descrip}</p>
 
-          <div className="row g-5 mb--30">
-            <div className="col-lg-6">
-              {/* <ul className="rbt-list-style-1">
+           <div className="row g-5 mb--30">
+            {/* <div className="col-lg-6">
+              <ul className="rbt-list-style-1">
                 {overviewList.slice(0, 4).map((item, innerIndex) => (
                   <li key={innerIndex}>
                     <i className="feather-check"></i>
                     {item.listItem}
                   </li>
                 ))}
-              </ul> */}
-            </div>
+              </ul>
+            </div>  */}
 
             <div className="col-lg-6">
               {/* <ul className="rbt-list-style-1">
@@ -49,7 +54,7 @@ const Overview = ({ checkMatchCourses }) => {
           onClick={() => setToggle(!toggle)}
         >
           Show More
-        </div>
+        </div> 
       </div>
     </>
   );

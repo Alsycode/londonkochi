@@ -72,6 +72,7 @@ console.log("get",getAllCourse)
               <CourseCardTwo course={getSelectedCourse} />
               {getAllCourse?.length > 10 ? ( // Updated for 10 courses per page
                 <div className="row">
+                  
                   <div className="col-lg-12 mt--60">
                     <Pagination
                       totalPages={totalPages}

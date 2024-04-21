@@ -11,7 +11,7 @@ import UniversityClassic from "@/components/13-university-classic/13-University-
 import HeaderStyleFour from "@/components/Header/HeaderStyle-Four";
 import Separator from "@/components/Common/Separator";
 
-const UniversityPage = ({videoData, testimonialData, update }) => {
+const UniversityPage = ({videoData, testimonialData, update, detailData }) => {
   const data = update;
  console.log("00000000000000000000000000000000000000", testimonialData)
   return (
@@ -21,7 +21,7 @@ const UniversityPage = ({videoData, testimonialData, update }) => {
         <Context>
           <MobileMenu />
           <HeaderStyleFour headerType="" />
-          <UniversityClassic videoData={videoData} testimonialData={testimonialData} update={update}/>
+          <UniversityClassic videoData={videoData} detailData={detailData} testimonialData={testimonialData} update={update}/>
           <Cart />
 
           <BackToTop />
