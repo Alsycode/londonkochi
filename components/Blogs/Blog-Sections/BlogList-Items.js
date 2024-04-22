@@ -6,13 +6,13 @@ const BlogListItems = ({ start, end, selectedBlogs ,updateData}) => {
   return (
     <>
       {updateData &&
-        updateData?.data?.slice(start, end).map((item, index) => (
+        updateData?.slice(start, end).map((item, index) => (
           <div
             className="rbt-card card-list variation-02 rbt-hover mt--30"
             key={index}
           >
             <div className="rbt-card-img">
-              <Link href={`/blog-details/${item.id}`}>
+              <Link href={`/updates/${item.id}`}>
                 <Image
                   src={item?.attributes?.Bannerimg1?.data?.attributes?.formats?.small?.url}
                   width={580}
@@ -24,7 +24,7 @@ const BlogListItems = ({ start, end, selectedBlogs ,updateData}) => {
             </div>
             <div className="rbt-card-body">
               <h5 className="rbt-card-title">
-                 <Link href={`/blog-details/${item.id}`}>{item?.attributes?.heading}</Link>
+                 <Link href={`/updates/${item.id}`}>{item?.attributes?.heading}</Link>
               </h5>
               {/* <div className="rbt-card-bottom">
                 <Link className="transparent-button" href={`/blog-details/${item.id}`}>

@@ -3,7 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/updates/[blogid]": "pages/updates/[blogid].js",
-  "/updates": "pages/updates.js",
-  "/": "pages/index.js",
-  "/404": "pages/404.js"
+  "/blog-details/[blogId]": "pages/blog-details/[blogId].js",
+  "/updates": "pages/updates.js"
 }

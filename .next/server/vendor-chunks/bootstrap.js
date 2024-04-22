@@ -10,16 +10,6 @@ exports.id = "vendor-chunks/bootstrap";
 exports.ids = ["vendor-chunks/bootstrap"];
 exports.modules = {
 
-/***/ "./node_modules/bootstrap/dist/css/bootstrap.css":
-/*!*******************************************************!*\
-  !*** ./node_modules/bootstrap/dist/css/bootstrap.css ***!
-  \*******************************************************/
-/***/ (() => {
-
-
-
-/***/ }),
-
 /***/ "./node_modules/bootstrap/scss/bootstrap.scss":
 /*!****************************************************!*\
   !*** ./node_modules/bootstrap/scss/bootstrap.scss ***!

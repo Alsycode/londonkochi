@@ -38,6 +38,7 @@ console.log("matchedupdate",matchedBlog)
     }
   }, [matchedBlog, router]);
 
+const filteredData = updateData?.data?.filter(item => item.id !== postId);
   return (
     <>
       {/* <PageHead title="Blog Details - Online Courses & Education NEXTJS14 Template" /> */}
@@ -65,7 +66,7 @@ console.log("matchedupdate",matchedBlog)
                   </div>
                    <BlogListItems
                     selectedBlogs={BlogData.blogList}
-                    updateData={updateData}
+                    updateData={filteredData}
                     start={1}
                     end={4}
                   /> 
