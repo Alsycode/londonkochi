@@ -2,9 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
+  "/updates/[blogid]": "pages/updates/[blogid].js",
   "/updates": "pages/updates.js",
-  "/blog-details/[blogId]": "pages/blog-details/[blogId].js",
-  "/404": "pages/404.js",
-  "/blog-list": "pages/blog-list.js"
+  "/": "pages/index.js",
+  "/404": "pages/404.js"
 }

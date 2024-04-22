@@ -25,7 +25,7 @@ const BlogGridTop = ({ updateData, selectedGridBlogs , BlogData}) => {
                 key={index}
               >
                 <div className="rbt-card-img">
-                  <Link href={`/blog-details/${data.id}`}>
+                  <Link href={`/updates/${data.id}`}>
                     <Image
                       src={data?.attributes?.Bannerimg1?.data?.attributes?.formats?.small?.url}
                       width={580}
@@ -37,13 +37,13 @@ const BlogGridTop = ({ updateData, selectedGridBlogs , BlogData}) => {
                 </div>
                 <div className="rbt-card-body">
                   <h3 className="rbt-card-title">
-                    <Link href={`/blog-details/${data.id}`}>{data?.attributes?.title}</Link>
+                    <Link href={`/updates/${data.id}`}>{data?.attributes?.title}</Link>
                   </h3>
                   {/* <p className="rbt-card-text">{data.desc}</p> */}
                   <div className="rbt-card-bottom">
                     <Link
                       className="transparent-button"
-                      href={`/blog-details/${data.id}`}
+                      href={`/updates/${data.id}`}
                     >
                       Learn More
                       <i>
@@ -82,7 +82,7 @@ const BlogGridTop = ({ updateData, selectedGridBlogs , BlogData}) => {
                 key={index}
               >
                 <div className="rbt-card-img">
-                  <Link href={`/blog-details/${data.id}`}>
+                  <Link href={`/updates/${data.id}`}>
                     <Image
                       src={data?.attributes?.Bannerimg1?.data?.attributes?.formats?.small?.url}
                       width={580}
@@ -94,12 +94,12 @@ const BlogGridTop = ({ updateData, selectedGridBlogs , BlogData}) => {
                 </div>
                 <div className="rbt-card-body">
                   <h5 className="rbt-card-title">
-                    <Link href={`/blog-details/${data.id}`}>{data?.attributes?.title}</Link>
+                    <Link href={`/updates/${data.id}`}>{data?.attributes?.title}</Link>
                   </h5>
                   <div className="rbt-card-bottom">
                     <Link
                       className="transparent-button"
-                      href={`/blog-details/${data.id}`}
+                      href={`/updates/${data.id}`}
                     >
                       Read Article
                       <i>

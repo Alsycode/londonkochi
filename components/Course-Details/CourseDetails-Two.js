@@ -171,7 +171,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
              <Gallery/>
 
             </div>
-            
+
             <div
               className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
               id="Job role"
@@ -192,7 +192,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
              <div className="col-lg-4">
         <div className="course-sidebar sticky-top rbt-shadow-box course-sidebar-top rbt-gradient-border">
           <div className="inner">
-            <Viedo checkMatchCourses={checkMatchCourses && checkMatchCourses} matchedCourse={matchedCourse} />
+            <Viedo checkMatchCourses={courseData} matchedCourse={matchedCourse} />
           </div>
         </div>
       </div>

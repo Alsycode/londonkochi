@@ -11,7 +11,7 @@ import VideoImg from "../../../public/images/course/course1.jpg";
 // import VideoImg from "../../public/images/course/course1.jpg";
 const Viedo = ({ checkMatchCourses, matchedCourse }) => {
 
-  console.log("*************************",matchedCourse)
+  console.log("*************************",checkMatchCourses)
   const { cartToggle, setCart } = useAppContext();
   const [toggle, setToggle] = useState(false);
   const [hideOnScroll, setHideOnScroll] = useState(false);
@@ -153,25 +153,25 @@ const Viedo = ({ checkMatchCourses, matchedCourse }) => {
                <li >
                   <span>Start Date:</span>
                   <span className="rbt-feature-value rbt-badge-5">
-                    {matchedCourse?.attributes?.Startdate}
+                    {checkMatchCourses?.attributes?.Startdate}
                   </span>
                 </li>
                 <li >
                   <span>Skill Reqd:</span>
                   <span className="rbt-feature-value rbt-badge-5">
-                    {matchedCourse?.attributes?.Skill_Level_Required_for_enrollment}
+                    {checkMatchCourses?.attributes?.Skill_Level_Required_for_enrollment}
                   </span>
                 </li>
                 <li >
                   <span>Batch Size:</span>
                   <span className="rbt-feature-value rbt-badge-5">
-                    {matchedCourse?.attributes?.Batch_size}
+                    {checkMatchCourses?.attributes?.Batch_size}
                   </span>
                 </li>
                 <li >
                   <span>Cerifications</span>
                   <span className="rbt-feature-value rbt-badge-5">
-                    {matchedCourse?.attributes?.Certifications}
+                    {checkMatchCourses?.attributes?.Certifications}
                   </span>
                 </li>
           </ul>

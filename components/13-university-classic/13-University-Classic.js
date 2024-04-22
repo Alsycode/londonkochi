@@ -613,7 +613,7 @@ console.log("dffdf",videoDataa)
               <div className="row row--15 align-items-center mb--30">
                 <div className="col-lg-12">
                   <div className="section-title">
-                    <h2 className="title">Updates</h2>
+                    <h2 className="title">UPDATES</h2>
                   </div>
                 </div>
               </div>
