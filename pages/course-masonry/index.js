@@ -39,7 +39,7 @@ const CourseMasonryLayout = () => {
 
       <Provider store={Store}>
         <Context>
-          <HeaderStyleTen headerSticky="rbt-sticky" headerType={true} />
+          {/* <HeaderStyleTen headerSticky="rbt-sticky" headerType={true} />
           <MobileMenu />
           <Cart />
 
@@ -59,7 +59,7 @@ const CourseMasonryLayout = () => {
 
           <Separator />
           <BackToTop />
-          <FooterOne />
+          <FooterOne /> */}
         </Context>
       </Provider>
     </>

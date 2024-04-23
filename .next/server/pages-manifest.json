@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/updates/[blogid]": "pages/updates/[blogid].js",
-  "/blog-details/[blogId]": "pages/blog-details/[blogId].js",
-  "/updates": "pages/updates.js"
+  "/": "pages/index.js",
+  "/404": "pages/404.js",
+  "/logistics-and-scm-courses": "pages/logistics-and-scm-courses.js"
 }

@@ -24,25 +24,31 @@ const CourseCardFourLayout = () => {
   const tagname = router.query.tag;
   console.log("tagname",tagname)
 
+  
+  if (tagname) {
+    // Your code that uses tagname
+  } else {
+    console.error('Tagname is undefined or null');
+  }
   let getAllCourse = JSON.parse(JSON.stringify(CourseDetails.courseTab));
   console.log("relatedCourses77777777777777",getAllCourse)
   const matchingRelatedCourses = [];
 
   getAllCourse.forEach(course => {
-    if (course?.courseTitle?.toLowerCase().includes(tagname.toLowerCase()) || course?.sortDescription?.toLowerCase().includes(tagname.toLowerCase())) {
-        matchingRelatedCourses.push(course);
+    if (course?.courseTitle?.toLowerCase().includes(tagname?.toLowerCase()) || course?.sortDescription?.toLowerCase().includes(tagname?.toLowerCase())) {
+      matchingRelatedCourses.push(course);
     } else if (course?.serviceEleven) {
-        course.serviceEleven.forEach(item => {
-            if (item.body) {
-                item.body.forEach(subItem => {
-                    if (subItem.title && subItem.title.toLowerCase().includes(tagname.toLowerCase())) {
-                        matchingRelatedCourses.push(course);
-                    }
-                });
+      course?.serviceEleven?.forEach(item => {
+        if (item?.body) {
+          item?.body?.forEach(subItem => {
+            if (subItem?.title && subItem?.title?.toLowerCase().includes(tagname?.toLowerCase())) {
+              matchingRelatedCourses.push(course);
             }
-        });
+          });
+        }
+      });
     }
-});
+  });
 console.log("matchingRelatedCourses",matchingRelatedCourses)
   const startIndex = (page - 1) * 10;
   const getSelectedCourse = courses?.slice(startIndex, startIndex + 10);
@@ -72,7 +78,7 @@ console.log("get",getAllCourse)
               <CourseCardTwo course={getSelectedCourse} />
               {getAllCourse?.length > 10 ? ( // Updated for 10 courses per page
                 <div className="row">
-                  
+
                   <div className="col-lg-12 mt--60">
                     <Pagination
                       totalPages={totalPages}
