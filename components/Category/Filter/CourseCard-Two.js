@@ -8,7 +8,7 @@ import { useAppContext } from "@/context/Context";
 const CourseCardTwo = ({ course }) => {
   const { toggle } = useAppContext();
 const courselog = course;
-console.log("********",courselog)
+console.log("********courselogcourselog",courselog)
   useEffect(() => {
     sal({
       threshold: 0.01,
@@ -34,8 +34,7 @@ console.log("********",courselog)
     }
   };
   
- const coureseimg = courselog?.data[0]?.attributes?.courseimage?.data?.attributes?.formats?.large?.url;
-console.log("coureseimg",coureseimg)
+
   return (
     <>
       <div
