@@ -182,7 +182,11 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
             </div>
             <div className="tagcloud" style={{ marginTop: "30px" }}>
       {tagData?.map((tag, index) => (
-        <Link key={index} href="/relatedCourse/[tag]" as={`/relatedCourse/${encodeURIComponent(tag)}`}>
+         <Link
+         key={index}
+         href="/relatedCourse/[tag]"
+         as={`/relatedCourse/${encodeURIComponent(tag?.tagtext.replace(/\s+/g, '-'))}`}
+       >
           #{tag?.tagtext}
         </Link>
       ))}

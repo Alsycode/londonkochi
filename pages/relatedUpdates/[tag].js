@@ -36,7 +36,7 @@ const BlogGridMinimalLayout = ({updatesData}) => {
       return blockquoteText.includes(tagNameLower) || heading.includes(tagNameLower);
     })
   };
-
+console.log("1111111111111111111111",updateData)
   return (
     <>
       <PageHead title="Blog Grid - Online Courses & Education NEXTJS14 Template" />
@@ -46,14 +46,14 @@ const BlogGridMinimalLayout = ({updatesData}) => {
           <HeaderStyleTen headerSticky="rbt-sticky" headerType="" />
           <Cart />
 
-          <Banner col="col-lg-12" text="All Blog" getBlog={getBlog} />
+          <Banner col="col-lg-12" text="Updates" getBlog={getBlog} />
           <div className="rbt-blog-area rbt-section-overlayping-top rbt-section-gapBottom">
             <div className="container">
               <BlogGridMinimal
                 isPagination={true}
                 top={true}
                 start={0}
-                end={9}
+                end={updateData?.data?.length}
                 updateData={updateData}
                  />
             </div>
@@ -71,7 +71,7 @@ const BlogGridMinimalLayout = ({updatesData}) => {
 export default BlogGridMinimalLayout;
 export async function getServerSideProps() {
   try {
-    const res = await fetch("http://139.59.78.49:1337/api/london-collegeupdates?populate=*", {
+    const res = await fetch("https://godigitalhub.org/api/london-collegeupdates?populate=*", {
       headers: {
         Authorization: "Bearer 3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c"
       }

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-import TeamHead from "./TeamHead";
+  import TeamHead from "./TeamHead";
 
 import TeamData from "../../data/elements/team.json";
 import Link from "next/link";

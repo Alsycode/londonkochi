@@ -88,13 +88,11 @@ console.log("matchingItem**************", matchingItem)
             checkMatchCourses={checkMatch !== undefined ? checkMatch : ""}
           /> */}
 
-          <div className="rbt-related-course-area bg-color-white pt--60 rbt-section-gapBottom">
+          {/* <div className="rbt-related-course-area bg-color-white pt--60 rbt-section-gapBottom">
             <SimilarCourses
-              checkMatchCourses={
-                getCourse !== undefined ? getCourse : ""
-            }
+              checkMatchCourses={courseData}
             />
-          </div>
+          </div> */}
           <div className="row row--15">
                {update && <CardFive update={update} />} 
               </div>
@@ -113,7 +111,7 @@ export async function getServerSideProps() {
   const token = "3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c";
   
   // Fetching the first URL
-  const res = await fetch("http://139.59.78.49:1337/api/coursedetails?populate=*", {
+  const res = await fetch("https://godigitalhub.org/api/coursedetails?populate=*", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -121,7 +119,7 @@ export async function getServerSideProps() {
   const courseData = await res.json();
   
   // Fetching the second URL
-  const res2 = await fetch("http://139.59.78.49:1337/api/london-collegeupdates?populate=*", {
+  const res2 = await fetch("https://godigitalhub.org/api/london-collegeupdates?populate=*", {
     headers: {
       Authorization: `Bearer ${token}`,
     },

@@ -179,16 +179,16 @@ console.log("dffdf",videoDataa)
           <div className="row g-5 align-items-end mb--60">
             <div className="col-lg-6 col-md-12 col-12">
               <div className="section-title text-start">
-              <span className="subtitle bg-primary-opacity">
-                    Our Program
-                  </span>
+              <span className="text-uppercase text-black">
+           <h2> Our Program</h2>
+          </span>
 
               </div>
             </div>
             <div className="col-lg-6 col-md-12 col-12">
               <div className="load-more-btn text-start text-lg-end">
-                <Link className="rbt-btn-link" href="/course-card-2">
-                  Browse Histudy Program<i className="feather-arrow-right"></i>
+                <Link className="rbt-btn-link" href="/logistics-and-scm-courses">
+                  Explore our courses<i className="feather-arrow-right"></i>
                 </Link>
               </div>
             </div>
@@ -202,9 +202,9 @@ console.log("dffdf",videoDataa)
     <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={index}>
       <div className="rbt-category-gallery">
         <div className="thumbnail">
-          <Link href={`/courses/${item.id}`}>
+          <Link href={`/logistics-and-scm-courses/${item?.attributes?.slug}`}>
           <Image
-                    src={item?.attributes?.courseimage?.data?.attributes?.formats?.small?.url}
+                    src={item?.attributes?.courseimage?.data?.attributes?.formats?.thumbnail?.url}
                     width={498}
                     height={498}
                     alt="Card image"
@@ -213,7 +213,7 @@ console.log("dffdf",videoDataa)
           </Link>
           <div className="hover-content">
             <h3 className="title">
-            <Link href={`/course-details-2/${item.id}`}>{item.attributes?.Coursename}</Link>
+            <Link href={`/logistics-and-scm-courses/${item?.attributes?.slug}`}>{item.attributes?.Coursename}</Link>
             </h3>
           </div>
         </div>
@@ -608,21 +608,21 @@ console.log("dffdf",videoDataa)
           </div>
         </div>
       </div> */}
-    <div className="rbt-rbt-card-area rbt-section-gap bg-color-white">
-            <div className="container">
-              <div className="row row--15 align-items-center mb--30">
-                <div className="col-lg-12">
-                  <div className="section-title">
-                    <h2 className="title">UPDATES</h2>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="row row--15">
-               {update && <CardFive update={update} />} 
-              </div>
-            </div>
-          </div>
+<div className="rbt-rbt-card-area rbt-section-gap bg-color-white">
+  <div className="container">
+    <div className="row row--15 align-items-center mb--30">
+      <div className="col-lg-12 text-center"> {/* Center the text */}
+        <div className="section-title">
+          <h2 className="title">UPDATES</h2>
+        </div>
+      </div>
+    </div>
+
+    <div className="row row--15">
+      {update && <CardFive update={update} />} 
+    </div>
+  </div>
+</div>
      
       <div
         className="rbt-program-area rbt-section-gapTop bg-color-white"

@@ -56,7 +56,7 @@ console.log("********courselogcourselog",courselog)
               }`}
             >
               <div className="rbt-card-img">
-                <Link href={`/logistics-and-scm-courses/${data?.slug}`}>
+                <Link href={`/logistics-and-scm-courses/${data?.attributes?.slug}`}>
                   <Image
                     src={data?.attributes?.courseimage?.data?.attributes?.formats?.thumbnail?.url}
                     width={235}
@@ -87,7 +87,7 @@ console.log("********courselogcourselog",courselog)
                 <div className="rbt-card-bottom">
                   <Link
                     className="transparent-button"
-                    href={`/logistics-and-scm-courses/${data?.slug}`}
+                    href={`/logistics-and-scm-courses/${data?.attributes?.slug}`}
                   >
                     Learn More
                     <i className="feather-arrow-right"></i>
@@ -103,3 +103,4 @@ console.log("********courselogcourselog",courselog)
 };
 
 export default CourseCardTwo;
+    

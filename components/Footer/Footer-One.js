@@ -12,7 +12,30 @@ import SectionHead from "../../components/Button/ButtonProps/SectionHead"; // Im
 
 const FooterOne = ({ bgColor }) => {
   const [email, setEmail] = useState(""); // State to store the email input value
+  const [state, setState] = useState(0);
+  const [errorMsg, setErrorMsg] = useState("");
+  const subscribe = async (e) => {
+    e.preventDefault();
 
+    setState(1);
+    seterrorMsg("");
+    console.log(e.target[0].value);
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        body: e.target[0].value,
+      });
+
+      const data = await res.json();
+      if (data.error !== null) {
+        throw data.error;
+      }
+      setState(2);
+    } catch (e) {
+      seterrorMsg(e);
+      setState(3);
+    }
+  };
   const handleEmailChange = (e) => {
     setEmail(e.target.value); // Update the email state when input value changes
   };
@@ -54,7 +77,7 @@ const FooterOne = ({ bgColor }) => {
                         ))}
                       </ul>
 
-                      <div className="contact-btn mt--30">
+                      {/* <div className="contact-btn mt--30">
                         <Link
                           className="rbt-btn hover-icon-reverse btn-border-gradient radius-round"
                           href="#"
@@ -69,7 +92,7 @@ const FooterOne = ({ bgColor }) => {
                             </span>
                           </div>
                         </Link>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
 
@@ -115,7 +138,7 @@ const FooterOne = ({ bgColor }) => {
                 <div className="rbt-button-group">
                   <Link className="rbt-moderbt-btn" href="#"
                           >
-                             <span className="moderbt-btn-text">Submit Button</span>
+                             <span className="moderbt-btn-text">Subscribe</span>
                             <i className="feather-arrow-right"></i>
                   </Link>
                 </div>

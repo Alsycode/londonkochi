@@ -8,7 +8,7 @@ const SectionHead = ({ tag, title, desc }) => {
           ) : (
             <span className="subtitle bg-secondary-opacity">{tag}</span>
           )}
-          <h2 className="title">{title}</h2>
+          <h1 className="title">{title}</h1>
           {desc === "" ? "" : <p className="description mt--30">{desc}</p>}
         </div>
       </div>

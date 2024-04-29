@@ -47,8 +47,8 @@ const VideoCarousel = ({ videoData }) => {
           marginBottom: "30px",
         }}
       >
-       <span className="subtitle bg-primary-opacity">
-                  <h1> Placement Stories </h1> 
+       <span className="subtitle">
+                  <h1> PLACEMENT STORIES </h1> 
                   </span>
       </div>
       <div style={{ position: "relative", overflow: "hidden" }}>

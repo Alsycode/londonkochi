@@ -25,7 +25,7 @@ export async function getServerSideProps(context) {
   try {
     // Fetch video data
     const videoRes = await fetch(
-      "http://139.59.78.49:1337/api/london-college-videos?populate=*",
+      "https://godigitalhub.org/api/london-college-videos?populate=*",
       {
         headers: {
           Authorization:
@@ -37,7 +37,7 @@ export async function getServerSideProps(context) {
 
     // Fetch testimonials data
     const testimonialRes = await fetch(
-      "http://139.59.78.49:1337/api/london-college-testimonials?populate=*",
+      "https://godigitalhub.org/api/london-college-testimonials?populate=*",
       {
         headers: {
           Authorization:
@@ -49,7 +49,7 @@ export async function getServerSideProps(context) {
 
     // Fetch updates data
     const updateRes = await fetch(
-      "http://139.59.78.49:1337/api/london-collegeupdates?populate=*",
+      "https://godigitalhub.org/api/london-collegeupdates?populate=*",
       {
         headers: {
           Authorization:
@@ -61,7 +61,7 @@ export async function getServerSideProps(context) {
 
     // Fetch course details data
     const courseDetailsRes = await fetch(
-      "http://139.59.78.49:1337/api/coursedetails?populate=*",
+      "https://godigitalhub.org/api/coursedetails?populate=*",
       {
         headers: {
           Authorization:

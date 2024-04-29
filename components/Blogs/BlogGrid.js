@@ -13,7 +13,7 @@ const BlogGrid = ({ isPagination, top, start, end, updateData }) => {
   const [totalPages, setTotalPages] = useState(0);
 console.log("blogData",updateData)
   const startIndex = (page - 1) * 10;
-  const selectedGridBlogs = blogs.slice(startIndex, startIndex + 10);
+  const selectedGridBlogs = updateData?.data?.slice(startIndex, startIndex + 10);
 
   const handleClick = (num) => {
     setPage(num);
@@ -24,9 +24,11 @@ console.log("blogData",updateData)
   };
 
   useEffect(() => {
-    setBlogs(BlogData.blogGrid);
-    setTotalPages(Math.ceil(BlogData.blogGrid.length / 10));
+    setBlogs(updateData?.data);
+    setTotalPages(Math.ceil(updateData?.data?.length / 10));
   }, [setTotalPages, setBlogs]);
+  console.log("))))))))))))))))",totalPages)
+  
   return (
     <>
       {top ? (
@@ -40,8 +42,8 @@ console.log("blogData",updateData)
       )}
 
       <div className="row g-5 mt--15">
-        {updateData &&
-          updateData?.data?.slice(start, end).map((data, index) => (
+        {selectedGridBlogs &&
+          selectedGridBlogs?.slice(start, end).map((data, index) => (
             <div className="col-lg-4 col-md-6 col-sm-12 col-12" key={index}>
               <div className="rbt-card variation-02 rbt-hover" >
                 <div className="rbt-card-img">

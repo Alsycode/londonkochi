@@ -23,7 +23,7 @@ const CourseCardFourLayout = ({courseData}) => {
   let getAllCourse = JSON.parse(JSON.stringify(CourseDetails.courseTab));
 
   const startIndex = (page - 1) * 10;
-  const getSelectedCourse = courses.slice(startIndex, startIndex + 10);
+  const getSelectedCourse = courseData?.data?.slice(startIndex, startIndex + 10);
 
   const handleClick = (num) => {
     setPage(num);
@@ -34,8 +34,8 @@ const CourseCardFourLayout = ({courseData}) => {
   };
 
   useEffect(() => {
-    setCourse(getAllCourse);
-    setTotalPages(Math.ceil(getAllCourse.length / 10)); // Updated for 10 courses per page
+    setCourse(courseData?.data);
+    setTotalPages(Math.ceil(courseData?.data?.length / 10)); // Updated for 10 courses per page
   }, [setTotalPages, setCourse]);
 console.log("get",getAllCourse)
 console.log("^&&&&&&&^^^^^^^^^^^^^&&&&&&&&&",courseData)
@@ -49,7 +49,7 @@ console.log("^&&&&&&&^^^^^^^^^^^^^&&&&&&&&&",courseData)
           <div className="rbt-section-overlayping-top rbt-section-gapBottom">
             <div className="container">
               <CourseCardTwo course={courseData} />
-              {getAllCourse?.length > 10 ? ( // Updated for 10 courses per page
+              {getAllCourse?.length > 3 ? ( // Updated for 10 courses per page
                 <div className="row">
                   <div className="col-lg-12 mt--60">
                     <Pagination

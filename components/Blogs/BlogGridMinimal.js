@@ -10,7 +10,7 @@ const BlogGridMinimal = ({ isPagination, start, end ,updateData}) => {
   const [totalPages, setTotalPages] = useState(0);
   console.log("^^^^^^^^^^^^^^^^^^^^",updateData)
   const startIndex = (page - 1) * 9;
-  const selectedGridBlogs = blogs.slice(startIndex, startIndex + 9);
+  const selectedGridBlogs = updateData?.data?.slice(startIndex, startIndex + 9);
 
   const handleClick = (num) => {
     setPage(num);
@@ -22,14 +22,15 @@ const BlogGridMinimal = ({ isPagination, start, end ,updateData}) => {
 
   useEffect(() => {
 
-    setBlogs(BlogData.blogGrid);
-    setTotalPages(Math.ceil(BlogData.blogGrid.length / 9));
+    setBlogs(updateData?.data);
+    setTotalPages(Math.ceil(updateData?.data?.length / 9));
   }, [setTotalPages, setBlogs]);
+  console.log("222222222222222",selectedGridBlogs)
   return (
     <>
       <div className="row g-5">
-        {updateData &&
-          updateData?.data?.slice(start, end).map((data, index) => (
+        {selectedGridBlogs &&
+          selectedGridBlogs?.slice(start, end).map((data, index) => (
             <div
               className="col-lg-4 col-md-6 col-sm-6 col-12 mt--30"
               // data-sal-delay="150"
