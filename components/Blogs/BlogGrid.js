@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Head from 'next/head';
 import { useEffect, useState } from "react";
 
 import BlogData from "../../data/blog/blog.json";
@@ -62,6 +62,20 @@ console.log("blogData",updateData)
                     <Link href={`/updates/${data.id}`}>{data?.attributes?.heading}</Link>
                   </h5>
                   <p className="rbt-card-text">{data?.desc}</p>
+                  {/* <Head>
+                    <title>{data.seo.metaTitle}</title>
+                    <meta name="description" content={data.seo.metaDescription} />
+                    <meta name="keywords" content={data.seo.keywords} />
+                    <meta name="robots" content={data.seo.metaRobots} />
+                   
+                   
+                    <script type="application/ld+json">{JSON.stringify(data.seo.structuredData)}</script>
+                   
+                    <meta name="viewport" content={data.seo.metaViewport} />
+                  
+                    <link rel="canonical" href={data.seo.canonicalURL} />
+                    
+                  </Head> */}
                   <div className="rbt-card-bottom">
                     <Link
                       className="transparent-button"

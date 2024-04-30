@@ -27,6 +27,19 @@ const BlogDetails = ({ matchedBlog,updateData }) => {
             )}
              <figcaption>{matchedBlog?.caption}</figcaption> 
           </figure>
+          {/* <Head>
+          <title>{matchedBlog?.seo?.metaTitle}</title>
+          <meta name="description" content={matchedBlog?.seo?.metaDescription} />
+          <meta name="keywords" content={matchedBlog?.seo?.keywords} />
+          <meta name="robots" content={matchedBlog?.seo?.metaRobots} />
+      
+          <script type="application/ld+json">{JSON.stringify(matchedBlog?.seo?.structuredData)}</script>
+       
+          <meta name="viewport" content={matchedBlog?.seo?.metaViewport} />
+        
+          <link rel="canonical" href={matchedBlog?.seo?.canonicalURL} />
+  
+        </Head> */}
         </div>
          <p>{matchedBlog?.attributes?.para[0]?.text}</p> 
 
