@@ -89,7 +89,7 @@ const filteredData = updateData?.data?.filter(item => item.id !== postId);
 
 export async function getServerSideProps() {
   try {
-    const res = await fetch("https://godigitalhub.org/api/london-collegeupdates?populate[0]=para&populate[1]=Bannerimg1&populate[2]=Blockquote&populate[3]=Bannerimage2&populate[4]=tags", {
+    const res = await fetch("https://godigitalhub.org/api/london-collegeupdates?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=Bannerimg1&populate[3]=smallimage1&populate[4]=smallimage2&populate[5]=smallimage3&populate[6]=blockquote&populate[7]=para&populate[8]=tags&populate[9]=seo.metaImage", {
       headers: {
         Authorization: "Bearer 3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c"
       }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect } from "react";
-
+import Head from "next/head";
 import "venobox/dist/venobox.min.css";
 import Viedo from "./Course-Sections/Viedo";
 import CourseMenu from "./Course-Sections/Course-Menu";
@@ -54,9 +54,37 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
 // const certificates = 
  console.log("requirement",tagData)
  console.log("jsontitle",jsontitle)
- console.log("detailname",detailname)
+ const meta = courseData?.attributes?.seo?.metaDescription;
+ console.log("checkMatchCourses111111111111",meta)
   return (
     <>
+      <Head>
+    <title>{courseData?.attributes?.seo?.metaTitle}</title>
+    <meta name="description" content={courseData?.attributes?.seo?.metaDescription} />
+    <meta name="keywords" content={courseData?.attributes?.seo?.keywords} />
+    <meta name="robots" content={courseData?.attributes?.seo?.metaRobots} />
+    
+    <meta property="og:title" content={courseData?.attributes?.seo?.metaSocial[2]?.title} />
+    <meta property="og:description" content={courseData?.attributes?.seo?.metaSocial[2]?.metaDescription} />
+    <meta property="og:image" content={courseData?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    <meta property="og:url" content={courseData?.attributes?.seo?.canonicalURL} />
+    <meta property="og:type" content="website" />
+    
+    <meta name="twitter:title" content={courseData?.attributes?.seo?.metaSocial[1]?.title} />
+    <meta name="twitter:description" content={courseData?.attributes?.seo?.metaSocial[1]?.metaDescription} />
+    <meta name="twitter:image" content={courseData?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta property="instgram:title" content={courseData?.attributes?.seo?.metaSocial[0]?.title} />
+    <meta property="instgram:description" content={courseData?.attributes?.seo?.metaSocial[0]?.metaDescription} />
+    <meta property="instgram:image" content={courseData?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} /> 
+    
+    <script type="application/ld+json">{JSON.stringify(courseData?.attributes?.seo?.structuredData)}</script>
+    
+    <meta name="viewport" content={courseData?.attributes?.seo?.metaViewport} />
+    
+    <link rel="canonical" href={courseData?.attributes?.seo?.canonicalURL} />
+</Head>
       <div className="col-lg-8">
 
         {checkMatchCourses?.courseImg && (

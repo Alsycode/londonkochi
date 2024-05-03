@@ -27,8 +27,9 @@ console.log("blogData",updateData)
     setBlogs(updateData?.data);
     setTotalPages(Math.ceil(updateData?.data?.length / 10));
   }, [setTotalPages, setBlogs]);
-  console.log("))))))))))))))))",totalPages)
-  
+  console.log("%%%%%%%%%%%%%%",selectedGridBlogs)
+  const metasoc = selectedGridBlogs[0]?.attributes?.seo.metaSocial[0].title;
+   console.log("))))))))))))))))",metasoc)
   return (
     <>
       {top ? (
@@ -62,20 +63,37 @@ console.log("blogData",updateData)
                     <Link href={`/updates/${data.id}`}>{data?.attributes?.heading}</Link>
                   </h5>
                   <p className="rbt-card-text">{data?.desc}</p>
-                  {/* <Head>
-                    <title>{data.seo.metaTitle}</title>
-                    <meta name="description" content={data.seo.metaDescription} />
-                    <meta name="keywords" content={data.seo.keywords} />
-                    <meta name="robots" content={data.seo.metaRobots} />
-                   
-                   
-                    <script type="application/ld+json">{JSON.stringify(data.seo.structuredData)}</script>
-                   
-                    <meta name="viewport" content={data.seo.metaViewport} />
-                  
-                    <link rel="canonical" href={data.seo.canonicalURL} />
-                    
-                  </Head> */}
+                  <Head>
+                  <title>{data?.seo?.metaTitle}</title>
+    <meta name="description" content={data?.seo?.metaDescription} />
+    <meta name="keywords" content={data?.seo?.keywords} />
+    <meta name="robots" content={data?.seo?.metaRobots} />
+    
+    
+    <meta property="og:title" content={data?.attributes?.seo?.metaSocial[2]?.title} />
+    <meta property="og:description" content={data.attributes?.seo?.metaSocial[2]?.metaDescription} />
+    <meta property="og:image" content={data?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    {/* <meta property="og:url" content={data.seo.canonicalURL} /> */}
+    <meta property="og:type" content="website" />
+    
+
+    <meta name="twitter:title" content={data?.attributes?.seo?.metaSocial[1]?.title} />
+    <meta name="twitter:description" content={data.attributes?.seo?.metaSocial[1]?.metaDescription} />
+    <meta name="twitter:image" content={data?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+     <meta property="instgram:title" content={data?.attributes?.seo?.metaSocial[0]?.title} />
+    <meta property="instgram:description" content={data.attributes?.seo?.metaSocial[0]?.metaDescription} />
+    <meta property="instgram:image" content={data?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} /> 
+    
+    {/* <script type="application/ld+json">{JSON.stringify(data.seo.structuredData)}</script> */}
+    
+   
+    <meta name="viewport" content={data.seo?.metaViewport} />
+    
+{/*   
+    <link rel="canonical" href={data.seo.canonicalURL} /> */}
+</Head>
                   <div className="rbt-card-bottom">
                     <Link
                       className="transparent-button"

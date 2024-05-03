@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Head from "next/head";
 import BlogAuthor from "./Blog-Sections/Blog-Author";
 import ComntForm from "./Blog-Sections/ComntForm";
 import Comment from "./Blog-Sections/Comment";
@@ -10,7 +10,8 @@ const BlogDetails = ({ matchedBlog,updateData }) => {
   console.log("-----------------",updateData)
   const relatedupdates = updateData?.data?.filter((item) => item?.id !== matchedBlog?.id);
  console.log("relatedupdates",relatedupdates)
- 
+ const seoco = matchedBlog?.attributes?.seo;
+console.log("seoco11111111111",matchedBlog)
   return (
     <>
       <div className="content">
@@ -27,19 +28,33 @@ const BlogDetails = ({ matchedBlog,updateData }) => {
             )}
              <figcaption>{matchedBlog?.caption}</figcaption> 
           </figure>
-          {/* <Head>
-          <title>{matchedBlog?.seo?.metaTitle}</title>
-          <meta name="description" content={matchedBlog?.seo?.metaDescription} />
-          <meta name="keywords" content={matchedBlog?.seo?.keywords} />
-          <meta name="robots" content={matchedBlog?.seo?.metaRobots} />
-      
-          <script type="application/ld+json">{JSON.stringify(matchedBlog?.seo?.structuredData)}</script>
-       
-          <meta name="viewport" content={matchedBlog?.seo?.metaViewport} />
-        
-          <link rel="canonical" href={matchedBlog?.seo?.canonicalURL} />
-  
-        </Head> */}
+          <Head>
+    <title>{matchedBlog?.attributes?.seo?.metaTitle}</title>
+    <meta name="description" content={matchedBlog?.attributes?.seo?.metaDescription} />
+    <meta name="keywords" content={matchedBlog?.attributes?.seo?.keywords} />
+    <meta name="robots" content={matchedBlog?.attributes?.seo?.metaRobots} />
+    
+    <meta property="og:title" content={matchedBlog?.attributes?.seo?.metaSocial[2]?.title} />
+    <meta property="og:description" content={matchedBlog?.attributes?.seo?.metaSocial[2]?.metaDescription} />
+    <meta property="og:image" content={matchedBlog?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    <meta property="og:url" content={matchedBlog?.attributes?.seo.canonicalURL} />
+    <meta property="og:type" content="website" />
+    
+    <meta name="twitter:title" content={matchedBlog?.attributes?.seo?.metaSocial[1]?.title} />
+    <meta name="twitter:description" content={matchedBlog?.attributes?.seo?.metaSocial[1]?.metaDescription} />
+    <meta name="twitter:image" content={matchedBlog?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta property="instgram:title" content={matchedBlog?.attributes?.seo?.metaSocial[0]?.title} />
+    <meta property="instgram:description" content={matchedBlog?.attributes?.seo?.metaSocial[0]?.metaDescription} />
+    <meta property="instgram:image" content={matchedBlog?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} /> 
+    
+    <script type="application/ld+json">{JSON.stringify(matchedBlog?.attributes?.seo?.structuredData)}</script>
+    
+    <meta name="viewport" content={matchedBlog?.attributes?.seo?.metaViewport} />
+    
+    <link rel="canonical" href={matchedBlog?.attributes?.seo?.canonicalURL} />
+</Head>
         </div>
          <p>{matchedBlog?.attributes?.para[0]?.text}</p> 
 

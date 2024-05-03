@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Head from "next/head";
 import TestimonialData from "../../data/elements/testimonial.json";
 
 const TestimonialModified = ({testimonialData}) => {
@@ -19,6 +19,34 @@ const TestimonialModified = ({testimonialData}) => {
                   </span>
                   <h2 className="title">{data.title}</h2>
                 </div> */}
+              <Head>
+    <title>{testttt?.data?.attributes?.seo?.metaTitle}</title>
+    <meta name="description" content={testttt?.data?.attributes?.seo?.metaDescription} />
+    <meta name="keywords" content={testttt?.data?.attributes?.seo?.keywords} />
+    <meta name="robots" content={testttt?.data?.attributes?.seo?.metaRobots} />
+    
+    <meta property="og:title" content={testttt?.data?.attributes?.seo?.metaSocial[2]?.title} />
+    <meta property="og:description" content={testttt?.data?.attributes?.seo?.metaSocial[2]?.metaDescription} />
+    <meta property="og:image" content={testttt?.data?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    {/* <meta property="og:url" content={testttt?.data?.attributes?.seo?.canonicalURL} /> */}
+    <meta property="og:type" content="website" />
+    
+    <meta name="twitter:title" content={testttt?.data?.attributes?.seo?.metaSocial[1]?.title} />
+    <meta name="twitter:description" content={testttt?.data?.attributes?.seo?.metaSocial[1]?.metaDescription} />
+    <meta name="twitter:image" content={testttt?.data?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta property="instgram:title" content={testttt?.data?.attributes?.seo?.metaSocial[0]?.title} />
+    <meta property="instgram:description" content={testttt?.data?.attributes?.seo?.metaSocial[0]?.metaDescription} />
+    <meta property="instgram:image" content={testttt?.data?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} /> 
+    
+    {/* <script type="application/ld+json">{JSON.stringify(testttt?.data?.attributes?.seo?.structuredData)}</script> */}
+    
+    <meta name="viewport" content={testttt?.data?.attributes?.seo?.metaViewport} />
+    
+    {/* <link rel="canonical" href={testttt?.data?.attributes?.seo?.canonicalURL} /> */}
+</Head>
+
               </div>
             </div>
             <div className="row g-8" >

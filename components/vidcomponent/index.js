@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Video from 'next-video';
-
+import Head from "next/head";
 const VideoCarousel = ({ videoData }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showPlayer, setShowPlayer] = useState(false);
@@ -27,6 +27,7 @@ const VideoCarousel = ({ videoData }) => {
       prevSlide === 0 ? videoData.length - 1 : prevSlide - 1
     );
   };
+ 
 
   return (
     <div
@@ -41,6 +42,7 @@ const VideoCarousel = ({ videoData }) => {
         boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
       }}
     >
+    
       <div 
         style={{
           textAlign: "center",
@@ -65,6 +67,35 @@ const VideoCarousel = ({ videoData }) => {
               textAlign: "center", // Center text on small screens
             }}
           >
+            
+            <Head>
+    <title>{videoObj?.attributes?.seo?.metaTitle}</title>
+    <meta name="description" content={videoObj?.attributes?.seo?.metaDescription} />
+    <meta name="keywords" content={videoObj?.attributes?.seo?.keywords} />
+    <meta name="robots" content={videoObj?.attributes?.seo?.metaRobots} />
+    
+    <meta property="og:title" content={videoObj?.attributes?.seo?.metaSocial[2]?.title} />
+    <meta property="og:description" content={videoObj?.attributes?.seo?.metaSocial[2]?.metaDescription} />
+    <meta property="og:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    <meta property="og:url" content={videoObj?.attributes?.seo.canonicalURL} />
+    <meta property="og:type" content="website" />
+    
+    <meta name="twitter:title" content={videoObj?.attributes?.seo?.metaSocial[1]?.title} />
+    <meta name="twitter:description" content={videoObj?.attributes?.seo?.metaSocial[1]?.metaDescription} />
+    <meta name="twitter:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta property="instgram:title" content={videoObj?.attributes?.seo?.metaSocial[0]?.title} />
+    <meta property="instgram:description" content={videoObj?.attributes?.seo?.metaSocial[0]?.metaDescription} />
+    <meta property="instgram:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} /> 
+    
+    <script type="application/ld+json">{JSON.stringify(videoObj?.attributes?.seo?.structuredData)}</script>
+    
+    <meta name="viewport" content={videoObj?.attributes?.seo?.metaViewport} />
+    
+    <link rel="canonical" href={videoObj?.attributes?.seo?.canonicalURL} />
+</Head>
+
             <div
               style={{
                 width: "100%",

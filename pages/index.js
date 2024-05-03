@@ -25,7 +25,7 @@ export async function getServerSideProps(context) {
   try {
     // Fetch video data
     const videoRes = await fetch(
-      "https://godigitalhub.org/api/london-college-videos?populate=*",
+      "https://godigitalhub.org/api/london-college-videos?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=seo.metaImage&populate[3]=videoimage&populate[4]=Video",
       {
         headers: {
           Authorization:
@@ -37,7 +37,7 @@ export async function getServerSideProps(context) {
 
     // Fetch testimonials data
     const testimonialRes = await fetch(
-      "https://godigitalhub.org/api/london-college-testimonials?populate=*",
+      "https://godigitalhub.org/api/london-college-testimonials?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=seo.metaImage&populate[3]=image",
       {
         headers: {
           Authorization:
@@ -49,7 +49,7 @@ export async function getServerSideProps(context) {
 
     // Fetch updates data
     const updateRes = await fetch(
-      "https://godigitalhub.org/api/london-collegeupdates?populate=*",
+      "https://godigitalhub.org/api/london-collegeupdates?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=Bannerimg1&populate[3]=smallimage1&populate[4]=smallimage2&populate[5]=smallimage3&populate[6]=blockquote&populate[7]=para&populate[8]=tags&populate[9]=seo.metaImage",
       {
         headers: {
           Authorization:
