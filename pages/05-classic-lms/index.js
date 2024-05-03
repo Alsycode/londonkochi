@@ -18,7 +18,7 @@ const ClassicLmsLayout = () => {
       <PageHead title="Home Classic Lms - Online Courses & Education NEXTJS14 Template" />
       <Provider store={Store}>
         <Context>
-          <MobileMenu />
+          {/* <MobileMenu />
           <HeaderTopBar />
           <HeaderStyleNine headerType="" />
           <ClassicLms />
@@ -26,7 +26,7 @@ const ClassicLmsLayout = () => {
 
           <BackToTop />
           <Separator />
-          <FooterOne />
+          <FooterOne /> */}
         </Context>
       </Provider>
     </>
