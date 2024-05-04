@@ -13,9 +13,9 @@ const handler = async (req, res) => {
         address,
         qualification,
         course,
-        pg_diploma,
-        parent_name,
-        parent_phone,
+        pgDiploma,
+        parentName,
+        parentPhone,
         message,
       } = req.body;
 
@@ -26,15 +26,14 @@ const handler = async (req, res) => {
         name,
         email,
         message,
-        // Add other form data here
         dob,
         phone,
         address,
         qualification,
         course,
-        pg_diploma,
-        parent_name,
-        parent_phone,
+        pgDiploma,
+        parentName,
+        parentPhone,
       });
 
       res.status(200).json({ message: "Email sent successfully!" });

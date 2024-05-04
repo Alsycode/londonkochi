@@ -1,10 +1,10 @@
 import React from "react";
 import ServiceEleven from "@/components/Services/Service-Eleven";
-const jobrole = ({ checkMatchCourses }) => {
+const jobrole = ({ jobrole }) => {
   return (
     <>
    
-        <ServiceEleven/>
+        <ServiceEleven jobrole={jobrole}/>
      
     </>
   );

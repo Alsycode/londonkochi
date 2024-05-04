@@ -11,7 +11,7 @@ const aboutDescription = checkMatchCourses[0]?.description;
     
         <div className="rbt-course-feature-inner has-show-more-inner-content">
           <div className="section-title">
-            <h4 className="rbt-title-style-3">{aboutTitle}</h4>
+            <h4 className="rbt-title-style-3 text-uppercase">{aboutTitle}</h4>
           </div>
           <p>{aboutDescription}</p>
 

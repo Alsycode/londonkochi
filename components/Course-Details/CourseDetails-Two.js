@@ -56,6 +56,8 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
  console.log("jsontitle",jsontitle)
  const meta = courseData?.attributes?.seo?.metaDescription;
  console.log("checkMatchCourses111111111111",meta)
+ const jobrole = courseData?.attributes?.jobrole;
+ console.log("jobrolee111111111111",jobrole)
   return (
     <>
       <Head>
@@ -205,7 +207,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
               id="Job role"
             >
               
-             <Jobrole/>
+             <Jobrole jobrole={jobrole}/>
 
             </div>
             <div className="tagcloud" style={{ marginTop: "30px" }}>

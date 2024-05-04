@@ -12,11 +12,6 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/index.js"
-    ],
     "/404": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -32,10 +27,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/testimonialpage": [
+    "/logistics-and-scm-courses": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/testimonialpage.js"
+      "static/chunks/pages/logistics-and-scm-courses.js"
+    ],
+    "/logistics-and-scm-courses/[id]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/logistics-and-scm-courses/[id].js"
+    ],
+    "/relatedCourse/[tag]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/relatedCourse/[tag].js"
     ]
   },
   "ampFirstPages": []

@@ -15,9 +15,9 @@ const Admissionform = ({ gap }) => {
         const address = formData.get("address");
         const qualification = formData.get("qualification");
         const course = formData.get("course");
-        const pg_diploma = formData.get("pg-diploma");
-        const parent_name = formData.get("parent-name");
-        const parent_phone = formData.get("parent-phone");
+        const pgDiploma = formData.get("pgDiploma");
+        const parentName = formData.get("parentName");
+        const parentPhone = formData.get("parentPhone");
         const message = formData.get("message");
         console.log("Name:", name);
         console.log("Email:", email);
@@ -29,7 +29,7 @@ const Admissionform = ({ gap }) => {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ name, dob, phone, email, address, qualification, course, pg_diploma, parent_name, parent_phone, message }),
+            body: JSON.stringify({ name, dob, phone, email, address, qualification, course, pgDiploma, parentName, parentPhone, message }),
           });
       
           if (response.ok) {
@@ -140,7 +140,7 @@ const Admissionform = ({ gap }) => {
                   <div className="form-group">
                     <input
                       type="text"
-                      name="pg-diploma"
+                      name="pgDiploma"
                       id="pg-diploma"
                       placeholder="PG Diploma"
                     />
@@ -149,7 +149,7 @@ const Admissionform = ({ gap }) => {
                   <div className="form-group">
                     <input
                       type="text"
-                      name="parent-name"
+                      name="parentName"
                       id="parent-name"
                       placeholder="Parent Name"
                     />
@@ -158,7 +158,7 @@ const Admissionform = ({ gap }) => {
                   <div className="form-group">
                     <input
                       type="tel"
-                      name="parent-phone"
+                      name="parentPhone"
                       id="parent-phone"
                       placeholder="Parent Phone Number"
                     />

@@ -9,7 +9,7 @@ const Requirements = ({ checkMatchCourses }) => {
     <>
       <div className="col-lg-12">
         <div className="section-title">
-          <h4 className="rbt-title-style-3 mb--20">{title1}</h4>
+          <h4 className="rbt-title-style-3 mb--20 text-uppercase">{title1}</h4>
         </div>
         <ul className="rbt-list-style-1">
           {checkMatchCourses[0]?.detailsList.map((item, innerIndex) => (
@@ -20,7 +20,7 @@ const Requirements = ({ checkMatchCourses }) => {
           ))}
         </ul>
              <div className="section-title">
-          <h4 className="rbt-title-style-3 mb--20">{title2}</h4>
+          <h4 className="rbt-title-style-3 mt--20 mb--20 text-uppercase">{title2}</h4>
         </div>
         <ul className="rbt-list-style-1">
           {checkMatchCourses[1]?.detailsList.map((item, innerIndex) => (

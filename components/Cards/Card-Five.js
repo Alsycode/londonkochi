@@ -28,7 +28,7 @@ const CardFive = ({update}) => {
             <div className="rbt-card-img position-relative">
               {/* Image */}
               <Image
-                src={data?.attributes?.Bannerimg1?.data?.attributes?.formats?.thumbnail?.url}
+                src={data?.attributes?.Bannerimg1?.data?.attributes?.formats?.small?.url}
                 width={355}
                 height={244}
                 alt="Card image"

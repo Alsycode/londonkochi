@@ -9,7 +9,7 @@ const DeliveryandBenifits = ({ checkMatchCourses }) => {
         {checkMatchCourses?.map((item, index) => (
           <div key={index}>
             <div className="section-title">
-              <h4 className="rbt-title-style-3 mb--20 mt--20">{item.title}</h4>
+              <h4 className="rbt-title-style-3 mb--20 mt--20 text-uppercase">{item.title}</h4>
             </div>
             <ul className="rbt-list-style-1">
               {item.list.map((listItem, innerIndex) => (
