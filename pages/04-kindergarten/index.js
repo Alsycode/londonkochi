@@ -16,13 +16,13 @@ const Home = () => {
       <PageHead title="Kindergarten - Online Courses & Education NEXTJS14 Template" />
       <Provider store={Store}>
         <Context>
-          <MobileMenu />
+          {/* <MobileMenu />
           <HeaderStyleEight headerSticky="rbt-sticky" headerType="" />
           <Kindergarten />
           <Cart />
 
           <BackToTop />
-          <FooterOne />
+          <FooterOne /> */}
         </Context>
       </Provider>
     </>

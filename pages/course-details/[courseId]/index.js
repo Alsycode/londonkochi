@@ -44,7 +44,7 @@ const SingleCourse = () => {
       <PageHead title="Course Details - Online Courses & Education NEXTJS14 Template" />
       <Provider store={Store}>
         <Context>
-          <MobileMenu />
+          {/* <MobileMenu />
           <HeaderStyleTen headerSticky="" headerType={true} />
           <Cart />
 
@@ -77,7 +77,7 @@ const SingleCourse = () => {
 
           <BackToTop />
           <Separator />
-          <FooterOne />
+          <FooterOne /> */}
         </Context>
       </Provider>
     </>

@@ -28,7 +28,7 @@ const ServicePage = () => {
       <PageHead title="Service Box - Online Courses & Education NEXTJS14 Template" />
       <Provider store={Store}>
         <Context>
-          <HeaderStyleTen headerSticky="rbt-sticky" headerType="" />
+          {/* <HeaderStyleTen headerSticky="rbt-sticky" headerType="" />
           <Cart />
           <BreadCrumb title="Service Box" text="Service Box" />
 
@@ -71,7 +71,7 @@ const ServicePage = () => {
 
           <BackToTop />
           <MobileMenu />
-          <FooterOne />
+          <FooterOne /> */}
         </Context>
       </Provider>
     </>
