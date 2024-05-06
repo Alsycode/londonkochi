@@ -1,6 +1,6 @@
 function getRequestParams(email) {
-    const API_KEY = "264a7e4919e40512f9a2988c78e23903-us21";
-    const LIST_ID = "d820ad2f09";
+    const API_KEY = "67dde0f449c4dc820f5f47ed86d31202-us22";
+    const LIST_ID = "d977d0501b";
   
     const DATACENTER = API_KEY.split("-")[1];
     const url = `https://${DATACENTER}.api.mailchimp.com/3.0/lists/${LIST_ID}/members`;

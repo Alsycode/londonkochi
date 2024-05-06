@@ -5,24 +5,23 @@ const CourseMenu = () => {
   const [currentSection, setCurrentSection] = useState("overview");
 
   const sections = [
-    {id: "About course", label: "About course" },
-    {id: "Delivery & Benefit", label: "Delivery & Benefit "},
-    {id: "About Industry", label: "About Industry"},
-    {id: "Certificates & Affiliates", label: "Certificates & Affiliates" },
-    {id: "Recruitment", label: "Recruitment"},
-    {id: "Job role",label: "Job role"},
-    ]
-
+    { id: "about-course", label: "About course" },
+    { id: "delivery-and-benefit", label: "Delivery & Benefit" },
+    { id: "about-industry", label: "About Industry" },
+    { id: "certificates-and-affiliates", label: "Certificates & Affiliates" },
+    { id: "recruitment", label: "Recruitment" },
+    { id: "job-role", label: "Job role" },
+  ];
+  
   useEffect(() => {
-    const sectionIds = [
-       "About course",
-       "Delivery & Benefit",
-       "About Industry",
-       "Certificates & Affiliates",
-       "Recruitment",
-       "Job role",
-    ];
-
+  const sectionIds = [
+    "about-course",
+    "delivery-and-benefit",
+    "about-industry",
+    "certificates-and-affiliates",
+    "recruitment",
+    "job-role",
+ ];
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 200;
       // console.log("Scroll position:", scrollPosition);

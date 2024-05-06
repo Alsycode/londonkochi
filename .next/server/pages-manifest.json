@@ -1,10 +1,8 @@
 {
   "/_app": "pages/_app.js",
-  "/_document": "pages/_document.js",
   "/_error": "pages/_error.js",
-  "/logistics-and-scm-courses": "pages/logistics-and-scm-courses.js",
+  "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/404": "pages/404.js",
-  "/logistics-and-scm-courses/[id]": "pages/logistics-and-scm-courses/[id].js",
-  "/relatedCourse/[tag]": "pages/relatedCourse/[tag].js"
+  "/admissions": "pages/admissions.js",
+  "/elements/style-guide": "pages/elements/style-guide.js"
 }

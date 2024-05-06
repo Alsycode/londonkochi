@@ -113,12 +113,44 @@ console.log("dffdf",videoDataa)
       once: true,
     });
   }, []);
+  useEffect(() => {
+    const typeitInstance = new Typed(".is-visible-one", {
+      strings: ["Supply Chain Management", "Logistics", "Shipping"],
+      typeSpeed: 80,
+      backSpeed: 60,
+      startDelay: 200,
+      loop: Infinity,
+      showCursor: false,
+    });
 
+    const intervalId = setInterval(() => {
+      setVisibleIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 2000);
+
+    return () => {
+      typeitInstance.destroy();
+      clearInterval(intervalId);
+    };
+  }, []);
   return (
     <>
       <div className="rbt-slider-main-wrapper position-relative">
         <UniversityBanner />
       </div>
+       <div className="d-flex justify-content-center align-items-center my-5"> 
+  <h1 className="title text-center">
+      
+      Why London College
+      <span className="header-caption ms-2">
+        <span className="cd-headline clip is-full-width">
+          <span className="cd-words-wrapper">
+            <b className="is-visible theme-gradient is-visible-one"></b>
+          </span>
+        </span>
+      </span>
+    
+    </h1>
+    </div>
       {/* <div className="d-flex justify-content-center align-items-center my-5"> 
   <h1 className="title text-center">
     Why

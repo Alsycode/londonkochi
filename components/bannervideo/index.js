@@ -115,7 +115,7 @@ const Main = () => {
           width: '100%',
           height: '100vh',
           position: 'relative',
-          borderRadius: '20px',
+          
           zIndex: 1,
         }}
       >
@@ -129,7 +129,7 @@ const Main = () => {
             height: '100%',
             backgroundColor: 'rgba(0,0,0,.4)',
             zIndex: 1,
-            borderRadius: '20px',
+            // borderRadius: '20px',
           }}
         ></div>
         <video

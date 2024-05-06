@@ -98,7 +98,7 @@ console.log("matchingItem**************", matchingItem)
     <div className="row row--15 align-items-center mb--30">
       <div className="col-lg-12 text-center"> {/* Center the text */}
         <div className="section-title">
-          <h5 className="title">UPDATES</h5>
+          <h2 className="title">UPDATES</h2>
         </div>
       </div>
     </div>

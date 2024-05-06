@@ -18,21 +18,25 @@ const FooterOne = ({ bgColor }) => {
     e.preventDefault();
 
     setState(1);
-    seterrorMsg("");
-    console.log(e.target[0].value);
+    setErrorMsg("");
+    console.log("subzzzzzzzzzzzzzzzz",e.target[0].value);
     try {
       const res = await fetch("/api/newsletter", {
         method: "POST",
         body: e.target[0].value,
       });
-
+      if (!res.ok) {
+        throw new Error("Failed to subscribe", res); // or handle the error as needed
+      }
+  
       const data = await res.json();
       if (data.error !== null) {
         throw data.error;
       }
       setState(2);
+      setEmail("");
     } catch (e) {
-      seterrorMsg(e);
+      setErrorMsg(e);
       setState(3);
     }
   };
@@ -123,7 +127,7 @@ const FooterOne = ({ bgColor }) => {
                         <p className="description">{footer.descriptionTwo}</p>
 
                         <div className="form-group right-icon icon-email mb--20">
-                          <label htmlFor="email">Enter Your Email Here</label>
+                          {/* <label htmlFor="email">Enter Your Email Here</label> */}
                           <input
                             id="email"
                             type="email"
@@ -136,11 +140,13 @@ const FooterOne = ({ bgColor }) => {
                         <div className="row mt--50">
               <div className="col-lg-12">
                 <div className="rbt-button-group">
-                  <Link className="rbt-moderbt-btn" href="#"
-                          >
-                             <span className="moderbt-btn-text">Subscribe</span>
-                            <i className="feather-arrow-right"></i>
-                  </Link>
+                  {/* <Link className="rbt-moderbt-btn" href="#"> */}
+                  <button className="rbt-btn btn-gradient icon-hover" type="submit">
+  Subscribe
+  <i className="feather-arrow-right"></i>
+</button>
+                            {/* <i className="feather-arrow-right"></i> */}
+                  {/* </Link> */}
                 </div>
               </div>
             </div>

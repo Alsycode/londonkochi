@@ -15,7 +15,7 @@ const Overview = ({ overview }) => {
         className={`rbt-course-feature-box overview-wrapper rbt-shadow-box mt--30 has-show-more ${
           toggle ? "active" : ""
         }`}
-        id="overview"
+        id="about-course"
       >
          <div className="rbt-course-feature-inner has-show-more-inner-content">
           <div className="section-title">

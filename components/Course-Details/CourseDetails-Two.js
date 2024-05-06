@@ -131,12 +131,18 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
             
              {/* {checkMatchCourses &&
               checkMatchCourses?.courseOverview?.map((data, index) => ( */}
-                <Overview  overview={overview}  />
+                 {/* <div
+              className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
+              id="about-course" // Corrected typo
+            >  */}
+            <Overview  overview={overview}  />
+            {/* </div>
+                 */}
               {/* ))}
              */}
             <div
               className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
-              id="Delivery & Benefit" // Corrected typo
+              id="delivery-and-benefit" // Corrected typo
             >
               
                   <DeliveryandBenifits   checkMatchCourses={deliveryandBenifits} />
@@ -145,7 +151,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
 
             <div
               className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
-              id="About Industry" // Corrected typo
+              id="about-industry" // Corrected typo
             >
               
           {checkMatchCourses &&
@@ -155,7 +161,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
 
             </div>
 
-            <div className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30" id="Certificates & Affiliates">
+            <div className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30" id="certificates-and-affiliates">
   <div className="row">
     {requirement &&
       // checkMatchCourses?.courseRequirement?.map((data, index) => (
@@ -195,7 +201,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
 
             <div
               className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
-              id="Recruitment"
+              id="recruitment"
             >
               
              <Gallery/>
@@ -204,7 +210,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
 
             <div
               className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
-              id="Job role"
+              id="job-role"
             >
               
              <Jobrole jobrole={jobrole}/>
