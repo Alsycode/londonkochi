@@ -11,7 +11,7 @@ import FooterOne from "@/components/Footer/Footer-One";
 import HeaderStyleTen from "@/components/Header/HeaderStyle-Four";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Cart from "@/components/Header/Offcanvas/Cart";
-import Headerstylemumbai from "@/components/Header/headerstymumbai";
+import Headerstylemumbai from "@/components/Header/headerstylemumbia";
 const FaqsPage = () => {
   return (
     <>
