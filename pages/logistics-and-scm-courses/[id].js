@@ -31,19 +31,19 @@ const SingleCourseTwo = ({courseData, updateData}) => {
   getCourse = JSON.parse(JSON.stringify(CourseData.courseTab));
 console.log("getCourse",getCourse)
 
-  const checkMatch = getCourse.find((course) => course.slug === postId);
-console.log("matchedcourse",checkMatch);
-// const detailname = courseData?.attributes?.Coursename;
-  useEffect(() => {
-    if (postId && checkMatch === undefined) {
-      router.push("/courses");
-    }
+  const checkMatch = courseData?.data?.find((course) => course.slug === postId);
+  console.log("matchedcourse",checkMatch);
+  // const detailname = courseData?.attributes?.Coursename;
+  // useEffect(() => {
+  //   if (postId && checkMatch === undefined) {
+  //     router.push("/courses");
+  //   }
 
-    sal({
-      threshold: 0.01,
-      once: true,
-    });
-  }, [checkMatch, router]);
+  //   sal({
+  //     threshold: 0.01,
+  //     once: true,
+  //   });
+  // }, [checkMatch, router]);
 const delivery = CourseData?.courseTab[0]?.DeliveryAndBenefit;
 console.log("delivery",delivery);
 console.log("courseData:", courseData); 
@@ -121,7 +121,7 @@ export async function getServerSideProps() {
   const token = "3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c";
   
   // Fetching the first URL
-  const res = await fetch("https://godigitalhub.org/api/coursedetails?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=seo.metaImage&populate[3]=tags&populate[4]=courseimage&populate[5]=recruiters&populate[6]=jobrole&populate[7]=courseVideo&populate[8]=jobrole.roles&populate[9]=jobrole.roleimage", {
+  const res = await fetch("https://godigitalhub.org/api/london-mumbai-courses?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=seo.metaImage&populate[3]=tags&populate[4]=courseimage&populate[5]=recruiters&populate[6]=jobrole&populate[7]=courseVideo&populate[8]=jobrole.roles&populate[9]=jobrole.roleimage", {
     headers: {
       Authorization: `Bearer ${token}`,
     },

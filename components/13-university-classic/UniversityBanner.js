@@ -108,7 +108,7 @@ const UniversityBanner = () => {
                       <div className="inner text-center">
                         <div className="section-title">
                           <span className="subtitle bg-white-opacity d-inline-block">
-                          Embrace Knowledge, Ignite Innovation - Welcome to London College
+                          Embrace Knowledge, Ignite Innovation - Welcome to London College 
                           </span>
                         </div>
                         {/* <h1 className="title w-700">

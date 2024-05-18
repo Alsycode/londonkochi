@@ -5,7 +5,7 @@ const handler = async (req, res) => {
   try {
     if (req.method === "POST") {
       // Extract data from the request body
-      const { name, phone, subject, message } = req.body;
+      const { name, email, phone, qualification, subject, message } = req.body;
 
       // Send email with form data
       await sendSimpleMail({
@@ -14,6 +14,8 @@ const handler = async (req, res) => {
         name,
         phone,
         message,
+        email,
+        qualification
       });
 
       res.status(200).json({ message: "Email sent successfully!" });

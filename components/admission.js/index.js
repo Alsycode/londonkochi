@@ -14,7 +14,7 @@ const Admissionform = ({ gap }) => {
         const email = formData.get("email");
         const address = formData.get("address");
         const qualification = formData.get("qualification");
-        const course = formData.get("course");
+        // const course = formData.get("course");
         const pgDiploma = formData.get("pgDiploma");
         const parentName = formData.get("parentName");
         const parentPhone = formData.get("parentPhone");
@@ -29,7 +29,7 @@ const Admissionform = ({ gap }) => {
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ name, dob, phone, email, address, qualification, course, pgDiploma, parentName, parentPhone, message }),
+            body: JSON.stringify({ name, dob, phone, email, address, qualification, pgDiploma, parentName, parentPhone, message }),
           });
       
           if (response.ok) {
@@ -103,6 +103,15 @@ const Admissionform = ({ gap }) => {
                   </div>
                   <div className="form-group">
                     <input
+                      type="tel"
+                      name="parentPhone"
+                      id="parent-phone"
+                      placeholder="Parent Phone Number"
+                    />
+                    <span className="focus-border"></span>
+                  </div>
+                  <div className="form-group">
+                    <input
                       type="email"
                       name="email"
                       id="email"
@@ -128,7 +137,7 @@ const Admissionform = ({ gap }) => {
                     />
                     <span className="focus-border"></span>
                   </div>
-                  <div className="form-group">
+                  {/* <div className="form-group">
                     <input
                       type="text"
                       name="course"
@@ -136,13 +145,13 @@ const Admissionform = ({ gap }) => {
                       placeholder="Course"
                     />
                     <span className="focus-border"></span>
-                  </div>
+                  </div> */}
                   <div className="form-group">
                     <input
                       type="text"
                       name="pgDiploma"
                       id="pg-diploma"
-                      placeholder="PG Diploma"
+                      placeholder="Your course"
                     />
                     <span className="focus-border"></span>
                   </div>
@@ -155,15 +164,7 @@ const Admissionform = ({ gap }) => {
                     />
                     <span className="focus-border"></span>
                   </div>
-                  <div className="form-group">
-                    <input
-                      type="tel"
-                      name="parentPhone"
-                      id="parent-phone"
-                      placeholder="Parent Phone Number"
-                    />
-                    <span className="focus-border"></span>
-                  </div>
+                  
                   <div className="form-group">
                     <textarea
                       name="message"

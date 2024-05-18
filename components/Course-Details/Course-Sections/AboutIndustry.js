@@ -2,10 +2,11 @@ import React, { useState } from "react";
 
 const AboutIndustry = ({ checkMatchCourses }) => {
   const [toggle, setToggle] = useState(false);
-  const { title, description } = checkMatchCourses[0];
-console.log("gettttttttttttttt", checkMatchCourses)
-const aboutTitle = checkMatchCourses[0]?.title;
-const aboutDescription = checkMatchCourses[0]?.description;
+  // const { title, description } = checkMatchCourses[0];
+
+const aboutTitle = checkMatchCourses.title;
+const aboutDescription = checkMatchCourses.description;
+console.log("222222222222222333333333333333", aboutTitle)
   return (
     <>
     

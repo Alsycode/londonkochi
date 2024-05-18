@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import sal from "sal.js";
-
+import Head from "next/head";
 import CardData from "../../data/elements/card";
 
 const CardFive = ({update}) => {
@@ -24,6 +24,34 @@ const CardFive = ({update}) => {
           data-sal-duration="800"
           key={index}
         >
+          <Head>
+  <title>{data?.attributes?.seo?.metaTitle}</title>
+  <meta name="description" content={data?.attributes?.seo?.metaDescription} />
+  <meta name="keywords" content={data?.attributes?.seo?.keywords} />
+  <meta name="robots" content={data?.attributes?.seo?.metaRobots} />
+  
+  <meta property="og:title" content={data?.attributes?.seo?.metaSocial[2]?.title} />
+  <meta property="og:description" content={data?.attributes?.seo?.metaSocial[2]?.metaDescription} />
+  <meta property="og:image" content={data?.attributes?.seo?.metaImage?.data?.attributes?.formats?.small?.url} />
+  <meta property="og:url" content={data?.attributes?.seo?.canonicalURL} />
+  <meta property="og:type" content="website" />
+  
+  <meta name="twitter:title" content={data?.attributes?.seo?.metaSocial[1]?.title} />
+  <meta name="twitter:description" content={data?.attributes?.seo?.metaSocial[1]?.metaDescription} />
+  <meta name="twitter:image" content={data?.attributes?.seo?.metaImage?.data?.attributes?.formats?.small?.url} />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <meta property="instgram:title" content={data?.attributes?.seo?.metaSocial[0]?.title} />
+  <meta property="instgram:description" content={data?.attributes?.seo?.metaSocial[0]?.metaDescription} />
+  <meta property="instgram:image" content={data?.attributes?.seo?.metaImage?.data?.attributes?.formats?.small?.url} /> 
+  
+  <script type="application/ld+json">{JSON.stringify(data?.attributes?.seo?.structuredData)}</script>
+  
+  <meta name="viewport" content={data?.attributes?.seo?.metaViewport} />
+  
+  {/* <link rel="canonical" href={data?.attributes?.seo?.canonicalURL} /> */}
+</Head>
+
           <div className="rbt-card variation-03 rbt-hover">
             <div className="rbt-card-img position-relative">
               {/* Image */}

@@ -53,7 +53,7 @@ console.log("seoco11111111111",matchedBlog)
     
     <meta name="viewport" content={matchedBlog?.attributes?.seo?.metaViewport} />
     
-    <link rel="canonical" href={matchedBlog?.attributes?.seo?.canonicalURL} />
+    {/* <link rel="canonical" href={matchedBlog?.attributes?.seo?.canonicalURL} /> */}
 </Head>
         </div>
          <p>{matchedBlog?.attributes?.para[0]?.text}</p> 

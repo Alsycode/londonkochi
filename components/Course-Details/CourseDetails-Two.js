@@ -28,7 +28,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
     });
   }, []);
  const cerificate = checkMatchCourses?.courseRequirement;
-
+console.log("666666666666666", checkMatchCourses)
    const detailname = courseData?.attributes?.Coursename;
   const jsontitle = checkMatchCourses?.courseTitle;
   let matchedCourse = null;
@@ -46,21 +46,21 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
 // console.log("detailname",detailname)
   const deliveryandBenifits = courseData?.attributes?.tabDatas?.DeliveryAndBenefit;
 
-  const aboutIndustry = courseData?.attributes?.tabDatas?.aboutIndustry;
+  const aboutIndustry = courseData?.attributes?.tabDatas?.aboutIndustry[0];
 // const AcclaimedAffiliations = courseData?.attributes?.tabDatas?.Acclaimed Affiliations;
  const overview = courseData?.attributes?.tabDatas;
   const requirement = courseData?.attributes?.tabDatas?.courseRequirement;
   const tagData = courseData?.attributes?.tags;
 // const certificates = 
- console.log("requirement",tagData)
- console.log("jsontitle",jsontitle)
- const meta = courseData?.attributes?.seo?.metaDescription;
- console.log("checkMatchCourses111111111111",meta)
- const jobrole = courseData?.attributes?.jobrole;
+//  console.log("requirement",aboutIndustry)
+//  console.log("jsontitle",jsontitle)
+//  const meta = courseData?.attributes?.seo?.metaDescription;
+//  console.log("checkMatchCourses111111111111",meta)
+  const jobrole = courseData?.attributes?.jobrole;
  console.log("jobrolee111111111111",jobrole)
   return (
     <>
-      <Head>
+      {/* <Head>
     <title>{courseData?.attributes?.seo?.metaTitle}</title>
     <meta name="description" content={courseData?.attributes?.seo?.metaDescription} />
     <meta name="keywords" content={courseData?.attributes?.seo?.keywords} />
@@ -86,7 +86,7 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
     <meta name="viewport" content={courseData?.attributes?.seo?.metaViewport} />
     
     <link rel="canonical" href={courseData?.attributes?.seo?.canonicalURL} />
-</Head>
+</Head> */}
       <div className="col-lg-8">
 
         {checkMatchCourses?.courseImg && (
@@ -149,17 +149,17 @@ const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
 
             </div>
 
+            {aboutIndustry && 
             <div
               className="rbt-instructor rbt-shadow-box instructor-wrapper mt--30"
               id="about-industry" // Corrected typo
             >
               
-          {checkMatchCourses &&
-             
-             <AboutIndustry checkMatchCourses={aboutIndustry} />
-           }
+              <AboutIndustry checkMatchCourses={aboutIndustry} />
 
             </div>
+            }
+
 
             <div className="rbt-course-feature-box rbt-shadow-box details-wrapper mt--30" id="certificates-and-affiliates">
   <div className="row">

@@ -10,10 +10,10 @@ import Cart from "@/components/Header/Offcanvas/Cart";
 import UniversityClassic from "@/components/13-university-classic/13-University-Classic";
 import HeaderStyleFour from "@/components/Header/HeaderStyle-Four";
 import Separator from "@/components/Common/Separator";
-
-const UniversityPage = ({videoData, testimonialData, update, detailData }) => {
+import Headerstylekochi from "../../components/Header/headerstylekochi"
+const UniversityPage = ({videoData, testimonialData, update, detailData, kochiSeosDatas }) => {
   const data = update;
- console.log("00000000000000000000000000000000000000", testimonialData)
+ console.log("00000000000000000000000000000000000000", kochiSeosDatas)
   return (
     <>
       <PageHead title="London College- No.1 Logistics School" />
@@ -21,9 +21,9 @@ const UniversityPage = ({videoData, testimonialData, update, detailData }) => {
         <Context>
           <MobileMenu />
           <HeaderStyleFour headerType="" />
-          <UniversityClassic videoData={videoData} detailData={detailData} testimonialData={testimonialData} update={update}/>
+          <UniversityClassic videoData={videoData} detailData={detailData} testimonialData={testimonialData} update={update} kochiSeosDatas={kochiSeosDatas} />
           <Cart />
-
+               
           <BackToTop />
           <Separator />
           <FooterOne />

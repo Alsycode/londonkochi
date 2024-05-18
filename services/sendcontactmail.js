@@ -1,6 +1,6 @@
 import nodemailer from "nodemailer";
 
-export async function sendSimpleMail({ name, email, subject, message }) {
+export async function sendSimpleMail({ name, email, subject, message, phone, qualification }) {
   try {
     var transporter = nodemailer.createTransport({
       service: "gmail",
@@ -24,7 +24,9 @@ export async function sendSimpleMail({ name, email, subject, message }) {
         <div style="margin-bottom: 20px;">
           <p style="font-size: 16px; margin-bottom: 5px;"><strong>Name:</strong> ${name}</p>
           <p style="font-size: 16px; margin-bottom: 5px;"><strong>Email:</strong> ${email}</p>
-          <p style="font-size: 16px; margin-bottom: 5px;"><strong>Subject:</strong> ${subject}</p>
+        
+          <p style="font-size: 16px; margin-bottom: 5px;"><strong>Phone:</strong> ${phone}</p>
+          <p style="font-size: 16px; margin-bottom: 5px;"><strong>Qualification:</strong> ${qualification}</p>
         </div>
         <div style="border-top: 1px solid #ccc; padding-top: 20px;">
           <p style="font-size: 16px;"><strong>Message:</strong></p>

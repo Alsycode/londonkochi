@@ -8,7 +8,7 @@ export const useAppContext = () => useContext(CreateContext);
 const Context = ({ children }) => {
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => state.CartReducer);
-
+  // const [college, setCollege] = useState("kochi");
   const [cartToggle, setCart] = useState(true);
   const [toggle, setToggle] = useState(true);
   const [search, setSearch] = useState(true);
@@ -65,7 +65,8 @@ const Context = ({ children }) => {
         setPricingThree,
         pricingFour,
         setPricingFour,
-        data // Include fetched data in the context value
+        data ,
+       
       }}
     >
       {children}

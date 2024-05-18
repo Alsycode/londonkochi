@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Head from "next/head";
 const Scroll = ({ testimonial, testimonialData , dataset}) => {
   const data = dataset;
 
@@ -12,7 +12,36 @@ const Scroll = ({ testimonial, testimonialData , dataset}) => {
           <div className="scroll-animation-wrapper mt--50" >
             <div className="scroll-animation scroll-right-left">
               {data?.map((item, innerIndex) => (
+
                 <div className="single-column-20" key={innerIndex}>
+                  <Head>
+  <title>{item?.data?.attributes?.seo?.metaTitle}</title>
+  <meta name="description" content={item?.data?.attributes?.seo?.metaDescription} />
+  <meta name="keywords" content={item?.data?.attributes?.seo?.keywords} />
+  <meta name="robots" content={item?.data?.attributes?.seo?.metaRobots} />
+  
+  <meta property="og:title" content={item?.data?.attributes?.seo?.metaSocial[2]?.title} />
+  <meta property="og:description" content={item?.data?.attributes?.seo?.metaSocial[2]?.metaDescription} />
+  <meta property="og:image" content={item?.data?.attributes?.seo?.metaImage?.data?.attributes?.formats?.small?.url} />
+  {/* <meta property="og:url" content={item?.data?.attributes?.seo?.canonicalURL} /> */}
+  <meta property="og:type" content="website" />
+  
+  <meta name="twitter:title" content={item?.data?.attributes?.seo?.metaSocial[1]?.title} />
+  <meta name="twitter:description" content={item?.data?.attributes?.seo?.metaSocial[1]?.metaDescription} />
+  <meta name="twitter:image" content={item?.data?.attributes?.seo?.metaImage?.data?.attributes?.formats?.small?.url} />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <meta property="instgram:title" content={item?.data?.attributes?.seo?.metaSocial[0]?.title} />
+  <meta property="instgram:description" content={item?.data?.attributes?.seo?.metaSocial[0]?.metaDescription} />
+  <meta property="instgram:image" content={item?.data?.attributes?.seo?.metaImage?.data?.attributes?.formats?.small?.url} /> 
+  
+  {/* <script type="application/ld+json">{JSON.stringify(item?.data?.attributes?.seo?.structuredData)}</script> */}
+  
+  <meta name="viewport" content={item?.data?.attributes?.seo?.metaViewport} />
+  
+  {/* <link rel="canonical" href={item?.data?.attributes?.seo?.canonicalURL} /> */}
+</Head>
+
                   <div className="rbt-testimonial-box">
                     <div className="inner">
                       <div className="clint-info-wrapper">

@@ -10,7 +10,7 @@ export async function sendMail({
   phone,
   address,
   qualification,
-  course,
+  // course,
   pgDiploma,
   parentName,
   parentPhone,
@@ -62,7 +62,7 @@ export async function sendMail({
           <p style="font-size: 16px; margin-bottom: 5px;"><strong>phone:</strong> ${phone}</p>
           <p style="font-size: 16px; margin-bottom: 5px;"><strong>qualification:</strong> ${qualification}</p>
           <p style="font-size: 16px; margin-bottom: 5px;"><strong>address:</strong> ${address}</p>
-          <p style="font-size: 16px; margin-bottom: 5px;"><strong>course:</strong> ${course}</p>
+          
           <p style="font-size: 16px; margin-bottom: 5px;"><strong>pgDiploma:</strong> ${pgDiploma}</p>
           <p style="font-size: 16px; margin-bottom: 5px;"><strong>parentName:</strong> ${parentName}</p>       
           <p style="font-size: 16px; margin-bottom: 5px;"><strong>parentPhone:</strong> ${parentPhone}</p>

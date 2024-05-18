@@ -1,6 +1,6 @@
 import HeaderTopFour from "./Header-Top/HeaderTop-Four";
 import HeaderFour from "./Headers/Header-Four";
-
+import Kochiheader from "../../components/Header/Headers/kochiheader"
 const HeaderStyleFour = () => {
   return (
     <>

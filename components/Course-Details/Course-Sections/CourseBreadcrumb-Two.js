@@ -50,7 +50,7 @@ const CourseBreadcrumbTwo = ({ getMatchCourse }) => {
               <span>{getMatchCourse.studentNumber} students</span>
             </div> */}
           </div>
-          <h2 className="title theme-gradient">{getMatchCourse.courseTitle}</h2>
+          <h2 className="title theme-gradient">{getMatchCourse?.courseTitle}</h2>
 
           <div className="rbt-author-meta mb--20 justify-content-center">
             {/* <div className="rbt-avater">

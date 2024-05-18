@@ -2,7 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/londoncollege-kochi": "pages/londoncollege-kochi.js",
+  "/londoncollege-mumbai": "pages/londoncollege-mumbai.js",
   "/": "pages/index.js",
-  "/admissions": "pages/admissions.js",
-  "/elements/style-guide": "pages/elements/style-guide.js"
+  "/404": "pages/404.js"
 }

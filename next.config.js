@@ -6,7 +6,6 @@ const nextConfig = {
   images: {
     domains: ['res.cloudinary.com'],
   },
-  // Add the videos configuration
   webpack(config, { isServer }) {
     if (!isServer) {
       // Exclude Node.js core modules from bundling in the browser
@@ -14,8 +13,8 @@ const nextConfig = {
         fs: false,
         net: false,
         dns: false,
-        child_process: false, // Exclude child_process from bundling
-        tls: false, // Exclude tls from bundling
+        child_process: false,
+        tls: false,
       };
     }
     config.module.rules.push({
@@ -31,6 +30,30 @@ const nextConfig = {
       ],
     });
     return config;
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/',
+        destination: '/londoncollege-mumbai',
+        has: [
+          {
+            type: 'host',
+            value: 'mumbai.londoncollege.in',
+          },
+        ],
+      },
+      {
+        source: '/',
+        destination: '/londoncollege-kochi',
+        has: [
+          {
+            type: 'host',
+            value: 'kochi.londoncollege.in',
+          },
+        ],
+      },
+    ];
   },
 };
 
