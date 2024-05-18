@@ -19,7 +19,7 @@ const FaqsPage = () => {
 
       <Provider store={Store}>
         <Context>
-          <Headerstylekochi headerSticky="rbt-sticky" headerType="" />
+          <Headerstylemumbai headerSticky="rbt-sticky" headerType="" />
           <MobileMenu />
           <Cart />
           <BreadCrumb title="Faqs" text="Faqs" />
