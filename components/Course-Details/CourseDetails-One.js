@@ -77,7 +77,7 @@ const CourseDetailsOne = ({ checkMatchCourses }) => {
             className="rbt-review-wrapper rbt-shadow-box review-wrapper mt--30"
             id="Job rolet"
           >
-           <Jobrole/>
+          <Jobrole/>
           </div>
 
           {/* {checkMatchCourses &&

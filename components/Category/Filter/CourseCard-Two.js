@@ -56,7 +56,7 @@ console.log("********courselogcourselog",courselog)
               }`}
             >
               <div className="rbt-card-img">
-                <Link href={`/londoncollege-mumbai/logistics-and-scm-courses/${data?.attributes?.slug}`}>
+                <Link href={`/logistics-and-scm-courses/${data?.attributes?.slug}`}>
                   <Image
                     src={data?.attributes?.courseimage?.data?.attributes?.formats?.thumbnail?.url}
                     width={235}
@@ -71,7 +71,7 @@ console.log("********courselogcourselog",courselog)
                     <Link href="#">Chennai</Link>
                   </div>
                 <h4 className="rbt-card-title">
-                  <Link href={`/londoncollege-mumbai/logistics-and-scm-courses/${data?.attributes?.slug}`}>
+                  <Link href={`/logistics-and-scm-courses/${data?.attributes?.slug}`}>
                     {data?.attributes?.tabDatas?.courseTitle}
                   </Link>
                 </h4>
@@ -87,7 +87,7 @@ console.log("********courselogcourselog",courselog)
                 <div className="rbt-card-bottom">
                   <Link
                     className="transparent-button"
-                    href={`/londoncollege-mumbai/logistics-and-scm-courses/${data?.attributes?.slug}`}
+                    href={`/logistics-and-scm-courses/${data?.attributes?.slug}`}
                   >
                     Learn More
                     <i className="feather-arrow-right"></i>

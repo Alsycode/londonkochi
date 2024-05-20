@@ -13,7 +13,7 @@ import Separator from "@/components/Common/Separator";
 import Headerstylekochi from "../../components/Header/headerstylekochi"
 const UniversityPage = ({videoData, testimonialData, update, detailData, kochiSeosDatas }) => {
   const data = update;
- console.log("00000000000000000000000000000000000000", kochiSeosDatas)
+ console.log("00000000000000000000000000000000000000", detailData)
   return (
     <>
       <PageHead title="London College- No.1 Logistics School" />

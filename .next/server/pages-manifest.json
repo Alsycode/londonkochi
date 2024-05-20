@@ -2,8 +2,13 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/londoncollege-kochi": "pages/londoncollege-kochi.js",
   "/londoncollege-mumbai": "pages/londoncollege-mumbai.js",
-  "/": "pages/index.js",
-  "/404": "pages/404.js"
+  "/londoncollege-mumbai/about": "pages/londoncollege-mumbai/about.js",
+  "/404": "pages/404.js",
+  "/londoncollege-mumbai/logistics-and-scm-courses": "pages/londoncollege-mumbai/logistics-and-scm-courses.js",
+  "/londoncollege-mumbai/updates": "pages/londoncollege-mumbai/updates.js",
+  "/londoncollege-mumbai/testimonials": "pages/londoncollege-mumbai/testimonials.js",
+  "/londoncollege-mumbai/faq": "pages/londoncollege-mumbai/faq.js",
+  "/londoncollege-mumbai/contactus": "pages/londoncollege-mumbai/contactus.js",
+  "/londoncollege-mumbai/admissions": "pages/londoncollege-mumbai/admissions.js"
 }

@@ -25,6 +25,16 @@ const Nav = () => {
   return (
     <nav className="mainmenu-nav">
       <ul className="mainmenu">
+      <li className="with-megamenu has-menu-child-item position-static">
+          <Link
+            className={`${activeMenuItem === "home" ? "open" : ""}`}
+            onClick={() => toggleMenuItem("home")}
+            href="/"
+          >
+            Our campuses 
+            <i ></i>
+          </Link>
+          </li>
         <li className="with-megamenu has-menu-child-item position-static">
           <Link
             className={`${activeMenuItem === "home" ? "open" : ""}`}
@@ -103,6 +113,7 @@ const Nav = () => {
             </div>
           </div>  */}
         </li>
+   
         <li className="with-megamenu position-static">
           <Link
             href="/about-us-02"

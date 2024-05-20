@@ -104,7 +104,7 @@ console.log("dffdf",videoDataa)
      <script type="application/ld+json">{JSON.stringify(kochiSeosDatas?.data?.attributes?.structuredData)}</script>
       </Head>
       <div className="rbt-slider-main-wrapper position-relative">
-        <Mumbaibanner />
+        <Kochibanner />
       </div>
        <div className="d-flex justify-content-center align-items-center my-5"> 
   <h1 className="title text-center">

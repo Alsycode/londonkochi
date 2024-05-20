@@ -25,7 +25,7 @@ const SingleCourseTwo = ({courseData, updateData}) => {
   const router = useRouter();
   const postId = router.query.id;
   const slug = router.query.id;
-  console.log("slug------------------",slug)
+  console.log("slug------------------",courseData)
   let getCourse;
 
   getCourse = JSON.parse(JSON.stringify(CourseData.courseTab));
@@ -121,7 +121,7 @@ export async function getServerSideProps() {
   const token = "3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c";
   
   // Fetching the first URL
-  const res = await fetch("https://godigitalhub.org/api/london-mumbai-courses?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=seo.metaImage&populate[3]=tags&populate[4]=courseimage&populate[5]=recruiters&populate[6]=jobrole&populate[7]=courseVideo&populate[8]=jobrole.roles&populate[9]=jobrole.roleimage", {
+  const res = await fetch("https://godigitalhub.org/api/coursedetails?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=seo.metaImage&populate[3]=tags&populate[4]=courseimage&populate[5]=recruiters&populate[6]=jobrole&populate[7]=courseVideo&populate[8]=jobrole.roles&populate[9]=jobrole.roleimage", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
@@ -129,7 +129,7 @@ export async function getServerSideProps() {
   const courseData = await res.json();
   
   // Fetching the second URL
-  const res2 = await fetch("https://godigitalhub.org/api/london-collegeupdates?populate=*", {
+  const res2 = await fetch("https://godigitalhub.org/api/london-collegeupdates?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=Bannerimg1&populate[3]=smallimage1&populate[4]=smallimage2&populate[5]=smallimage3&populate[6]=blockquote&populate[7]=para&populate[8]=tags&populate[9]=seo.metaImage", {
     headers: {
       Authorization: `Bearer ${token}`,
     },
