@@ -76,10 +76,11 @@ console.log("^&&&&&&&^^^^^^^^^^^^^&&&&&&&&&",courseData)
 
 export default CourseCardFourLayout;
 export async function getServerSideProps() {
-  const token = "3e782df90eeb3343004cf32f2bb0a6871b64271e6701a72e38cc95756a51fc72a3175011998d8e812470738288cba55a77a4eb9e5d6c6bfe6bff8dd37dd8daec91e10a1cd40ddbf8792168757d21f103c3935096c85b1daa9ecf390d4ebfd002868cf7c698d50a875ed1c66e59afd63d05e9a9e589cb742c0a026cd8c0f82c2c";
+  const token = process.env.STRAPI_API_TOKEN;
+  const apiUrl1 = process.env.LONDONMUMBAI_COURSE;
 
   // Fetching data from the specified URL
-  const res = await fetch("https://godigitalhub.org/api/london-mumbai-courses?populate[0]=seo&populate[1]=seo.metaSocial&populate[2]=seo.metaImage&populate[3]=tags&populate[4]=courseimage&populate[5]=recruiters&populate[6]=jobrole&populate[7]=courseVideo&populate[8]=jobrole.roles&populate[9]=jobrole.roleimage", {
+  const res = await fetch(apiUrl1, {
     headers: {
       Authorization: `Bearer ${token}`,
     },

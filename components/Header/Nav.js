@@ -31,7 +31,7 @@ const Nav = () => {
             onClick={() => toggleMenuItem("home")}
             href="/"
           >
-            Our campuses 
+            Campuses 
             <i ></i>
           </Link>
           </li>

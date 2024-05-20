@@ -27,45 +27,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/londoncollege-mumbai": [
+    "/londoncollege-mumbai/logistics-and-scm-courses/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/londoncollege-mumbai.js"
-    ],
-    "/londoncollege-mumbai/about": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/londoncollege-mumbai/about.js"
-    ],
-    "/londoncollege-mumbai/admissions": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/londoncollege-mumbai/admissions.js"
-    ],
-    "/londoncollege-mumbai/contactus": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/londoncollege-mumbai/contactus.js"
-    ],
-    "/londoncollege-mumbai/faq": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/londoncollege-mumbai/faq.js"
-    ],
-    "/londoncollege-mumbai/logistics-and-scm-courses": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/londoncollege-mumbai/logistics-and-scm-courses.js"
-    ],
-    "/londoncollege-mumbai/testimonials": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/londoncollege-mumbai/testimonials.js"
+      "static/chunks/pages/londoncollege-mumbai/logistics-and-scm-courses/[id].js"
     ],
     "/londoncollege-mumbai/updates": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/londoncollege-mumbai/updates.js"
+    ],
+    "/londoncollege-mumbai/updates/[blogid]": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/londoncollege-mumbai/updates/[blogid].js"
     ]
   },
   "ampFirstPages": []

@@ -56,10 +56,11 @@ console.log("seoco11111111111",matchedBlog)
     {/* <link rel="canonical" href={matchedBlog?.attributes?.seo?.canonicalURL} /> */}
 </Head>
         </div>
-         <p>{matchedBlog?.attributes?.para[0]?.text}</p> 
+        {matchedBlog?.attributes?.para ? (
+         <p>{matchedBlog?.attributes?.para[0]?.text}</p> ) : null }
 
          <blockquote className="wp-block-quote">
-          <p>{matchedBlog.attributes?.Blockquote?.quote}</p>
+          <p>{matchedBlog.attributes?.blockquote?.quote}</p>
           {/* <cite>
             <Link href="https://themeforest.net/user/rainbow-themes/portfolio">
               {matchedBlog.city}
@@ -88,36 +89,42 @@ console.log("seoco11111111111",matchedBlog)
               ))}
           </ul>
         </div> */}
-
-         <h4>{matchedBlog?.attributes?.para[1]?.heading}</h4>
+                  {matchedBlog?.attributes?.para ? (
+         <h4>{matchedBlog?.attributes?.para[1]?.heading}</h4>) : null}
 
         <p>
           <Link href="#">{matchedBlog?.linkOne}</Link> {matchedBlog.descTwo}
         </p>
 
-        <p>{matchedBlog?.attributes?.para[2]?.text}</p>
+        {matchedBlog?.attributes?.para ? (
+    <p>{matchedBlog?.attributes?.para[0]?.text}</p>
+  ) : null}
 
-        <h4>{matchedBlog?.attributes?.para[2]?.heading}</h4>
+{matchedBlog?.attributes?.para ? (
+    <p>{matchedBlog?.attributes?.para[2]?.text}</p>
+  ) : null}
 
         {/* <p>
           <Link href="#">{matchedBlog?.linkTwo}</Link> {matchedBlog.descSaven}
         </p>  */}
+{matchedBlog?.attributes?.Bannerimage2?.data?.attributes?.formats?.large?.url ? (
+   <div className="post-thumbnail mb--30 position-relative wp-block-image alignwide">
+   <figure>
+     {matchedBlog && (
+       <Image
+         src={matchedBlog?.attributes?.Bannerimage2?.data?.attributes?.formats?.large?.url}
+         width={1085}
+         height={645}
+         priority
+         alt="Blog Images"
+       />
+     )}
 
-        <div className="post-thumbnail mb--30 position-relative wp-block-image alignwide">
-          <figure>
-            {matchedBlog && (
-              <Image
-                src={matchedBlog?.attributes?.Bannerimage2?.data?.attributes?.formats?.large?.url}
-                width={1085}
-                height={645}
-                priority
-                alt="Blog Images"
-              />
-            )}
-
-            {/* <figcaption>{matchedBlog?.caption}</figcaption> */}
-          </figure>
-        </div> 
+     {/* <figcaption>{matchedBlog?.caption}</figcaption> */}
+   </figure>
+ </div> 
+) : null}
+       
 
         {/* <p>{matchedBlog?.descFive}</p>
         <h4>{matchedBlog?.titleTwo}</h4> */}
