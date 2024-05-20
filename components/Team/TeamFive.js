@@ -9,6 +9,13 @@ import TeamData from "../../data/elements/team.json";
 const TeamFive = () => {
   // const { setCollege, college } = useAppContext();
   // console("collegesatte222222222222222222222", college)
+  const handleRedirect = (location) => {
+    if (location === 'mumbai') {
+      window.location.href = 'https://mumbai.londoncollege.in';
+    } else if (location === 'kochi') {
+      window.location.href = 'https://kochi.londoncollege.in';
+    }
+  };
   return (
     <>
       <div className="container">
@@ -22,9 +29,9 @@ const TeamFive = () => {
                     
                   >
                   
-                    <Link href={`/londoncollege-kochi`} passHref>
+                    {/* <Link href={`/londoncollege-kochi`} passHref> */}
                      
-                        <div className="inner" style={{ height: "400px" }}>
+                        <div className="inner" style={{ height: "400px" }}  onClick={() => handleRedirect('kochi')}>
                           <div className="thumbnail">
                             <Image
                               src={Img}
@@ -56,7 +63,7 @@ const TeamFive = () => {
                           </div>
                         </div>
                       
-                    </Link>
+                    {/* </Link> */}
                   </div>
                   
      
@@ -69,9 +76,9 @@ const TeamFive = () => {
                    
                   >
                   
-                    <Link href={`/londoncollege-mumbai`} passHref>
+                    {/* <Link href={`/londoncollege-mumbai`} passHref> */}
                      
-                        <div className="inner" style={{ height: "400px" }}>
+                        <div className="inner" style={{ height: "400px" }}  onClick={() => handleRedirect('mumbai')}>
                           <div className="thumbnail">
                             <Image
                               src={Img}
@@ -103,7 +110,7 @@ const TeamFive = () => {
                           </div>
                         </div>
                       
-                    </Link>
+                    {/* </Link> */}
                   </div>
                   
       
