@@ -73,7 +73,7 @@ const CardFive = ({update}) => {
             </div>
             <div className="rbt-card-body">
               <h6 className="rbt-card-title">
-                <Link href={`/londoncollege-mumbai/update/${data.id}`}>{data?.attributes?.heading}</Link>
+                <Link href={`/londoncollege-mumbai/updates/${data.id}`}>{data?.attributes?.heading}</Link>
               </h6>
               <div className="rbt-card-bottom">
                 <Link className="transparent-button" href={`/londoncollege-mumbai/updates/${data.id}`}>
