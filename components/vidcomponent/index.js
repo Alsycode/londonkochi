@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Video from 'next-video';
 import Head from "next/head";
+
 const VideoCarousel = ({ videoData }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showPlayer, setShowPlayer] = useState(false);
@@ -17,17 +18,14 @@ const VideoCarousel = ({ videoData }) => {
   };
 
   const nextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === videoData.length - 1 ? 0 : prevSlide + 1
-    );
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % videoData.data.length);
   };
 
   const prevSlide = () => {
     setCurrentSlide((prevSlide) =>
-      prevSlide === 0 ? videoData.length - 1 : prevSlide - 1
+      prevSlide === 0 ? videoData.data.length - 1 : prevSlide - 1
     );
   };
- 
 
   return (
     <div
@@ -42,60 +40,49 @@ const VideoCarousel = ({ videoData }) => {
         boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
       }}
     >
-    
-      <div 
+      <div
         style={{
           textAlign: "center",
           marginBottom: "30px",
         }}
       >
-       <span className="subtitle">
-                  <h1> OUR STORIES </h1> 
-                  </span>
+        <span className="subtitle">
+          <h1> OUR STORIES </h1>
+        </span>
       </div>
       <div style={{ position: "relative", overflow: "hidden" }}>
         {videoData?.data?.map((videoObj, index) => (
           <div
             key={videoObj.id}
-            className={`carousel-slide ${
-              index === currentSlide ? "active" : ""
-            }`}
+            className={`carousel-slide ${index === currentSlide ? "active" : ""}`}
             style={{
               display: index === currentSlide ? "flex" : "none",
               alignItems: "center",
-              flexDirection: "column", // Stack items vertically on small screens
-              textAlign: "center", // Center text on small screens
+              flexDirection: "column",
+              textAlign: "center",
             }}
           >
-            
             <Head>
-    <title>{videoObj?.attributes?.seo?.metaTitle}</title>
-    <meta name="description" content={videoObj?.attributes?.seo?.metaDescription} />
-    <meta name="keywords" content={videoObj?.attributes?.seo?.keywords} />
-    <meta name="robots" content={videoObj?.attributes?.seo?.metaRobots} />
-    
-    <meta property="og:title" content={videoObj?.attributes?.seo?.metaSocial[2]?.title} />
-    <meta property="og:description" content={videoObj?.attributes?.seo?.metaSocial[2]?.metaDescription} />
-    <meta property="og:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
-    <meta property="og:url" content={videoObj?.attributes?.seo.canonicalURL} />
-    <meta property="og:type" content="website" />
-    
-    <meta name="twitter:title" content={videoObj?.attributes?.seo?.metaSocial[1]?.title} />
-    <meta name="twitter:description" content={videoObj?.attributes?.seo?.metaSocial[1]?.metaDescription} />
-    <meta name="twitter:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
-    <meta name="twitter:card" content="summary_large_image" />
-    
-    <meta property="instgram:title" content={videoObj?.attributes?.seo?.metaSocial[0]?.title} />
-    <meta property="instgram:description" content={videoObj?.attributes?.seo?.metaSocial[0]?.metaDescription} />
-    <meta property="instgram:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} /> 
-    
-    <script type="application/ld+json">{JSON.stringify(videoObj?.attributes?.seo?.structuredData)}</script>
-    
-    <meta name="viewport" content={videoObj?.attributes?.seo?.metaViewport} />
-    
-    <link rel="canonical" href={videoObj?.attributes?.seo?.canonicalURL} />
-</Head>
-
+              <title>{videoObj?.attributes?.seo?.metaTitle}</title>
+              <meta name="description" content={videoObj?.attributes?.seo?.metaDescription} />
+              <meta name="keywords" content={videoObj?.attributes?.seo?.keywords} />
+              <meta name="robots" content={videoObj?.attributes?.seo?.metaRobots} />
+              <meta property="og:title" content={videoObj?.attributes?.seo?.metaSocial[2]?.title} />
+              <meta property="og:description" content={videoObj?.attributes?.seo?.metaSocial[2]?.metaDescription} />
+              <meta property="og:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+              <meta property="og:url" content={videoObj?.attributes?.seo.canonicalURL} />
+              <meta property="og:type" content="website" />
+              <meta name="twitter:title" content={videoObj?.attributes?.seo?.metaSocial[1]?.title} />
+              <meta name="twitter:description" content={videoObj?.attributes?.seo?.metaSocial[1]?.metaDescription} />
+              <meta name="twitter:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta property="instgram:title" content={videoObj?.attributes?.seo?.metaSocial[0]?.title} />
+              <meta property="instgram:description" content={videoObj?.attributes?.seo?.metaSocial[0]?.metaDescription} />
+              <meta property="instgram:image" content={videoObj?.attributes?.seo?.metaImage?.data?.attaributes?.formats?.small?.url} />
+              <script type="application/ld+json">{JSON.stringify(videoObj?.attributes?.seo?.structuredData)}</script>
+              <meta name="viewport" content={videoObj?.attributes?.seo?.metaViewport} />
+              <link rel="canonical" href={videoObj?.attributes?.seo?.canonicalURL} />
+            </Head>
             <div
               style={{
                 width: "100%",
@@ -106,8 +93,7 @@ const VideoCarousel = ({ videoData }) => {
             >
               <img
                 src={
-                  videoObj?.attributes?.videoimage?.data?.attributes?.formats
-                    ?.small?.url
+                  videoObj?.attributes?.videoimage?.data?.attributes?.formats?.small?.url
                 }
                 alt={videoObj.attributes?.title}
                 className="carousel-image"
@@ -121,9 +107,7 @@ const VideoCarousel = ({ videoData }) => {
               <button
                 className="play-button"
                 onClick={() =>
-                  openPlayer(
-                    videoObj?.attributes?.Video?.data?.attributes?.url
-                  )
+                  openPlayer(videoObj?.attributes?.Video?.data?.attributes?.url)
                 }
                 style={{
                   position: "absolute",
@@ -198,22 +182,20 @@ const VideoCarousel = ({ videoData }) => {
             padding: "20px",
           }}
         >
-<button
-  className="close-button"
-  onClick={closePlayer}
-  style={{
-    position: "relative",
-    top: "20px",
-    right: "20px",
-    background: "none",
-    border: "none",
-    cursor: "pointer",
-    fontSize: "20px",
-    marginBottom:"20px"
-  // Ensure the button appears above the video
-  }}
->
-
+          <button
+            className="close-button"
+            onClick={closePlayer}
+            style={{
+              position: "relative",
+              top: "20px",
+              right: "20px",
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              fontSize: "20px",
+              marginBottom: "20px",
+            }}
+          >
             Close
           </button>
           <Video src={videoUrl} style={{ width: "100%", height: "80%" }} />

@@ -152,7 +152,11 @@ const UniversityClassic = ({videoData, testimonialData, update, detailData, koch
             </div>
           </div>
           <div className="row g-5">
-  {detailData?.data?.slice(0, 3).map((item, index) => (
+  {detailData?.data?.slice(0, 3).map((item, index) => {
+    const imageUrl = item?.attributes?.courseimage?.data?.attributes?.formats?.small?.url;
+    
+
+    return (
     <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={index}>
       <Head>
         <title>{item?.attributes?.seo?.metaTitle}</title>
@@ -179,7 +183,7 @@ const UniversityClassic = ({videoData, testimonialData, update, detailData, koch
         <div className="thumbnail">
           <Link href={`/logistics-and-scm-courses/${item?.attributes?.slug}`}>
             <Image
-              src={item?.attributes?.courseimage?.data?.attributes?.formats?.thumbnail?.url}
+              src={imageUrl}
               width={498}
               height={498}
               alt="Card image"
@@ -194,7 +198,7 @@ const UniversityClassic = ({videoData, testimonialData, update, detailData, koch
         </div>
       </div>
     </div>
-  ))}
+  )})}
 <div className="mb-60 mt-60">
 <Gallery/>
 </div>

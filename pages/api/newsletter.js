@@ -1,5 +1,5 @@
 function getRequestParams(email) {
-    const API_KEY = "67dde0f449c4dc820f5f47ed86d31202-us22";
+    const API_KEY = process.env.MAILCHIMP_API_KEY;
     const LIST_ID = "d977d0501b";
   
     const DATACENTER = API_KEY.split("-")[1];

@@ -68,7 +68,7 @@ console.log("********courselogcourselog",courselog)
               <div className="rbt-card-body">
               <div className="rbt-category">
                     <Link href="#">Mumbai</Link>
-                    <Link href="#">Chennai</Link>
+                    <Link href="#">Kochi</Link>
                   </div>
                 <h4 className="rbt-card-title">
                   <Link href={`/londoncollege-mumbai/logistics-and-scm-courses/${data?.attributes?.slug}`}>
