@@ -2,8 +2,5 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/londoncollege-kochi/about": "pages/londoncollege-kochi/about.js",
-  "/londoncollege-kochi": "pages/londoncollege-kochi.js",
-  "/logistics-and-scm-courses/[id]": "pages/logistics-and-scm-courses/[id].js",
-  "/404": "pages/404.js"
+  "/": "pages/index.js"
 }

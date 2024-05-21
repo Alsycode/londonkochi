@@ -136,23 +136,23 @@ const UniversityClassic = ({videoData, testimonialData, update, detailData, koch
         <div className="container">
           <div className="row g-5 align-items-end mb--60">
             <div className="col-lg-6 col-md-12 col-12">
-           <div className="section-title text-start">
+           {/* <div className="section-title text-start">
               <span className="text-uppercase text-black">
            <h2> Our Program</h2>
           </span>
 
-              </div> 
+              </div>  */}
             </div>
             <div className="col-lg-6 col-md-12 col-12">
-              <div className="load-more-btn text-start text-lg-end">
+              {/* <div className="load-more-btn text-start text-lg-end">
                 <Link className="rbt-btn-link" href="/logistics-and-scm-courses">
                   Explore our courses<i className="feather-arrow-right"></i>
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="row g-5">
-  {detailData?.data?.slice(0, 3).map((item, index) => {
+  {/* {detailData?.data?.slice(0, 3).map((item, index) => {
     const imageUrl = item?.attributes?.courseimage?.data?.attributes?.formats?.thumbnail?.url;
     
 
@@ -198,7 +198,7 @@ const UniversityClassic = ({videoData, testimonialData, update, detailData, koch
         </div>
       </div>
     </div>
-  )})}
+  )})} */}
 <div className="mb-60 mt-60">
 <Gallery/>
 </div>
