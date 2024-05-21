@@ -18,6 +18,7 @@ import VideoImg from "../../public/images/course/course-02.jpg";
 import AboutIndustry from "./Course-Sections/AboutIndustry";
 import Gallery from "../Gallery/Gallery";
 import Jobrole from "./Course-Sections/jobrole";
+import { saveAs } from 'file-saver';
 const tags = ["Warehouse","Commerce","DIPLOMA","Online","Shipping","Supply Chain Management","Logistics","Logistics Courses","Logistics Colleges"];
 const CourseDetailsTwo = ({ checkMatchCourses, courseData }) => {
   useEffect(() => {
@@ -58,6 +59,12 @@ console.log("666666666666666", checkMatchCourses)
 //  console.log("checkMatchCourses111111111111",meta)
   const jobrole = courseData?.attributes?.jobrole;
  console.log("jobrolee111111111111",jobrole)
+ 
+ const handleDownload = () => {
+  // URL to the syllabus Excel file in the public directory
+  const fileUrl = "/syllabus.xlsx";
+  saveAs(fileUrl, "syllabus.xlsx");
+};
   return (
     <>
       {/* <Head>
@@ -213,8 +220,10 @@ console.log("666666666666666", checkMatchCourses)
               id="job-role"
             >
               
-             {/* <Jobrole jobrole={jobrole}/> */}
-
+             <Jobrole jobrole={jobrole}/>
+             <button onClick={handleDownload} className="btn btn-primary">
+                  Download Syllabus
+                </button>
             </div>
             <div className="tagcloud" style={{ marginTop: "30px" }}>
       {tagData?.map((tag, index) => (
@@ -227,6 +236,7 @@ console.log("666666666666666", checkMatchCourses)
         </Link>
       ))}
     </div>
+    
         </div>
         
              <div className="col-lg-4">
@@ -236,6 +246,7 @@ console.log("666666666666666", checkMatchCourses)
           </div>
         </div>
       </div>
+     
       </div>
  
     </>

@@ -22,7 +22,8 @@ import CourseDetails from "../../../components/Course-Details/CourseDetails-Two"
 import CardFive from "@/components/Cards/Card-Five";
 import Headerstylekochi from "../../../components/Header/headerstylekochi"; 
 console.log("CourseDatajsonnnnnnnnnnnnnnnn:", CourseData);
-import Cardkochi from "../../../components/Cards/cardkochi"
+import Cardkochi from "../../../components/Cards/cardkochi";
+import { saveAs } from 'file-saver';
 const SingleCourseTwo = ({courseData, updateData}) => {
   const router = useRouter();
   const postId = router.query.id;
@@ -55,6 +56,11 @@ console.log("coursejson", coursejson)
 
 const matchingItem = courseData?.data?.find((item) => item?.attributes?.slug === slug);
 console.log("matchingItem**************", matchingItem)
+const handleDownload = () => {
+  // URL to the syllabus Excel file
+  const fileUrl = "/syllabus.xlsx";
+    saveAs(fileUrl, "syllabus.xlsx");
+};
   return (
     <>
       <PageHead title="Course Filter Toggle - Online Courses & Education NEXTJS14 Template" />
@@ -76,7 +82,9 @@ console.log("matchingItem**************", matchingItem)
               </div>
             </div>
           </div>
-
+          <button onClick={handleDownload} className="btn btn-primary">
+                  Download Syllabus
+                </button>
           <div className="rbt-section-overlayping-top rbt-section-gapBottom">
             <div className="inner">
               <div className="container">
@@ -84,10 +92,11 @@ console.log("matchingItem**************", matchingItem)
                   checkMatchCourses={checkMatch !== undefined ? checkMatch : ""}
                   courseData={matchingItem}
                 />
+                
               </div>
             </div>
           </div>
-
+         
           {/* <CourseActionBottom
             checkMatchCourses={checkMatch !== undefined ? checkMatch : ""}
           /> */}

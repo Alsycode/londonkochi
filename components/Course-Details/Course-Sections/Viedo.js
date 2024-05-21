@@ -188,22 +188,22 @@ const embedurl  = `https://www.youtube.com/embed/${youtubeID}?autoplay=0`;
           <div className="rbt-post-share d-flex align-items-center justify-content-center">
             <ul className="social-icon social-default transparent-with-border justify-content-center">
               <li>
-                <Link href="https://www.facebook.com/">
+                <Link href="https://www.facebook.com/londoncollegekochi/">
                   <i className="feather-facebook"></i>
                 </Link>
               </li>
               <li>
-                <Link href="https://www.twitter.com">
+                <Link href="https://twitter.com/LondonCollegebf">
                   <i className="feather-twitter"></i>
                 </Link>
               </li>
               <li>
-                <Link href="https://www.instagram.com/">
+                <Link href="https://www.instagram.com/londoncollege_mumbai/">
                   <i className="feather-instagram"></i>
                 </Link>
               </li>
               <li>
-                <Link href="https://www.linkdin.com/">
+                <Link href="https://www.linkedin.com/company/london-college/?originalSubdomain=in">
                   <i className="feather-linkedin"></i>
                 </Link>
               </li>

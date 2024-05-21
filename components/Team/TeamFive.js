@@ -29,9 +29,10 @@ const TeamFive = () => {
                     
                   >
                   
-                    {/* <Link href={`/londoncollege-kochi`} passHref> */}
+                    <Link href={`/londoncollege-kochi`} passHref>
                      
-                        <div className="inner" style={{ height: "400px" }}  onClick={() => handleRedirect('kochi')}>
+                        <div className="inner" style={{ height: "400px" }}  >
+                        {/* onClick={() => handleRedirect('kochi')} */}
                           <div className="thumbnail">
                             <Image
                               src={Img}
@@ -63,7 +64,7 @@ const TeamFive = () => {
                           </div>
                         </div>
                       
-                    {/* </Link> */}
+                    </Link>
                   </div>
                   
      
@@ -76,9 +77,10 @@ const TeamFive = () => {
                    
                   >
                   
-                    {/* <Link href={`/londoncollege-mumbai`} passHref> */}
+                    <Link href={`/londoncollege-mumbai`} passHref>
                      
-                        <div className="inner" style={{ height: "400px" }}  onClick={() => handleRedirect('mumbai')}>
+                        <div className="inner" style={{ height: "400px" }} >
+                        {/* onClick={() => handleRedirect('mumbai')} */}
                           <div className="thumbnail">
                             <Image
                               src={Img}
@@ -110,7 +112,7 @@ const TeamFive = () => {
                           </div>
                         </div>
                       
-                    {/* </Link> */}
+                    </Link>
                   </div>
                   
       

@@ -2,5 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js"
+  "/londoncollege-mumbai/logistics-and-scm-courses/[id]": "pages/londoncollege-mumbai/logistics-and-scm-courses/[id].js",
+  "/londoncollege-mumbai/updates/[blogid]": "pages/londoncollege-mumbai/updates/[blogid].js",
+  "/londoncollege-mumbai": "pages/londoncollege-mumbai.js"
 }
