@@ -123,7 +123,7 @@ const TeamFive = () => {
 
                   >
                   
-                    <Link href="#" passHref>
+                    {/* <Link href="#" passHref> */}
                      
                         <div className="inner" style={{ height: "400px" }}>
                           <div className="thumbnail">
@@ -157,7 +157,7 @@ const TeamFive = () => {
                           </div>
                         </div>
                       
-                    </Link>
+                    {/* </Link> */}
                   </div>
                   
 

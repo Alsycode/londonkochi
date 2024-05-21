@@ -4,7 +4,7 @@ import Image from "next/image";
 
 import "venobox/dist/venobox.min.css";
 
-import img from "../../public/images/bg/bg-image-12.jpg";
+import img from "../../public/images/bg/videobg.jpg";
 
 const Video = () => {
   useEffect(() => {
@@ -14,6 +14,9 @@ const Video = () => {
       });
     });
   }, []);
+  const youtubeID = "0wW2G9G0lRs"; // Replace with your actual video ID
+
+  const embedUrl = `https://www.youtube.com/embed/${youtubeID}?autoplay=0`;
   return (
     <>
       <div className="rbt-video-area">
@@ -30,7 +33,7 @@ const Video = () => {
                   className="rbt-btn rounded-player-2 popup-video position-to-top with-animation btn-theme-color"
                   data-vbtype="video"
                   controls
-                  href="https://www.youtube.com/watch?v=nA1Aqp0sPQo"
+                  href={embedUrl}
                 >
                   <span className="play-icon"></span>
                 </Link>

@@ -180,7 +180,7 @@ console.log("dffdf",videoDataa)
       </Head>
       <div className="rbt-category-gallery">
         <div className="thumbnail">
-          <Link href={`/logistics-and-scm-courses/${item?.attributes?.slug}`}>
+          <Link href={`/londoncollege-mumbai/logistics-and-scm-courses/${item?.attributes?.slug}`}>
             <Image
               src={item?.attributes?.courseimage?.data?.attributes?.formats?.thumbnail?.url}
               width={498}
@@ -191,7 +191,7 @@ console.log("dffdf",videoDataa)
           </Link>
           <div className="hover-content">
             <h3 className="title">
-              <Link href={`/logistics-and-scm-courses/${item?.attributes?.slug}`}>{item.attributes?.Coursename}</Link>
+              <Link href={`/londoncollege-mumbai/logistics-and-scm-courses/${item?.attributes?.slug}`}>{item.attributes?.Coursename}</Link>
             </h3>
           </div>
         </div>

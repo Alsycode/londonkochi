@@ -55,7 +55,8 @@ const Viedo = ({ checkMatchCourses, matchedCourse }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  const youtubeID = "57SFQ4MoP5M";
+const embedurl  = `https://www.youtube.com/embed/${youtubeID}?autoplay=0`;
   return (
     <>
       <Link
@@ -63,7 +64,7 @@ const Viedo = ({ checkMatchCourses, matchedCourse }) => {
           hideOnScroll ? "d-none" : ""
         }`}
         data-vbtype="video"
-        href="https://www.youtube.com/shorts/57SFQ4MoP5M"
+        href={embedurl}
       >
         <div className="video-content">
           {/* {checkMatchCourses.courseImg && ( */}

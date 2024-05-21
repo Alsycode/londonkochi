@@ -153,7 +153,7 @@ const UniversityClassic = ({videoData, testimonialData, update, detailData, koch
           </div>
           <div className="row g-5">
   {detailData?.data?.slice(0, 3).map((item, index) => {
-    const imageUrl = item?.attributes?.courseimage?.data?.attributes?.formats?.small?.url;
+    const imageUrl = item?.attributes?.courseimage?.data?.attributes?.formats?.thumbnail?.url;
     
 
     return (

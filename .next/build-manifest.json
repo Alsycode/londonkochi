@@ -12,10 +12,10 @@
   ],
   "rootMainFiles": [],
   "pages": {
-    "/": [
+    "/404": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/index.js"
+      "static/chunks/pages/404.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",
@@ -27,10 +27,20 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/relatedUpdates/[tag]": [
+    "/logistics-and-scm-courses/[id]": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/relatedUpdates/[tag].js"
+      "static/chunks/pages/logistics-and-scm-courses/[id].js"
+    ],
+    "/londoncollege-kochi": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/londoncollege-kochi.js"
+    ],
+    "/londoncollege-kochi/about": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/londoncollege-kochi/about.js"
     ]
   },
   "ampFirstPages": []

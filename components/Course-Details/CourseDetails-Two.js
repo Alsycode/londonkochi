@@ -213,7 +213,7 @@ console.log("666666666666666", checkMatchCourses)
               id="job-role"
             >
               
-             <Jobrole jobrole={jobrole}/>
+             {/* <Jobrole jobrole={jobrole}/> */}
 
             </div>
             <div className="tagcloud" style={{ marginTop: "30px" }}>
