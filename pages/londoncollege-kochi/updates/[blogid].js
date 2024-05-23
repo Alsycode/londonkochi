@@ -19,6 +19,7 @@ import Instagram from "@/components/Instagram/Instagram";
 import BlogBreadCrumb from "@/components/Common/Blog-BreadCrumb";
 import Headerstylekochi from "../../../components/Header/headerstylekochi";
 import Kochisection from "../../../components/Blogs/Blog-Sections/kochisection"
+import Kochiblogdetails from "../../../components/Blogs/kochiblogdetails"
 const SingleBlog = ({updateData}) => {
   const router = useRouter();
   const postId = parseInt(router.query.blogid);
@@ -54,7 +55,7 @@ const filteredData = updateData?.data?.filter(item => item.id !== postId);
 
             <div className="rbt-blog-details-area rbt-section-gapBottom breadcrumb-style-max-width">
               <div className="blog-content-wrapper rbt-article-content-wrapper">
-                <BlogDetails
+                <Kochiblogdetails
                   matchedBlog={matchedBlog !== undefined ? matchedBlog : ""}
                   updateData={updateData}
                 /> 
