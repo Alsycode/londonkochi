@@ -39,7 +39,7 @@ const BlogGridLayout = ({ updateData }) => {
  console.log("check",updateData)
   return (
     <>
-      <PageHead title="Blog Grid - Online Courses & Education NEXTJS14 Template" />
+      <PageHead title="Updates" />
       {/* <Head>
         <title>{title}</title>
         <meta name="description" content="We have been succesfull in placing more than 1800+ students  in India and Middle East Asia.London college is a globally reputed  educational institution" />

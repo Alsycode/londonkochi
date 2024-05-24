@@ -19,7 +19,7 @@ import Separator from "@/components/Common/Separator";
 import Banner from "@/components/About-Us-02/Banner";
 import Video from "@/components/About-Us-02/Video";
 import ContactForm from "@/components/Contacts/Contact-Form";
-
+import Footermumbai from "../../components/Footer/footermumbai"
 const AboutUsPageTwo = () => {
   return (
     <>
@@ -65,7 +65,7 @@ const AboutUsPageTwo = () => {
           <ContactForm/>
           <Separator/>
           <BackToTop/>
-          <FooterOne/>
+          <Footermumbai/>
         </Context>
       </Provider>
     </>

@@ -33,7 +33,7 @@ import courseDetails from "../data/course-details/courseData.json";
 import VideoSlider from "../components/videoslider/index.js";
 import VideoCarousel from "../components/videocarousal/index.js";
 import Vidcomponet from "../components/vidcomponent/index.js";
-import BannerVideo from "../components/bannervideo";
+import BannerVideo from "../components/mumbaibannervid";
 import ContactForm from "../components/Contacts/Contact-Form.js";
 import BrandOneHome from "../components/Brand/brandhome"
 import Typed from "typed.js";

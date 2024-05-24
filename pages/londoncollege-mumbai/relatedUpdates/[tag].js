@@ -17,6 +17,7 @@ import Separator from "@/components/Common/Separator";
 import FooterOne from "@/components/Footer/Footer-One";
 import BlogGridMinimal from "@/components/Blogs/BlogGridMinimal";
 import Mumbaiblogminimal from "../../../components/Blogs/mubaiblogminimal"
+import Footermumbai from "../../components/Footer/footermumbai"
 const BlogGridMinimalLayout = ({updatesData}) => {
   let getBlog = JSON.parse(JSON.stringify(BlogData.blogGrid));
   const router = useRouter();
@@ -61,7 +62,7 @@ console.log("1111111111111111111111",updateData)
 
           <BackToTop />
           <Separator />
-          <FooterOne />
+          <Footermumbai />
         </Context>
       </Provider>
     </>

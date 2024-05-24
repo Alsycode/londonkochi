@@ -10,6 +10,7 @@ import MobileMenu from "@/components/Header/MobileMenu";
 import Cart from "@/components/Header/Offcanvas/Cart";
 import FooterOne from "@/components/Footer/Footer-One";
 import Headerstylemumbai from "../../components/Header/headerstylemumbia";
+import Footermumbai from "../../components/Footer/footermumbai"
 const ContactPage = () => {
   return (
     <>
@@ -51,7 +52,7 @@ const ContactPage = () => {
             ></iframe>
           </div>
 
-          <FooterOne />
+          <Footermumbai />
         </Context>
       </Provider>
     </>

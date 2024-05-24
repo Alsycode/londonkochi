@@ -42,7 +42,7 @@ console.log("get",getAllCourse)
 console.log("^&&&&&&&^^^^^^^^^^^^^&&&&&&&&&",courseData)
   return (
     <>
-      <PageHead title="Course Four - Online Courses & Education NEXTJS14 Template" />
+      <PageHead title="Updates" />
       <Provider store={Store}>
         <Context>
           <Headerstylekochi headerSticky="rbt-sticky" headerType={true} />

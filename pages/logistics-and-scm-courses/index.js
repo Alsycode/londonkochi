@@ -41,7 +41,7 @@ console.log("get",getAllCourse)
 console.log("^&&&&&&&^^^^^^^^^^^^^&&&&&&&&&",courseData)
   return (
     <>
-      <PageHead title="Course Four - Online Courses & Education NEXTJS14 Template" />
+      <PageHead title="Logistics and Supply Chain Management Courses" />
       <Provider store={Store}>
         <Context>
           <HeaderStyleTen headerSticky="rbt-sticky" headerType={true} />

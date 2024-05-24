@@ -43,7 +43,7 @@ console.log("matchedupdate",matchedBlog)
 const filteredData = updateData?.data?.filter(item => item.id !== postId);
   return (
     <>
-      {/* <PageHead title="Blog Details - Online Courses & Education NEXTJS14 Template" /> */}
+      <PageHead title={matchedBlog?.attributes?.heading} />
       <Provider store={Store}>
         <Context>
           <MobileMenu />

@@ -17,6 +17,7 @@ import { useAppContext } from "@/context/Context";
 import ContactForm from "@/components/Contacts/Contact-Form";
 import Head from "next/head";
 import Headerstylemumbai from "../../../components/Header/headerstylemumbia";
+import Footermumbai from "../../components/Footer/footermumbai"
 const BlogGridLayout = ({ updateData }) => {  
   const [data, setData ] = useState();
 
@@ -59,7 +60,7 @@ const BlogGridLayout = ({ updateData }) => {
 <ContactForm/>
           <BackToTop />
           <Separator />
-          <FooterOne />
+          <Footermumbai />
         </Context>
       </Provider>
     </>

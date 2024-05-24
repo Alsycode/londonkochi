@@ -12,6 +12,7 @@ import HeaderStyleTen from "@/components/Header/HeaderStyle-Four";
 import MobileMenu from "@/components/Header/MobileMenu";
 import Cart from "@/components/Header/Offcanvas/Cart";
 import Headerstylemumbai from "@/components/Header/headerstylemumbia";
+import Footermumbai from "../../components/Footer/footermumbai"
 const FaqsPage = () => {
   return (
     <>
@@ -30,7 +31,7 @@ const FaqsPage = () => {
           <ContactForm gap="rbt-section-gap" />
 
           <Separator />
-          <FooterOne />
+          <Footermumbai />
         </Context>
       </Provider>
     </>

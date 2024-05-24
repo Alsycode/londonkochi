@@ -22,6 +22,7 @@ import CourseDetails from "../../../components/Course-Details/CourseDetails-Two"
 import CardFive from "@/components/Cards/Card-Five";
 import Cardmumbai from "../../../components/Cards/cardmumbai";
 console.log("CourseDatajsonnnnnnnnnnnnnnnn:", CourseData);
+import Footermumbai from "../../components/Footer/footermumbai"
 const SingleCourseTwo = ({courseData, updateData}) => {
   const router = useRouter();
   const postId = router.query.id;
@@ -112,7 +113,7 @@ console.log("matchingItem**************", matchingItem)
 </div>
           <BackToTop />
           {/* <Separator /> */}
-          <FooterOne />
+          <Footermumbai />
         </Context>
       </Provider>
     </>

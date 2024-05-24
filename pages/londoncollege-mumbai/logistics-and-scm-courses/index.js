@@ -16,6 +16,7 @@ import CourseCardTwo from "@/components/Category/Filter/CourseCard-Two";
 import CallToActionFour from "@/components/Call-To-Action/CallToAction-Four";
 import ContactForm from "@/components/Contacts/Contact-Form";
 import Coursecardmumbai from "../../../components/Category/Filter/coursecardmumbai"
+import Footermumbai from "../../../components/Footer/footermumbai"
 const CourseCardFourLayout = ({courseData}) => {
   const [courses, setCourse] = useState([]);
   const [page, setPage] = useState(1);
@@ -67,7 +68,7 @@ console.log("^&&&&&&&^^^^^^^^^^^^^&&&&&&&&&",courseData)
           </div>
           <ContactForm />
           <BackToTop />
-          <FooterOne />
+          <Footermumbai />
         </Context>
       </Provider>
     </>

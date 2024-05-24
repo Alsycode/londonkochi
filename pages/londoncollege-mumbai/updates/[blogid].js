@@ -20,6 +20,7 @@ import BlogBreadCrumb from "@/components/Common/Blog-BreadCrumb";
 import Headerstylemumbai from "../../../components/Header/headerstylemumbia";
 import Mumbaisection from "../../../components/Blogs/Blog-Sections/mumbaisection"
 import Mumbaiblogdetails from "../../../components/Blogs/mumbaiblogdetails"
+import Footermumbai from "../../components/Footer/footermumbai"
 const SingleBlog = ({updateData}) => {
   const router = useRouter();
   const postId = parseInt(router.query.blogid);
@@ -43,7 +44,7 @@ console.log("matchedupdate",matchedBlog)
 const filteredData = updateData?.data?.filter(item => item.id !== postId);
   return (
     <>
-      {/* <PageHead title="Blog Details - Online Courses & Education NEXTJS14 Template" /> */}
+      {/* <PageHead title={matchedBlog?.attributes?.heading} /> */}
       <Provider store={Store}>
         <Context>
           <MobileMenu />
@@ -81,7 +82,7 @@ const filteredData = updateData?.data?.filter(item => item.id !== postId);
 
           <BackToTop />
           <Separator />
-          <FooterOne /> 
+          <Footermumbai /> 
         </Context>
       </Provider>
     </>

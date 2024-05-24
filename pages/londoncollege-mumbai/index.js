@@ -12,6 +12,7 @@ import HeaderStyleFour from "@/components/Header/HeaderStyle-Four";
 import Separator from "@/components/Common/Separator";
 import Headerstylemumbai from "../../components/Header/headerstylemumbia";
 import Mumbaihome from "../../components/mumbaihome"
+import Footermumbai from "../../components/Footer/footermumbai"
 const UniversityPage = ({videoData, testimonialData, update, detailData, kochiSeosDatas }) => {
   const data = update;
  console.log("00000000000000000000000000000000000000", detailData)
@@ -27,7 +28,7 @@ const UniversityPage = ({videoData, testimonialData, update, detailData, kochiSe
 
           <BackToTop />
           <Separator />
-          <FooterOne />
+          <Footermumbai />
         </Context>
       </Provider>
     </>

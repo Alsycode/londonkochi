@@ -52,10 +52,11 @@ const coursejson = courseData?.attributes?.tabDatas;
 console.log("coursejson", coursejson)
 
 const matchingItem = courseData?.data?.find((item) => item?.attributes?.slug === slug);
-console.log("matchingItem**************", matchingItem)
+const coursename = checkMatch?.attributes?.Coursename;
+console.log("^^^^^^^^^^^^^^^^^^", coursename)
   return (
     <>
-      <PageHead title="Course Filter Toggle - Online Courses & Education NEXTJS14 Template" />
+      <PageHead title={matchingItem?.attributes?.Coursename} />
       <Provider store={Store}>
         <Context>
           <MobileMenu />

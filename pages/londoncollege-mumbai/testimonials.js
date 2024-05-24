@@ -24,6 +24,7 @@ import BackToTop from "@/pages/backToTop";
 import TestimonialModified from "@/components/modifiedtestimonial";
 import ContactForm from "@/components/Contacts/Contact-Form";
 import Headerstylemumbai from "../../components/Header/headerstylemumbia";
+import Footermumbai from "../../components/Footer/footermumbai"
 const TestimonialPage = ({testimonialData}) => {
     const testdata =testimonialData;
     console.log("tesdata",testdata)
@@ -136,7 +137,7 @@ const TestimonialPage = ({testimonialData}) => {
           <ContactForm/>
 
           <BackToTop />
-          <FooterOne />
+          <Footermumbai />
         </Context>
       </Provider>
     </>
